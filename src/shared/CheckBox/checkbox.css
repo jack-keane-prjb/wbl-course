@@ -1,0 +1,74 @@
+.label {
+  display: flex;
+  align-items: center;
+}
+
+.checkboxNative {
+  display: none;
+}
+
+.checkboxCustom {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 2px;
+  border: 2px solid var(--gray666);
+  margin-right: 10px;
+  position: relative;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.ico {
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: opacity 0.2s ease-in-out;
+}
+
+.checkboxNative:checked + .checkboxCustom {
+  border-color: var(--purpleA65);
+  background-color: var(--purpleA65);
+}
+
+.checkboxNative:checked + .checkboxCustom > .ico {
+  opacity: 1;
+}
+
+.text {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: left;
+  color: var(--black);
+}
+
+/* .checkboxCustom::after {
+  content: '';
+
+
+  content: url('../Icon/res/checkbox_bird.svg');
+  background-color: red;
+  REC: тут, видимо, сломалось подключение через inline svg base64 (или его тут и нет...)
+  background-image: url('../Icon/res/checkbox_bird.svg');
+
+
+  position: absolute;
+  z-index: 100;
+
+
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+} */
+
+@media all and (max-width: 767px) {
+  .checkboxCustom {
+    margin-right: 6px;
+  }
+}

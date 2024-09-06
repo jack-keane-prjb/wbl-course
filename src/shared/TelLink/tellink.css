@@ -1,0 +1,56 @@
+.telLink {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: left;
+  color: var(--orangeFF8);
+  transition: color .2s ease-out;
+  display: flex;
+  align-items: center;
+}
+
+.telLink:hover .telLinkText {
+  color: var(--orangeFFB);
+}
+
+.telLink:hover > svg path {
+  fill: var(--orangeFFB);
+}
+
+.telLink:focus {
+  background-color: var(--orangeFFF);
+  outline: none;
+}
+
+.telLink:focus > .telLinkText {
+  color: var(--orangeFF8);
+}
+
+.telLink:focus > svg path {
+  fill: var(--orangeFF8);
+}
+
+.telLink:active {
+  background-color: transparent;
+}
+
+.telLink:active > .telLinkText {
+  color: var(--orangeBB3);
+}
+
+.telLink:active > svg path {
+  fill: var(--orangeBB3);
+}
+
+.telLink > *:not(:last-child) {
+  margin-right: 5px;
+}
+
+.phoneIco path {
+  transition: fill .2s ease-in-out;
+}
+
+.telLinkText {
+  transition: color .2s ease-in-out;
+}

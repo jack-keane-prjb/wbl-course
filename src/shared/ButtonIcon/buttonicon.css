@@ -1,0 +1,52 @@
+.btn {
+  height: 36px;
+  position: relative;
+  /* padding: 0 5px; */
+  transition: background-color .2s ease-in-out;
+}
+
+.btn svg path {
+  transition: fill .2s ease-in-out;
+}
+
+.btn:hover svg path {
+  fill: var(--purpleC99);
+}
+
+.btn:focus svg path {
+  fill: var(--white);
+}
+
+.btn:focus {
+  background-color: var(--purpleC99);
+}
+
+.btn:active {
+  background-color: transparent;
+}
+
+.btn:active svg path {
+  fill: var(--purple703);
+}
+
+.btnBadged {
+  padding-left: 15px;
+}
+
+.badge {
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--orangeFF8);
+  font-family: Open Sans;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 4px;
+  text-align: center;
+  color: var(--white);
+  left: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5px;
+  width: 15px;
+  height: 15px;
+}

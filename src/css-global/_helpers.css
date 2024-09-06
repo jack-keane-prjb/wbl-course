@@ -1,0 +1,38 @@
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.button-reset {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.substrate {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.substrate--blur {
+  backdrop-filter: blur(5px);
+}
+
+.substrate--cell {
+  border-radius: 50px;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.visually-hidden {
+  visibility: hidden;
+}

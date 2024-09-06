@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: span 9;
+}
+
+.container > *:not(:last-child) {
+  margin-right: 15px;
+}
+
+

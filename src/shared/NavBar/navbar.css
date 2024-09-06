@@ -1,0 +1,27 @@
+.navBar {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.pathPart {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: left;
+  color: var(--gray999);
+}
+
+.pathPartLast {
+  color: var(--purple703);
+}
+
+.delimeter {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: left;
+  color: var(--gray999);
+  padding: 0 5px;
+}

@@ -1,0 +1,37 @@
+.section {
+  padding: 70px;
+}
+
+@media all and (max-width: 1599px) {
+  /* 1024x */
+  .section {
+    padding: 72px 36px;
+  }
+
+  .section > *:not(:last-child) {
+    margin-bottom: 69px;
+  }
+}
+
+@media all and (max-width: 1023px) {
+  /* 768px */
+  .section {
+    padding: 71px 71px;
+  }
+  .sectionSome {
+    padding-bottom: 75px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  /* 320px */
+  .section {
+    padding: 12px;
+    margin-bottom: 57px;
+  }
+
+  .section2 {
+    padding: 12px;
+    margin-bottom: 29px;
+  }
+}

@@ -1,0 +1,51 @@
+.container {
+  grid-column: span 6;
+}
+
+.tagContainer {
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+}
+
+.tagContainer > *:not(:last-child) {
+  margin-right: 5px;
+}
+
+.tagName, .tag {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25.2px;
+  text-align: left;
+  white-space: nowrap
+}
+
+.tagName {
+  color: var(--gray999);
+}
+
+.delimeter {
+  width: 100%;
+  background-image: linear-gradient(to right, black 20%, rgba(255,255,255,0) 0%);
+  background-position: bottom;
+  background-size: 5px 1px;
+  background-repeat: repeat-x;
+  position: relative;
+  bottom: 8px;
+}
+
+
+/* REC: добавить это в сниппеты: (ну или куда-нибудь)*/
+
+/*Horizontal*/
+/* background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+background-position: bottom;
+background-size: 3px 1px;
+background-repeat: repeat-x; */
+
+/*Vertical*/
+/* background-image: linear-gradient(black 33%, rgba(255,255,255,0) 0%);
+background-position: right;
+background-size: 1px 3px;
+background-repeat: repeat-y; */

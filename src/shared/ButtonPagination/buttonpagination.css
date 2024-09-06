@@ -1,0 +1,29 @@
+.btn {
+  /* TODO: заменить везде OPEN SANS на var */
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: center;
+  padding: 8px 11px;
+  border-radius: 10px;
+  border: 2px solid var(--purpleA65);
+  color: var(--purpleA65);
+  transition: background-color .2s ease-in-out, border-color .2s ease-in-out, color .2s ease-in-out;
+}
+
+.btn:focus {
+  background-color: var(--purpleC99);
+  color: var(--white);
+}
+
+.btn:hover {
+  background-color: var(--purpleA65);
+  color: var(--white);
+}
+
+.btn:active, .current {
+  background-color: var(--purple703);
+  border-color: var(--purple703);
+  color: var(--white);
+}

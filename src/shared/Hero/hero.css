@@ -1,0 +1,54 @@
+.hero {
+  padding: 80px 0;
+  background-repeat: no-repeat;
+}
+
+/* REC: h2 тоже вынести в компонент */
+.h2 {
+  max-width: 496px;
+  font-family: var(--font);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 65.37px;
+  text-align: left;
+  color: var(--gray999);
+  margin-bottom: 47px;
+}
+
+.btn {
+  padding: 22px 50px;
+}
+
+@media all and (max-width: 1023px) {
+  /* 768px */
+
+  .container {
+    padding: 0;
+  }
+  .hero {
+    padding: 80px 72px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  /* 320px */
+  .h2 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27.24px;
+    text-align: left;
+    margin-bottom: 138px;
+  }
+
+  .hero {
+    padding: 10px 12px;
+  }
+
+  .container {
+    padding: 20px 18px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

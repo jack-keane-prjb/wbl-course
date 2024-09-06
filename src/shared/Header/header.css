@@ -1,0 +1,35 @@
+/* .row {
+  padding: 34px 0;
+}
+
+.row > *:not(:last-child) {
+  margin-bottom: 32px;
+} */
+
+.telLinkRow {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  display: none;
+}
+
+@media all and (max-width: 1599px) {
+  /* 1024px */
+  .telLinkRow {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media all and (max-width: 1023px) {
+  /* 768px */
+  .telLinkRow {
+    padding: 20px 73px;
+  }
+}
+@media all and (max-width: 767px) {
+  /* 320px */
+  .telLinkRow {
+    display: none;
+  }
+}

@@ -1,0 +1,31 @@
+@media all and (max-width: 1599px) {
+  /* 1024x */
+
+  .container {
+    padding: 0;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .sectionTitle {
+    margin-bottom: 25px;
+  }
+}
+
+@media all and (max-width: 1023px) {
+  /* 768px */
+  .container {
+    margin-bottom: 71px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  /* 320px */
+  .container {
+    padding: 50px 0;
+    row-gap: 24px;
+    margin-bottom: 20px;
+  }
+}

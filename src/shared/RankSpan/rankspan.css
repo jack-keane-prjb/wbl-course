@@ -1,0 +1,38 @@
+.spanRank {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.ico {
+  margin-right: 5px;
+}
+
+.rankText {
+  color: var(--orangeFF8);
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 14.5px;
+  text-align: left;
+}
+
+@media all and (max-width: 1023px) {
+  /* 768px */
+  .ico {
+    margin-right: 10px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .spanRank {
+    padding: 0;
+  }
+
+  .rankText {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.6px;
+    text-align: left;
+  }
+}

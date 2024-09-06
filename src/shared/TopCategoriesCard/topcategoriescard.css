@@ -1,0 +1,244 @@
+.card {
+  /* padding: 30px; */
+  background-color: var(--grayF6);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.card1x {
+  grid-column: span 4;
+}
+
+.card2x {
+  grid-column: span 6;
+}
+
+.descrContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px 30px 0 30px;
+}
+
+/* .descrContainer > *:not(:last-child) { */
+/* margin-bottom: 20px; */
+/* } */
+
+.subcategories {
+  margin-bottom: 14px;
+  display: flex;
+}
+
+.link {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: left;
+  color: var(--gray999);
+}
+
+.title {
+  font-family: Open Sans;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32.68px;
+  text-align: left;
+  color: var(--black);
+  margin-bottom: 29px;
+}
+
+.categoryImg {
+  /* position: absolute; */
+  /* margin-left: -30px; */
+  margin-bottom: 30px;
+  /* REC: новое свойство для object-fit */
+  object-fit: contain;
+  object-position: left center;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+}
+/* TODO: скорее всего, если я хотел начинать с мобилок, то надо были писать min-width: 320 и т.д. Тогда бы свойста навешивались. Надо переделать. */
+/* REC: так еще удобнее получается, ибо попадаешь точно в размер макета, а дальше расширение. */
+/* @media all and (max-width: 767px) { */
+
+/* UPD: в таком случае, ВООБЩЕ ВСЕ надо переделывать, ибо дефолтные размеры шрифта указаны для 1920 и все прочее. Так что нет. */
+/* А вообще, наверное, прикольно начинать с мобилы. */
+
+@media all and (max-width: 1599px) {
+  /* 1024x */
+  .card {
+    grid-column: span 2;
+  }
+  .card1x .btnContainer {
+    padding-top: 10px;
+  }
+  /* HERE: */
+  .card2x {
+    grid-column: span 4;
+  }
+
+  .nameBtn {
+    display: none;
+  }
+
+  .categoryImg {
+    max-height: 308px;
+  }
+
+  .btnContainer {
+    padding: 0 30px 30px 30px;
+  }
+
+  .link:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media all and (max-width: 1023px) {
+  /* 768px */
+  .card {
+    grid-column: initial;
+    min-height: 511px;
+    padding: 0;
+  }
+
+  .card1x .title {
+    margin-bottom: 9px;
+  }
+
+  .card1x > .categoryImg {
+    max-height: 296px;
+  }
+
+  .card2x {
+    grid-column: span 2;
+  }
+
+  .card2x > .categoryImg {
+    max-width: 515px;
+  }
+
+  .descrContainer {
+    padding: 29px 29px;
+  }
+
+  .btnContainer {
+    padding: 31px 28px;
+  }
+
+  .categoryImg {
+    margin: 0;
+  }
+
+  .link:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .nameBtn {
+    display: none;
+  }
+
+  .title {
+    margin: 0;
+  }
+
+  .btnContainer {
+    margin-top: auto;
+  }
+}
+
+@media all and (max-width: 767px) {
+  /* 320px */
+  .card {
+    grid-column: initial;
+    padding: 19px 0;
+    border-radius: 10px;
+  }
+  .card2x {
+    grid-column: span 2;
+    padding-top: 29px;
+    /* Убрал, ибо изменил логику верстки карточки */
+    /* padding-bottom: 17px; */
+  }
+
+  .subcategories {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+  }
+
+  .categoryImg {
+    margin: 0;
+  }
+
+  .link {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 10px;
+    text-align: left;
+    margin-right: 0;
+  }
+
+  .link:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  .card2x .link {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .card2x .link:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .card2x .title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32.68px;
+    text-align: left;
+  }
+
+  .titleContainer {
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .card .descrContainer {
+    padding-left: 16px;
+    /* margin-bottom: 10px; */
+  }
+
+  .card2x .descrContainer {
+    padding-left: 30px;
+    /* margin-bottom: 10px; */
+  }
+
+  .subcategories {
+    margin-bottom: 10px;
+  }
+
+  .card2x .subcategories {
+    margin-bottom: 14px;
+    flex-direction: row;
+  }
+}

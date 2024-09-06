@@ -1,0 +1,50 @@
+.btn {
+  padding: 19px 34px;
+  font-family: var(--font);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  color: var(--purpleA65);
+  background-color: transparent;
+  border-radius: 10px;
+  transition: background-color .2s ease-in-out, color .2s ease-in-out;
+  position: relative;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  border-radius: 10px;
+  border: 2px solid var(--purpleA65);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+  transition: opacity .2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--purpleA65);
+  color: var(--white);
+}
+
+.btn:focus {
+  background-color: var(--purpleC99);
+  color: var(--white);
+}
+
+.btn:active {
+  background-color: var(--purple703);
+}
+
+.btn:active::after {
+  border-color: var(--purple703);
+}
+
+.btn:disabled {
+  color: var(--gray999);
+  background-color: var(--grayEA);
+}
+

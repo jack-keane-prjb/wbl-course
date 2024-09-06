@@ -1,0 +1,48 @@
+.itemImg {
+  grid-column: span 6;
+}
+
+.itemInfo {
+  grid-column: span 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.rank {
+  margin-bottom: 5px;
+}
+
+.title {
+  font-family: Open Sans;
+font-size: 24px;
+font-weight: 400;
+line-height: 31.2px;
+text-align: left;
+
+  margin-bottom: 5px;
+}
+
+.shortDescr {
+  margin-bottom: 21px;
+  font-family: Open Sans;
+font-size: 14px;
+font-weight: 400;
+line-height: 14px;
+text-align: left;
+color: var(--gray999);
+}
+
+.price {
+  font-family: Open Sans;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 46.8px;
+  text-align: left;
+margin-bottom: 21px;
+}
+
+.btn {
+  margin-bottom: 12px;
+}
+
