@@ -47,17 +47,22 @@ export function Section1() {
         </nav>
       </div>
 
-      <form className={styles.searchForm}>
-        <input
-          className={styles.input}
-          type="text"
-          placeholder="Я хочу купить..."
+      <div className={`${styles.row} ${styles.row2}`}>
+        <form className={styles.searchForm}>
+          <input
+            className={styles.input}
+            type="text"
+            placeholder="Я хочу купить..."
           // required
-        />
-        <Icon ico="search" className={styles.searchIco}></Icon>
-        <ButtonText icon className={styles.btn}></ButtonText>
-      </form>
-      <UserBtns className={styles.UserBtns} />
+          />
+          <Icon ico="search" className={styles.searchIco}></Icon>
+          <ButtonText icon className={styles.btn}></ButtonText>
+        </form>
+        <UserBtns className={styles.UserBtns} />
+      </div>
+
+
+
     </Container>
   );
 }

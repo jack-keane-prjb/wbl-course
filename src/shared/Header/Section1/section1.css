@@ -18,7 +18,7 @@
   cursor: pointer;
 }
 
-.action > * + * {
+.action>*+* {
   padding-left: 5px;
 }
 
@@ -29,6 +29,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  padding: 30px 0;
 }
 
 .nav {
@@ -58,7 +59,17 @@
   margin-bottom: 34px;
 }
 
+.row2 {
+  margin-bottom: 0;
+}
+
+
+.TelLink {
+  display: none;
+}
+
 @media all and (max-width: 1599px) {
+
   /* 1024px */
   .container {
     padding-left: 36px;
@@ -75,14 +86,18 @@
   .navList li:not(:last-child) {
     margin-right: 42px;
   }
+
   .TelLink {
     display: none;
   }
+
   .UserBtns {
     display: none;
   }
 }
+
 @media all and (max-width: 1023px) {
+
   /* 768px */
   .container {
     display: grid;
@@ -119,6 +134,7 @@
     text-align: left;
   }
 }
+
 @media all and (max-width: 767px) {
   /* 320px */
 
@@ -168,6 +184,8 @@
   /* TODO: */
   /* width: 1061px; */
   position: relative;
+  width: 100%;
+  flex-basis: 1000px;
 }
 
 .input {
@@ -187,7 +205,7 @@
   outline: 2px solid var(--purpleA65);
 }
 
-.input:focus + .searchIco path {
+.input:focus+.searchIco path {
   fill: var(--purpleA65);
 }
 
@@ -221,32 +239,40 @@
     min-width: 500px;
     /* flex-basis: 500px; */
   }
+
   .UserBtns {
     display: none;
   }
+
   .searchForm {
     /* REC: вот эти два свойства используются в паре. Типа один растягивает на всю ширину. А другой ОГРАНИЧИВАЕТ. */
     max-width: 733px;
     width: 100%;
   }
 }
+
 @media all and (max-width: 1023px) {
+
   /* 768px */
   .container {
     width: 100%;
     padding: 0 68px;
     padding-bottom: 34px;
   }
+
   .searchForm {
     width: 100%;
   }
+
   .input {
     width: 100%;
   }
+
   .UserBtns {
     display: none;
   }
 }
+
 @media all and (max-width: 767px) {
   /* 320px */
 
