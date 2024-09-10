@@ -8,9 +8,11 @@ import { Section1 } from './Section1';
 export function Header() {
   return (
     <header>
+      {/* <= 1024px */}
       <Container className={styles.telLinkRow}>
         <TelLink />
       </Container>
+
       <ContactsRow />
       <Section1 />
     </header>

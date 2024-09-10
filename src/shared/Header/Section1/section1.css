@@ -56,11 +56,10 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-bottom: 34px;
 }
 
-.row2 {
-  margin-bottom: 0;
+.row:not(:last-child) {
+  margin-bottom: 27px;
 }
 
 

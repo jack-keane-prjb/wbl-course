@@ -47,7 +47,7 @@ export function Section1() {
         </nav>
       </div>
 
-      <div className={`${styles.row} ${styles.row2}`}>
+      <div className={`${styles.row}`}>
         <form className={styles.searchForm}>
           <input
             className={styles.input}
