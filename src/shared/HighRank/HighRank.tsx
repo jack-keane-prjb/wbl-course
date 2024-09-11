@@ -96,7 +96,26 @@ export function HighRank({ className }: { className?: string }) {
           fullPrice={'17 990 руб'}
           button={<ButtonTransparent className={styles.btn} text="Купить" />}
         />
-        {!is320px ||
+        {/* TODO: разобраться тут с логикой на меньших разрешениях: */}
+        <OfferCardHighRanked
+          rank={'4,8'}
+          productImg={high_ranked_7_img}
+          productName={'Диван шиниловый \n “V-43”'}
+          fullPrice={'19 990 руб'}
+          button={
+            <ButtonTransparent className={styles.btn} text="Купить" />
+          }
+        />
+        <OfferCardHighRanked
+          rank={'4,7'}
+          productImg={high_ranked_8_img}
+          productName={'Диван велюровый \n “S-99”'}
+          fullPrice={'19 990 руб'}
+          button={
+            <ButtonTransparent className={styles.btn} text="Купить" />
+          }
+        />
+        {/* {!is320px ||
           (!is768px && (
             <>
               <OfferCardHighRanked
@@ -118,7 +137,7 @@ export function HighRank({ className }: { className?: string }) {
                 }
               />
             </>
-          ))}
+          ))} */}
       </div>
     </Container>
   );

@@ -5,7 +5,7 @@
 }
 
 .ico {
-  margin-right: 5px;
+  margin-right: 9px;
 }
 
 .rankText {
@@ -18,6 +18,7 @@
 }
 
 @media all and (max-width: 1023px) {
+
   /* 768px */
   .ico {
     margin-right: 10px;

@@ -3,8 +3,7 @@
 }
 
 .grid {
-  grid-template-columns: repeat(9, 1fr);
-  ;
+  /* grid-template-columns: repeat(9, 1fr); */
 }
 
 @media all and (max-width: 1599px) {

@@ -1,6 +1,8 @@
 .hero {
-  padding: 80px 0;
+  padding: 81px 0;
   background-repeat: no-repeat;
+  background-image: url(../../assets/img/hero1_1920px.jpg);
+  background-position: -12px 0;
 }
 
 /* REC: h2 тоже вынести в компонент */
@@ -19,18 +21,29 @@
   padding: 22px 50px;
 }
 
+@media all and (max-width: 1599px) {
+  .hero {
+    background-image: url(../../assets/img/1024px/hero1_1024px.jpg);
+  }
+
+}
+
+
 @media all and (max-width: 1023px) {
   /* 768px */
 
   .container {
     padding: 0;
   }
+
   .hero {
     padding: 80px 72px;
+    background-image: url(../../assets/img/768px/hero1_768px.jpg);
   }
 }
 
 @media all and (max-width: 767px) {
+
   /* 320px */
   .h2 {
     font-size: 20px;

@@ -62,6 +62,7 @@
   display: flex;
   align-items: center;
 }
+
 /* TODO: скорее всего, если я хотел начинать с мобилок, то надо были писать min-width: 320 и т.д. Тогда бы свойста навешивались. Надо переделать. */
 /* REC: так еще удобнее получается, ибо попадаешь точно в размер макета, а дальше расширение. */
 /* @media all and (max-width: 767px) { */
@@ -70,14 +71,16 @@
 /* А вообще, наверное, прикольно начинать с мобилы. */
 
 @media all and (max-width: 1599px) {
+
   /* 1024x */
   .card {
     grid-column: span 2;
   }
+
   .card1x .btnContainer {
     padding-top: 10px;
   }
-  /* HERE: */
+
   .card2x {
     grid-column: span 4;
   }
@@ -100,6 +103,7 @@
 }
 
 @media all and (max-width: 1023px) {
+
   /* 768px */
   .card {
     grid-column: initial;
@@ -111,7 +115,7 @@
     margin-bottom: 9px;
   }
 
-  .card1x > .categoryImg {
+  .card1x>.categoryImg {
     max-height: 296px;
   }
 
@@ -119,7 +123,7 @@
     grid-column: span 2;
   }
 
-  .card2x > .categoryImg {
+  .card2x>.categoryImg {
     max-width: 515px;
   }
 
@@ -153,12 +157,14 @@
 }
 
 @media all and (max-width: 767px) {
+
   /* 320px */
   .card {
     grid-column: initial;
     padding: 19px 0;
     border-radius: 10px;
   }
+
   .card2x {
     grid-column: span 2;
     padding-top: 29px;

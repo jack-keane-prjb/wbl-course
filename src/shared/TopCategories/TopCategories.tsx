@@ -30,9 +30,14 @@ export function TopCategories({ className }: { className?: string }) {
     <Container className={`${styles.container} ${className}`}>
       <h2 className={`sectionTitle ${styles.sectionTitle}`}>Топ категории</h2>
       <div className={`gridContainer ${styles.grid}`}>
+
+
         {/* TODO: возможно, стоит пересмотреть изменение размеров карточки через JS. Ибо нашелся вариант намного */}
+        {/* Итого: вместо всей это кучи атрибутов (пропсов) я буду прописывать один класс. Так намного проще*/}
+
+        {/* HERE: тут остановился */}
         <TopCategoriesCard
-          className={styles.card1}
+          className={`${styles.card1} ${styles.cardBig}`}
           size1920="2x"
           size1024="2x"
           size768="2x"

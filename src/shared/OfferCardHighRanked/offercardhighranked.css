@@ -1,11 +1,12 @@
 .card {
-  /* grid-column: span 3; */
-  padding: 34px 15px 44px;
+  grid-column: span 3;
+  padding: 34px 15px 30px;
   background-color: var(--grayF6);
   position: relative;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  min-height: 420px;
 }
 
 .col {
@@ -58,8 +59,9 @@
   /* min-height: 252px; */
   /* min-height: 150px; */
   height: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
 }
+
 /* REC: попытки внести универсальность приводят к тем же телодвиженями, учитывая усложнение селекторов... */
 
 .card .imgContainer {
@@ -80,9 +82,10 @@
   padding-left: 15px;
 }
 
-.descrContainer > *:not(:last-child) {
+/* REC: написание всяких умных селекторов = никогда не завершить pixel perfect )))) В топку*/
+/* .descrContainer>*:not(:last-child) {
   margin-bottom: 27px;
-}
+} */
 
 .productName {
   /* max-width: 225px; */
@@ -93,13 +96,14 @@
   text-align: left;
   color: var(--black);
   white-space: pre-line;
+  margin-bottom: 25px;
 }
 
 .priceRow {
   display: flex;
 }
 
-.priceRow > *:not(:last-child) {
+.priceRow>*:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -119,6 +123,7 @@
   line-height: 16px;
   text-align: left;
   color: var(--gray666);
+  margin-bottom: 27px;
 }
 
 .striked {
@@ -140,23 +145,28 @@
 /* TODO: еще бы решить, как лучше писать свойства в медиа-запросах, ибо можно назнчить строго диапазон. А можно сделть типа не менее / не более.  Тогда свойства будут складываться. */
 
 @media all and (max-width: 1599px) {
+
   /* 1024x */
   .imgContainer {
     min-height: 143px;
     margin-bottom: 0;
   }
+
   .productImg {
     padding: 0;
   }
+
   .descrContainer {
     padding: 15px;
   }
+
   .card {
     padding-bottom: 11px;
   }
 }
 
 @media all and (max-width: 1023px) {
+
   /* 768px */
   .card {
     min-height: 420px;
@@ -174,6 +184,7 @@
 }
 
 @media all and (max-width: 767px) {
+
   /* 320px */
   .productName {
     font-size: 16px;
@@ -188,7 +199,7 @@
     min-height: 278px;
   }
 
-  .descrContainer > *:not(:last-child) {
+  .descrContainer>*:not(:last-child) {
     margin-bottom: 18px;
   }
 

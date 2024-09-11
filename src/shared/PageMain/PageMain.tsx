@@ -33,28 +33,19 @@ export function PageMain() {
       {/* <Content> */}
       <main>
         <Hero
-          backgroundImg1920={hero1_1920px}
-          backgroundImg1024={hero1_1024px}
-          backgroundImg768={hero1_768px}
-          backgroundImg320={hero1_320px}
+
         />
         {/* TODO: тут бы секцию в глобал отнести. А править конерктно для этих двух компонентов */}
         {/* Пробую изменить на Container с классом section */}
         {/* <div className={`${styles.section} ${styles.sectionSome}`}> */}
-        <Container className={`${styles.section} ${styles.sectionSome}`}>
-          <SpecialOffers className={styles.specialoffers} />
-          <HighRank className={styles.highrank} />
+        <Container className={`${styles.section}`}>
+          <SpecialOffers className={styles.sectionSome} />
+          <HighRank className={styles.sectionSome} />
         </Container>
         {/* </div> */}
-        <Hero2
-          backgroundImg1920={hero2_1920px}
-          backgroundImg1024={hero2_1024px}
-          backgroundImg768={hero2_768px}
-          backgroundImg320={hero2_320px}
-        />
+        <Hero2 />
         {/* TODO: разобарться получше с классами для секций */}
-        {/* HERE: тут остановился */}
-        <div className={styles.section2}>
+        <div className={styles.section}>
           <TopCategories />
           {/* <Useful /> */}
           {/* <Feedback /> */}

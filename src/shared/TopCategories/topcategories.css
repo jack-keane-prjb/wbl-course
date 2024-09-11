@@ -1,8 +1,21 @@
 /* REC: универсализация - это очень хорошо. Однако, кода дело доходит до пиксель перфект, то приходится втыкать вот такие ненужные стили. И ничего с этим не сделаешь. */
 /* Так что БЭМ, либо css-модули тащат (намного проще именование) */
 
+.sectionTitle {
+  margin-bottom: 26px;
+}
+
+
 .grid {
   row-gap: 29px;
+}
+
+.cardSmall {
+  grid-column: span 4;
+}
+
+.cardBig {
+  grid-column: span 6;
 }
 
 /* REC: вот так меняю порядок карточек */
@@ -30,6 +43,7 @@
 /* REC: я еще свойства пишу через жопу, ибо у меня медиа-запросы подразумевают, что я делаю desktop-first. Но в какой-то момент я отсупы подгонять с 320пкс. Что с этого получиться я вообще хз.*/
 
 @media all and (max-width: 1599px) {
+
   /* 1024x */
   .container {
     padding-top: 72px;
@@ -55,6 +69,7 @@
 }
 
 @media all and (max-width: 1023px) {
+
   /* 768px */
   .grid {
     padding: 64px 74px;
@@ -67,6 +82,7 @@
 }
 
 @media all and (max-width: 767px) {
+
   /* 320px */
   .grid {
     grid-template-columns: 1fr 1fr;
