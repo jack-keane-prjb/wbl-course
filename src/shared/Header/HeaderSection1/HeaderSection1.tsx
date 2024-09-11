@@ -2,9 +2,9 @@ import React from 'react';
 import { Container } from '../../Container';
 import { TelLink } from '../../TelLink';
 import { UserBtns } from '../../UserBtns';
-import styles from './contactsrow.css';
+import styles from './headersection1.css';
 
-export function ContactsRow() {
+export function HeaderSection1() {
   return (
     <div className={styles.row}>
       <Container className={styles.container}>

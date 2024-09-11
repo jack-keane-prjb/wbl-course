@@ -6,19 +6,19 @@ import { Icon } from '../../Icon';
 import { LinkGeneric } from '../../LinkGeneric';
 import { TelLink } from '../../TelLink';
 import { UserBtns } from '../../UserBtns';
-import styles from './section1.css';
+import styles from './headersection2.css';
 
-export function Section1() {
+export function HeaderSection2() {
   return (
     <Container className={styles.container}>
-      <div className={styles.row}>
+      <div className={`${styles.row} ${styles.row1}`}>
         <Link to="/" className={styles.logo}>
           {/* <div className={styles.logo}> */}
           <Icon ico={'logo'}></Icon>
           {/* </div> */}
         </Link>
         <TelLink className={styles.TelLink} />
-        <UserBtns className={styles.UserBtns} />
+        <UserBtns className={`${styles.UserBtns} ${styles.UserBtnsRow1}`} />
         <nav className={styles.nav}>
           <ul className={styles.navList}>
             <li>
@@ -47,7 +47,7 @@ export function Section1() {
         </nav>
       </div>
 
-      <div className={`${styles.row}`}>
+      <div className={`${styles.row} ${styles.row2}`}>
         <form className={styles.searchForm}>
           <input
             className={styles.input}
@@ -58,7 +58,7 @@ export function Section1() {
           <Icon ico="search" className={styles.searchIco}></Icon>
           <ButtonText icon className={styles.btn}></ButtonText>
         </form>
-        <UserBtns className={styles.UserBtns} />
+        <UserBtns className={`${styles.UserBtns} ${styles.UserBtnsRow2}`} />
       </div>
 
 

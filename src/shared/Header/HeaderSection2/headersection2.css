@@ -29,7 +29,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  padding: 30px 0;
+  padding: 31px 0;
 }
 
 .nav {
@@ -43,7 +43,7 @@
 }
 
 .navList li:not(:last-child) {
-  margin-right: 70px;
+  margin-right: 93px;
 }
 
 .link {
@@ -59,13 +59,22 @@
 }
 
 .row:not(:last-child) {
-  margin-bottom: 27px;
+  margin-bottom: 32px;
+}
+
+.row1 {
+  padding-top: 3px;
 }
 
 
 .TelLink {
   display: none;
 }
+
+.UserBtnsRow1 {
+  display: none
+}
+
 
 @media all and (max-width: 1599px) {
 
@@ -90,7 +99,7 @@
     display: none;
   }
 
-  .UserBtns {
+  .UserBtnsRow1 {
     display: none;
   }
 }
@@ -184,7 +193,7 @@
   /* width: 1061px; */
   position: relative;
   width: 100%;
-  flex-basis: 1000px;
+  flex-basis: 1060px;
 }
 
 .input {
@@ -231,6 +240,10 @@
   right: 32px;
 }
 
+.UserBtnsRow1 {
+  display: none;
+}
+
 @media all and (max-width: 1599px) {
   /* 1024px */
 
@@ -239,7 +252,7 @@
     /* flex-basis: 500px; */
   }
 
-  .UserBtns {
+  .UserBtnsRow1 {
     display: none;
   }
 
@@ -267,7 +280,7 @@
     width: 100%;
   }
 
-  .UserBtns {
+  .UserBtnsRow1 {
     display: none;
   }
 }
