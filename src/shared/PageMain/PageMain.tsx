@@ -19,6 +19,10 @@ import hero2_1024px from '../../assets/img/1024px/hero2_1024px.jpg';
 import hero2_768px from '../../assets/img/768px/hero2_768px.jpg';
 import hero2_320px from '../../assets/img/320px/hero2_320px.jpg';
 import { TopCategories } from '../TopCategories';
+import { Useful } from '../Useful';
+import { Feedback } from '../Feedback';
+import { Footer } from '../Footer';
+import { Copyright } from '../Copyright';
 // import { Feedback } from '../Feedback';
 // import { TopCategories } from '../TopCategories';
 // import { Useful } from '../Useful';
@@ -32,9 +36,7 @@ export function PageMain() {
       {/* REC: убрал Content в пользу обычного main */}
       {/* <Content> */}
       <main>
-        <Hero
-
-        />
+        <Hero />
         {/* TODO: тут бы секцию в глобал отнести. А править конерктно для этих двух компонентов */}
         {/* Пробую изменить на Container с классом section */}
         {/* <div className={`${styles.section} ${styles.sectionSome}`}> */}
@@ -45,15 +47,14 @@ export function PageMain() {
         {/* </div> */}
         <Hero2 />
         {/* TODO: разобарться получше с классами для секций */}
-        <div className={styles.section}>
-          <TopCategories />
-          {/* <Useful /> */}
-          {/* <Feedback /> */}
-        </div>
+        <Container className={`${styles.section} ${styles.sectionFix}`}>
+          <TopCategories className={styles.sectionSome} />
+          <Useful className={styles.sectionSome} />
+          <Feedback className={styles.sectionSome} />
+        </Container>
       </main>
       {/* </Content> */}
-      {/* <Footer /> */}
-      {/* <Copyright /> */}
+      <Footer />
     </>
   );
 }

@@ -8,8 +8,9 @@ import img_article_2 from '../../assets/img/article_2.jpg';
 import img_article_3 from '../../assets/img/article_3.jpg';
 import img_article_4 from '../../assets/img/article_4.jpg';
 import img_article_5 from '../../assets/img/article_5.jpg';
+import classNames from 'classnames';
 
-export function Useful() {
+export function Useful({ className }: { className: string }) {
   const [is320px, setIs320px] = useState(false);
   const [is768px, setIs768px] = useState(false);
 
@@ -45,32 +46,34 @@ export function Useful() {
   }, []);
 
   return (
-    <Container className={`gridContainer section ${styles.grid}`}>
-      <h2 className="sectionTitle">Полезное</h2>
-      <UsefulСard
-        img={img_article_1}
-        text="И нет сомнений, что сделанные на базе интернет-аналитики выводы представляют собой не что иное?"
-      />
-      <UsefulСard
-        img={img_article_2}
-        text="Как принято считать, некоторые особенности приносят несомненную пользу обществу?"
-      />
-      {is320px && (
-        <>
-          <UsefulСard
-            img={img_article_3}
-            text="Ясность нашей позиции очевидна: укрепление и развитие внутренней структуры?"
-          />
-          <UsefulСard
-            img={img_article_4}
-            text="Прежде всего, консультация с широким активом однозначно фиксирует необходимость распределения?"
-          />
-          <UsefulСard
-            img={img_article_5}
-            text="Как принято считать, некоторые особенности приносят несомненную пользу обществу?"
-          />
-        </>
-      )}
-    </Container>
+    <div className={className}>
+      <h2 className={`sectionTitle ${styles.sectionTitle}`}>Полезное</h2>
+      <div className={`gridContainer ${styles.grid}`}>
+        <UsefulСard
+          img={img_article_1}
+          text="И нет сомнений, что сделанные на базе интернет-аналитики выводы представляют собой не что иное?"
+        />
+        <UsefulСard
+          img={img_article_2}
+          text="Как принято считать, некоторые особенности приносят несомненную пользу обществу?"
+        />
+        {is320px && (
+          <>
+            <UsefulСard
+              img={img_article_3}
+              text="Ясность нашей позиции очевидна: укрепление и развитие внутренней структуры?"
+            />
+            <UsefulСard
+              img={img_article_4}
+              text="Прежде всего, консультация с широким активом однозначно фиксирует необходимость распределения?"
+            />
+            <UsefulСard
+              img={img_article_5}
+              text="Как принято считать, некоторые особенности приносят несомненную пользу обществу?"
+            />
+          </>
+        )}
+      </div>
+    </div>
   );
 }

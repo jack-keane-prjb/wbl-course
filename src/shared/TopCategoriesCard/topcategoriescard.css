@@ -4,6 +4,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  /* min-height: 511px; */
 }
 
 .card1x {
@@ -39,6 +40,10 @@
   color: var(--gray999);
 }
 
+.link:not(:last-child) {
+  margin-right: 30px;
+}
+
 .title {
   font-family: Open Sans;
   font-size: 24px;
@@ -46,7 +51,7 @@
   line-height: 32.68px;
   text-align: left;
   color: var(--black);
-  margin-bottom: 29px;
+  /* margin-bottom: 29px; */
 }
 
 .categoryImg {
@@ -61,6 +66,15 @@
 .titleContainer {
   display: flex;
   align-items: center;
+  margin-bottom: 29px;
+}
+
+.nameBtn {
+  display: none;
+}
+
+.btnContainer {
+  padding: 0 30px 28px 30px;
 }
 
 /* TODO: скорее всего, если я хотел начинать с мобилок, то надо были писать min-width: 320 и т.д. Тогда бы свойста навешивались. Надо переделать. */

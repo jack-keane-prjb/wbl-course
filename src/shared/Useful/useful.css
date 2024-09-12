@@ -1,4 +1,10 @@
+.sectionTitle {
+  margin-bottom: 27px;
+}
+
+
 @media all and (max-width: 1023px) {
+
   /* 768px */
   .grid {
     padding: 5px 72px;
@@ -6,6 +12,7 @@
 }
 
 @media all and (max-width: 767px) {
+
   /* 320px */
   .grid {
     padding: 64px 0;

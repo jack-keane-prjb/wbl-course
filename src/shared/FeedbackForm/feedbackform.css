@@ -6,7 +6,7 @@
   text-align: left;
   color: var(--gray666);
   max-width: 624px;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
 .form {
@@ -55,6 +55,7 @@
 }
 
 @media all and (max-width: 1023px) {
+
   /* 768px */
   .form {
     grid-column: span 2;

@@ -6,6 +6,17 @@
   margin-bottom: 70px;
 }
 
+.sectionFix {
+  padding-bottom: 72px;
+}
+
+.sectionFooter {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* padding-top: 10px; */
+}
+
+
 @media all and (max-width: 1599px) {
 
   /* 1024x */

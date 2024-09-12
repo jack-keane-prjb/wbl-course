@@ -5,39 +5,35 @@
   margin-bottom: 26px;
 }
 
-
 .grid {
-  row-gap: 29px;
-}
-
-.cardSmall {
-  grid-column: span 4;
-}
-
-.cardBig {
-  grid-column: span 6;
+  row-gap: 32px;
 }
 
 /* REC: вот так меняю порядок карточек */
 
 .card1 {
   order: 1;
+  grid-column: span 6;
 }
 
 .card2 {
   order: 2;
+  grid-column: span 6;
 }
 
 .card3 {
   order: 3;
+  grid-column: span 4;
 }
 
 .card4 {
   order: 4;
+  grid-column: span 4;
 }
 
 .card5 {
   order: 5;
+  grid-column: span 4;
 }
 
 /* REC: я еще свойства пишу через жопу, ибо у меня медиа-запросы подразумевают, что я делаю desktop-first. Но в какой-то момент я отсупы подгонять с 320пкс. Что с этого получиться я вообще хз.*/

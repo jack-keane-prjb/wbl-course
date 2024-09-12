@@ -1,6 +1,6 @@
 .title {
   /* REC: сетку можно еще подгонять вот так, если не хочется трогать row-gap и col-gap */
-  margin-bottom: -14px;
+  margin-bottom: 9px;
 }
 
 .backgroundCell {
@@ -13,16 +13,20 @@
 }
 
 @media all and (max-width: 1023px) {
+
   /* 768px */
   .container {
     padding: 65px 72px;
   }
+
   .grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
   .title {
     grid-column: span 2;
   }
+
   .backgroundCell {
     grid-column: initial;
     grid-row: span 2;
@@ -34,6 +38,7 @@
 }
 
 @media all and (max-width: 767px) {
+
   /* 320px */
   .container {
     padding: 5px 0;

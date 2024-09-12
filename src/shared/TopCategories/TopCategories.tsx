@@ -25,9 +25,9 @@ import imgChairs from '../../assets/img/top_cat_chairs.png';
 import imgChairs1024 from '../../assets/img/1024px/top_cat_chairs_1024px.png';
 import imgChairs768 from '../../assets/img/768px/top_cat_chairs_768px.png';
 
-export function TopCategories({ className }: { className?: string }) {
+export function TopCategories({ className }: { className: string }) {
   return (
-    <Container className={`${styles.container} ${className}`}>
+    <div className={className}>
       <h2 className={`sectionTitle ${styles.sectionTitle}`}>Топ категории</h2>
       <div className={`gridContainer ${styles.grid}`}>
 
@@ -37,11 +37,7 @@ export function TopCategories({ className }: { className?: string }) {
 
         {/* HERE: тут остановился */}
         <TopCategoriesCard
-          className={`${styles.card1} ${styles.cardBig}`}
-          size1920="2x"
-          size1024="2x"
-          size768="2x"
-          size320="2x"
+          className={`${styles.card1}`}
           subcategories={['Прямые', 'Угловые', 'Модульные']}
           name="Диваны"
           img1920={imgSofas}
@@ -50,22 +46,21 @@ export function TopCategories({ className }: { className?: string }) {
         />
         <TopCategoriesCard
           className={styles.card2}
-          subcategories={['Односпальные', 'Двуспальные']}
-          name="Кровати"
-          img1920={imgBeds}
-          img1024={imgBeds1024}
-          img768={imgBeds768}
-          img320={imgBeds320}
-        />
-        <TopCategoriesCard
-          className={styles.card3}
-          size1920="2x"
           subcategories={['Мягкие', 'Кресла-кровати']}
           name="Кресла"
           img1920={imgArmchairs}
           img1024={imgArmchairs1024}
           img768={imgArmchairs768}
           img320={imgArmchairs320}
+        />
+        <TopCategoriesCard
+          className={styles.card3}
+          subcategories={['Односпальные', 'Двуспальные']}
+          name="Кровати"
+          img1920={imgBeds}
+          img1024={imgBeds1024}
+          img768={imgBeds768}
+          img320={imgBeds320}
         />
         <TopCategoriesCard
           className={styles.card4}
@@ -84,6 +79,6 @@ export function TopCategories({ className }: { className?: string }) {
           img768={imgChairs768}
         />
       </div>
-    </Container>
+    </div>
   );
 }
