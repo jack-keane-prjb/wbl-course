@@ -50,18 +50,35 @@
     margin-bottom: 25px;
   }
 
+  /* TODO: есть дубликаты свойств в разных медиа-запросах. Решать бы как-нибудь этот вопрос. */
   .grid {
     grid-template-columns: repeat(6, 1fr);
-    row-gap: 35px;
+    row-gap: 32px;
+  }
+
+  .card1 {
+    grid-column: span 4;
+  }
+
+  .card2 {
+    grid-column: span 2;
+    order: 5;
   }
 
   .card3 {
-    order: 4;
+    grid-column: span 2;
+    order: 1;
   }
 
   .card4 {
-    order: 3;
+    grid-column: span 2;
+    /* order: 3; */
   }
+
+  .card5 {
+    grid-column: span 2;
+  }
+
 }
 
 @media all and (max-width: 1023px) {

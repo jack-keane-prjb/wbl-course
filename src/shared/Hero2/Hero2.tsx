@@ -6,9 +6,7 @@ import styles from './hero2.css';
 export function Hero2() {
 
   return (
-    <section
-      className={`${styles.hero}`}
-    >
+    <section className={`${styles.hero}`}>
       <Container className={styles.container}>
         <h2 className={styles.h2}>Оксфорд 1950</h2>
         <h3 className={styles.h3}>Новая коллекция изысканных кресел </h3>

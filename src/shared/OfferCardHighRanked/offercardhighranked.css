@@ -162,6 +162,12 @@
 
   .card {
     padding-bottom: 11px;
+    grid-column: span 1;
+  }
+
+  .descrContainer {
+    padding-top: 14px;
+    padding-bottom: 19px;
   }
 }
 

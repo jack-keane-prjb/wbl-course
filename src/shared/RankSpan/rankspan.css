@@ -17,6 +17,12 @@
   text-align: left;
 }
 
+@media all and (max-width: 1599px) {
+  .spanRank {
+    padding-left: 17px;
+  }
+}
+
 @media all and (max-width: 1023px) {
 
   /* 768px */

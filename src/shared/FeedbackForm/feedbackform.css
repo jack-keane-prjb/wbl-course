@@ -54,6 +54,16 @@
   margin-bottom: 15px;
 }
 
+@media all and (max-width: 1599px) {
+
+  /* HERE: */
+  .form {
+    grid-column: span 4;
+  }
+
+}
+
+
 @media all and (max-width: 1023px) {
 
   /* 768px */

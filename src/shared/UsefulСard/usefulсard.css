@@ -33,11 +33,9 @@
   margin-top: auto;
 }
 
-@media all and (max-width: 1023px) {
-
-  /* 768px */
+@media all and (max-width: 1599px) {
   .card {
-    grid-column: initial;
+    grid-column: span 3;
   }
 
   .text {
@@ -46,6 +44,15 @@
     line-height: 21.79px;
     text-align: left;
     margin-bottom: 31px;
+  }
+
+}
+
+@media all and (max-width: 1023px) {
+
+  /* 768px */
+  .card {
+    grid-column: initial;
   }
 }
 

@@ -97,7 +97,8 @@ export function HighRank({ className }: { className?: string }) {
           button={<ButtonTransparent className={styles.btn} text="Купить" />}
         />
         {/* TODO: разобраться тут с логикой на меньших разрешениях: */}
-        <OfferCardHighRanked
+        {/* 1920px */}
+        {/* <OfferCardHighRanked
           rank={'4,8'}
           productImg={high_ranked_7_img}
           productName={'Диван шиниловый \n “V-43”'}
@@ -114,8 +115,11 @@ export function HighRank({ className }: { className?: string }) {
           button={
             <ButtonTransparent className={styles.btn} text="Купить" />
           }
-        />
-        {/* {!is320px ||
+        /> */}
+
+
+
+        {!is320px ||
           (!is768px && (
             <>
               <OfferCardHighRanked
@@ -137,7 +141,7 @@ export function HighRank({ className }: { className?: string }) {
                 }
               />
             </>
-          ))} */}
+          ))}
       </div>
     </Container>
   );

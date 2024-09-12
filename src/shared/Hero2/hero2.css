@@ -33,6 +33,13 @@
   color: var(--white);
 }
 
+@media all and (max-width: 1599px) {
+
+  .hero {
+    background-image: url("../../assets/img/1024px/hero2_1024px.jpg");
+  }
+}
+
 @media all and (max-width: 1023px) {
 
   /* 768px */

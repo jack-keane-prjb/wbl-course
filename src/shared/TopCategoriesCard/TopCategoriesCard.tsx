@@ -46,13 +46,14 @@ export function TopCategoriesCard(props: ITopCategoriesCard) {
         </div>
       </div>
       {/* TODO: Контентное или декоративное? Вроде, контентное. */}
-      <picture>
+      {/* <div className={styles.imgContainer}> */}
+      <picture className={styles.picture}>
         <source srcSet={img1024} media="(max-width: 1599px)" />
         <source srcSet={img768} media="(max-width: 1023px)" />
         <source srcSet={img320} media="(max-width: 767px)" />
         <img src={img1920} alt={altOfImg} className={styles.categoryImg} />
       </picture>
-
+      {/* </div> */}
       {/* <picture>
         <source srcset="mdn-logo-wide.png" media="(min-width: 600px)" />
         <img src="mdn-logo-narrow.png" alt="MDN" />

@@ -4,7 +4,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  /* min-height: 511px; */
+  min-height: 511px;
 }
 
 .card1x {
@@ -19,7 +19,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 30px 30px 0 30px;
+  padding: 30px 30px 29px 30px;
 }
 
 /* .descrContainer > *:not(:last-child) { */
@@ -54,19 +54,33 @@
   /* margin-bottom: 29px; */
 }
 
+.imgContainer {
+  /* display: flex; */
+  /* align-items: flex-end; */
+  /* height: 100%; */
+  /* min-height: 339px; */
+}
+
+.picture {
+  min-height: 303px;
+  display: flex;
+  align-items: flex-end;
+}
+
 .categoryImg {
   /* position: absolute; */
   /* margin-left: -30px; */
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   /* REC: новое свойство для object-fit */
-  object-fit: contain;
-  object-position: left center;
+  /* object-fit: contain; */
+  /* object-position: left center; */
+  /* min-height: 311px; */
 }
 
 .titleContainer {
   display: flex;
   align-items: center;
-  margin-bottom: 29px;
+  /* margin-bottom: 29px; */
 }
 
 .nameBtn {
@@ -75,6 +89,7 @@
 
 .btnContainer {
   padding: 0 30px 28px 30px;
+  margin-top: auto;
 }
 
 /* TODO: скорее всего, если я хотел начинать с мобилок, то надо были писать min-width: 320 и т.д. Тогда бы свойста навешивались. Надо переделать. */
@@ -87,28 +102,9 @@
 @media all and (max-width: 1599px) {
 
   /* 1024x */
-  .card {
-    grid-column: span 2;
-  }
-
-  .card1x .btnContainer {
-    padding-top: 10px;
-  }
-
-  .card2x {
-    grid-column: span 4;
-  }
 
   .nameBtn {
     display: none;
-  }
-
-  .categoryImg {
-    max-height: 308px;
-  }
-
-  .btnContainer {
-    padding: 0 30px 30px 30px;
   }
 
   .link:not(:last-child) {

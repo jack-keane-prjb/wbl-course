@@ -49,6 +49,7 @@ export function Useful({ className }: { className: string }) {
     <div className={className}>
       <h2 className={`sectionTitle ${styles.sectionTitle}`}>Полезное</h2>
       <div className={`gridContainer ${styles.grid}`}>
+        {/* 1920px */}
         <UsefulСard
           img={img_article_1}
           text="И нет сомнений, что сделанные на базе интернет-аналитики выводы представляют собой не что иное?"
@@ -57,7 +58,28 @@ export function Useful({ className }: { className: string }) {
           img={img_article_2}
           text="Как принято считать, некоторые особенности приносят несомненную пользу обществу?"
         />
-        {is320px && (
+
+
+        {/* 1024px */}
+        <UsefulСard
+          img={img_article_3}
+          text="Ясность нашей позиции очевидна: укрепление и развитие внутренней структуры?"
+        />
+
+        {/* 320px */}
+        {/* <UsefulСard
+          img={img_article_4}
+          text="Прежде всего, консультация с широким активом однозначно фиксирует необходимость распределения?"
+        />
+        <UsefulСard
+          img={img_article_5}
+          text="Как принято считать, некоторые особенности приносят несомненную пользу обществу?"
+        /> */}
+
+
+
+
+        {/* {is320px && (
           <>
             <UsefulСard
               img={img_article_3}
@@ -72,7 +94,9 @@ export function Useful({ className }: { className: string }) {
               text="Как принято считать, некоторые особенности приносят несомненную пользу обществу?"
             />
           </>
-        )}
+        )} */}
+
+
       </div>
     </div>
   );

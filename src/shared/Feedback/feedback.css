@@ -12,6 +12,13 @@
   background-repeat: no-repeat;
 }
 
+@media all and (max-width: 1599px) {
+  .backgroundCell {
+    grid-column: span 4;
+  }
+}
+
+
 @media all and (max-width: 1023px) {
 
   /* 768px */

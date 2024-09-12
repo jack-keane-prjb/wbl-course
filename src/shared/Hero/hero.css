@@ -24,6 +24,7 @@
 @media all and (max-width: 1599px) {
   .hero {
     background-image: url(../../assets/img/1024px/hero1_1024px.jpg);
+    background-position: 0 0;
   }
 
 }

@@ -83,6 +83,7 @@ h5 {
   color: var(--gray666);
 }
 
+
 .sectionTitle {
   /* Больше заголовок не входит в сетку */
   /* grid-column: span 12; */
@@ -150,39 +151,39 @@ h5 {
   padding-left: 80px;
 }
 
-.dist10 > * + * {
+.dist10>*+* {
   margin-top: 10px;
 }
 
-.dist25 > * + * {
+.dist25>*+* {
   margin-top: 25px;
 }
 
-.dist50 > * + * {
+.dist50>*+* {
   margin-top: 50px;
 }
 
-.inter5 > * + * {
+.inter5>*+* {
   margin-left: 5px;
 }
 
-.inter10 > * + * {
+.inter10>*+* {
   margin-left: 10px;
 }
 
-.inter25 > * + * {
+.inter25>*+* {
   margin-left: 25px;
 }
 
-.inter32 > * + * {
+.inter32>*+* {
   margin-left: 32px;
 }
 
-.inter64 > * + * {
+.inter64>*+* {
   margin-left: 64px;
 }
 
-.inter91 > * + * {
+.inter91>*+* {
   margin-left: 91px;
 }
 

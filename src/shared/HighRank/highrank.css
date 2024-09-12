@@ -16,11 +16,11 @@
 
   .grid {
     grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 35px;
+    row-gap: 32px;
   }
 
   .sectionTitle {
-    margin-bottom: 25px;
+    margin-bottom: 27px;
   }
 }
 
