@@ -56,7 +56,6 @@
 
 @media all and (max-width: 1599px) {
 
-  /* HERE: */
   .form {
     grid-column: span 4;
   }

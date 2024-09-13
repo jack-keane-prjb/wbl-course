@@ -35,7 +35,7 @@ export function TopCategories({ className }: { className: string }) {
         {/* TODO: возможно, стоит пересмотреть изменение размеров карточки через JS. Ибо нашелся вариант намного */}
         {/* Итого: вместо всей это кучи атрибутов (пропсов) я буду прописывать один класс. Так намного проще*/}
         <TopCategoriesCard
-          className={`${styles.card1}`}
+          className={`${styles.card} ${styles.card1}`}
           subcategories={['Прямые', 'Угловые', 'Модульные']}
           name="Диваны"
           img1920={imgSofas}
@@ -43,7 +43,7 @@ export function TopCategories({ className }: { className: string }) {
           img320={imgSofas320}
         />
         <TopCategoriesCard
-          className={styles.card2}
+          className={`${styles.card} ${styles.card2}`}
           subcategories={['Мягкие', 'Кресла-кровати']}
           name="Кресла"
           img1920={imgArmchairs}
@@ -52,7 +52,7 @@ export function TopCategories({ className }: { className: string }) {
           img320={imgArmchairs320}
         />
         <TopCategoriesCard
-          className={styles.card3}
+          className={`${styles.card} ${styles.card3}`}
           subcategories={['Односпальные', 'Двуспальные']}
           name="Кровати"
           img1920={imgBeds}
@@ -61,7 +61,7 @@ export function TopCategories({ className }: { className: string }) {
           img320={imgBeds320}
         />
         <TopCategoriesCard
-          className={styles.card4}
+          className={`${styles.card} ${styles.card4}`}
           subcategories={['Тумбы', 'Комоды']}
           name="Тумбы и комоды"
           img1920={imgChests}
@@ -69,7 +69,7 @@ export function TopCategories({ className }: { className: string }) {
           img768={imgChests768}
         />
         <TopCategoriesCard
-          className={styles.card5}
+          className={`${styles.card} ${styles.card5}`}
           subcategories={['Деревянные', 'Металлокаркас']}
           name="Стулья"
           img1920={imgChairs}

@@ -45,6 +45,9 @@
   /* 768px */
   .hero {
     padding: 154px 36px;
+    padding-top: 156px;
+    padding-bottom: 151px;
+    background-image: url("../../assets/img/768px/hero2_768px.jpg");
   }
 
   .container {

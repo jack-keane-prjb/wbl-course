@@ -28,6 +28,10 @@
   .container {
     margin-bottom: 71px;
   }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media all and (max-width: 767px) {

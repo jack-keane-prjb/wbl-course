@@ -7,12 +7,11 @@
 } */
 
 .telLinkRow {
-  padding-top: 18px;
-  padding-bottom: 18px;
   display: none;
 }
 
 @media all and (max-width: 1599px) {
+
   /* 1024px */
   .telLinkRow {
     display: block;
@@ -22,12 +21,16 @@
 }
 
 @media all and (max-width: 1023px) {
+
   /* 768px */
   .telLinkRow {
     padding: 20px 73px;
+    padding-bottom: 21px;
   }
 }
+
 @media all and (max-width: 767px) {
+
   /* 320px */
   .telLinkRow {
     display: none;

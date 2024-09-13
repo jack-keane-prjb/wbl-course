@@ -23,38 +23,36 @@ import { Useful } from '../Useful';
 import { Feedback } from '../Feedback';
 import { Footer } from '../Footer';
 import { Copyright } from '../Copyright';
-// import { Feedback } from '../Feedback';
-// import { TopCategories } from '../TopCategories';
-// import { Useful } from '../Useful';
-// import { Footer } from '../Footer';
+
 
 export function PageMain() {
   return (
-    // TODO: Возможно удалить layout, ибо он ничего в данном случае не делает.
     <>
       <Header />
-      {/* REC: убрал Content в пользу обычного main */}
-      {/* <Content> */}
       <main>
         <Hero />
-        {/* TODO: тут бы секцию в глобал отнести. А править конерктно для этих двух компонентов */}
-        {/* Пробую изменить на Container с классом section */}
-        {/* <div className={`${styles.section} ${styles.sectionSome}`}> */}
-        <Container className={`${styles.section}`}>
+        <Container className={`${styles.section222}`}>
           <SpecialOffers className={styles.sectionSome} />
           <HighRank className={styles.sectionSome} />
         </Container>
-        {/* </div> */}
         <Hero2 />
-        {/* TODO: разобарться получше с классами для секций */}
         <Container className={`${styles.section} ${styles.sectionFix}`}>
           <TopCategories className={styles.sectionSome} />
-          <Useful className={styles.sectionSome} />
-          <Feedback className={styles.sectionSome} />
+          {/* <Useful className={styles.sectionSome} /> */}
+          {/* <Feedback className={styles.sectionSome} /> */}
         </Container>
       </main>
-      {/* </Content> */}
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
+
+{/* TODO: разобарться получше с классами для секций */ }
+{/* TODO: тут бы секцию в глобал отнести. А править конерктно для этих двух компонентов */ }
+
+
+{/* REC: убрал Content в пользу обычного main */ }
+{/* <Content> */ }
+
+
+// TODO: Возможно удалить layout, ибо он ничего в данном случае не делает.

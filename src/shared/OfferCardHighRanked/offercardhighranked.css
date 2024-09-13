@@ -185,7 +185,12 @@
   }
 
   .imgContainer {
-    margin-bottom: 12px;
+    margin-bottom: 2px;
+  }
+
+  .descrContainer {
+    padding-top: 13px;
+    padding-bottom: 0;
   }
 }
 

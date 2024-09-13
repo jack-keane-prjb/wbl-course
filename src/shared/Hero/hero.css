@@ -41,6 +41,10 @@
     padding: 80px 72px;
     background-image: url(../../assets/img/768px/hero1_768px.jpg);
   }
+
+  .h2 {
+    margin-bottom: 49px;
+  }
 }
 
 @media all and (max-width: 767px) {
