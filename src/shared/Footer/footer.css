@@ -100,6 +100,21 @@
   margin-right: 14px;
 }
 
+@media all and (max-width: 1599px) {
+
+  .containerLinks {
+    padding-bottom: 22px;
+  }
+
+  .linksContainer {
+    padding-top: 2px;
+  }
+
+  .linksContainerRow:not(:last-child) {
+    margin-right: 94px;
+  }
+}
+
 @media all and (max-width: 1023px) {
 
   /* 768px */
