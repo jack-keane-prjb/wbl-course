@@ -52,6 +52,11 @@
   .sectionFix {
     padding-top: 68px;
   }
+
+  .section333 {
+    padding-top: 68px;
+    padding-bottom: 72px;
+  }
 }
 
 @media all and (max-width: 767px) {

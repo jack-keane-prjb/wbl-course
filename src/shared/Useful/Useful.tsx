@@ -61,10 +61,10 @@ export function Useful({ className }: { className: string }) {
 
 
         {/* 1024px */}
-        <UsefulСard
+        {/* <UsefulСard
           img={img_article_3}
           text="Ясность нашей позиции очевидна: укрепление и развитие внутренней структуры?"
-        />
+        /> */}
 
         {/* 320px */}
         {/* <UsefulСard

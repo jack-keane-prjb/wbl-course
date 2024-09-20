@@ -118,15 +118,24 @@
 @media all and (max-width: 1023px) {
 
   /* 768px */
-  .footer {
-    padding: 25px 72px;
-  }
 
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 22px;
     padding: 0;
+  }
+
+  .containerLinks {
+    padding: 22px 72px;
+    flex-wrap: wrap;
+  }
+
+  .logoContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   .logoLink {
@@ -143,6 +152,7 @@
   .linksContainer {
     grid-column: span 2;
     justify-content: space-between;
+    width: 100%;
   }
 
   .linksContainerRow,

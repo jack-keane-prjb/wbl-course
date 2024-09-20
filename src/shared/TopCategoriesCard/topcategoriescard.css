@@ -161,9 +161,18 @@
     margin: 0;
   }
 
+  .descrContainer {
+    padding: 31px;
+  }
+
   .btnContainer {
     margin-top: auto;
+    padding: 30px 31px 29px;
+    /* padding-bottom: 36px; */
+    /* padding-top: 30px; */
   }
+
+
 }
 
 @media all and (max-width: 767px) {

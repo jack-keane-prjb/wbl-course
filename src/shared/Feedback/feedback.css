@@ -37,10 +37,7 @@
 
   .grid {
     grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .title {
-    grid-column: span 2;
+    row-gap: 0;
   }
 
   .backgroundCell {
@@ -48,8 +45,8 @@
     grid-row: span 2;
     background-image: url('../../assets/img/768px/feedback_bg_768px.png');
     background-position: initial;
-    background-position: center;
-    background-size: contain;
+    background-position: center -28px;
+    background-size: 186px;
   }
 }
 

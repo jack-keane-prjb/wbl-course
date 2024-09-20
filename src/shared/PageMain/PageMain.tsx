@@ -36,13 +36,13 @@ export function PageMain() {
           <HighRank className={styles.sectionSome} />
         </Container>
         <Hero2 />
-        <Container className={`${styles.section} ${styles.sectionFix}`}>
+        <Container className={`${styles.section} ${styles.section333}`}>
           <TopCategories className={styles.sectionSome} />
-          {/* <Useful className={styles.sectionSome} /> */}
-          {/* <Feedback className={styles.sectionSome} /> */}
+          <Useful className={styles.sectionSome} />
+          <Feedback className={styles.sectionSome} />
         </Container>
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

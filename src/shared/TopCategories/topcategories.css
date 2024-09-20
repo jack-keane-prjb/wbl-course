@@ -83,13 +83,11 @@
 
 @media all and (max-width: 1023px) {
 
-  /* HERE: тут остановился: */
-
   /* 768px */
   .grid {
     /* padding: 64px 74px; */
     /* row-gap: 31px; */
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     /* padding: 0; */
   }
 
@@ -97,6 +95,18 @@
 
     grid-column: initial;
 
+  }
+
+  .card1 {
+    grid-column: span 2;
+  }
+
+  .card4 {
+    order: 5
+  }
+
+  .sectionTitle {
+    margin-bottom: 26px;
   }
 }
 
