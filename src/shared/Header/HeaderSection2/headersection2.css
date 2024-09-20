@@ -292,15 +292,8 @@
 }
 
 @media all and (max-width: 767px) {
+
   /* 320px */
-
-  .container {
-    /* background-color: var(--grayF6); */
-    padding-left: 12px;
-    padding-right: 12px;
-    row-gap: 22px;
-  }
-
   .nav {
     grid-column: span 2;
     margin: initial;
@@ -327,12 +320,38 @@
   /* 320px */
 
   .container {
-    padding: 15px 10px;
+    /* padding: 15px 10px; */
+    padding: 0;
     margin-bottom: 18px;
+    padding: 0 12px;
+    margin-bottom: 33px;
   }
 
   .input {
     min-width: initial;
+  }
+
+  .TelLink {
+    display: flex;
+    /* TODO: подумать, стоит ли выравнивание в ячейках делать паддингом. */
+    /* padding-left: 14px; */
+  }
+
+  .row1 {
+    row-gap: 22px;
+  }
+
+  .UserBtnsRow1 {
+    /* padding-right: 8px; */
+    margin: 0;
+  }
+
+  .row:not(:last-child) {
+    margin-bottom: 17px;
+  }
+
+  .navList li:not(:last-child) {
+    margin-right: 31px;
   }
 
 }

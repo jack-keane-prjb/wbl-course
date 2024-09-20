@@ -4,9 +4,9 @@ import { TelLink } from '../../TelLink';
 import { UserBtns } from '../../UserBtns';
 import styles from './headersection1.css';
 
-export function HeaderSection1() {
+export function HeaderSection1({ className }: { className?: string }) {
   return (
-    <div className={styles.row}>
+    <div className={`${styles.row} ${className}`}>
       <Container className={styles.container}>
         <TelLink className={styles.telLink} />
         <nav className={styles.nav}>

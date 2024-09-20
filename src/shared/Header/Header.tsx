@@ -13,7 +13,8 @@ export function Header() {
         <TelLink />
       </Container>
 
-      <HeaderSection1 />
+
+      <HeaderSection1 className={styles.headerSection1} />
       <HeaderSection2 />
     </header>
   );

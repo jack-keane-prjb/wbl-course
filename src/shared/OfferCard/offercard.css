@@ -167,6 +167,8 @@
 }
 
 @media all and (max-width: 767px) {
+
+  /* 320px */
   .card {
     grid-column: initial;
     /* padding-left: 35px; */
@@ -180,6 +182,8 @@
 
   .imgContainer {
     justify-content: center;
+    /* REC: тут одна из карточек выбивается. Если поправить на другое свойство, то выбивается другая )) Оставляем. */
+    /* justify-content: flex-end; */
   }
 
   .productImg {

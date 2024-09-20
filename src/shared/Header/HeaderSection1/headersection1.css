@@ -119,7 +119,5 @@
 @media all and (max-width: 767px) {
 
   /* 320px */
-  .container {
-    display: none;
-  }
+
 }

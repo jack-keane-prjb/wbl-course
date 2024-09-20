@@ -15,6 +15,7 @@ export function Hero() {
 
   return (
     <section className={styles.hero}>
+      {/* TODO: поправить на 1920, 1024, 768. Тперь это флекс. */}
       <Container className={styles.container}>
         {/* prettier-ignore */}
         <h2 className={styles.h2}>{headerText}</h2>

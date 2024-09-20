@@ -66,4 +66,16 @@
     padding: 12px;
     margin-bottom: 57px;
   }
+
+  .section222 {
+    padding: 0;
+  }
+
+  .specialOffers {
+    margin-bottom: 0;
+  }
+
+  .highRank {
+    padding: 7px 12px;
+  }
 }

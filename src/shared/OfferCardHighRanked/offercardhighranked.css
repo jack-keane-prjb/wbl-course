@@ -186,6 +186,7 @@
 
   .imgContainer {
     margin-bottom: 2px;
+    min-height: 75px;
   }
 
   .descrContainer {
@@ -231,6 +232,10 @@ text-align: left;
 
   .imgContainer {
     justify-content: center;
+    margin-bottom: 0;
+  }
+
+  .fullPrice {
     margin-bottom: 0;
   }
 }

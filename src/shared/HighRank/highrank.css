@@ -40,16 +40,20 @@
 
 @media all and (max-width: 767px) {
 
+  /* HERE: */
   /* 320px */
   .container {
-    grid-template-columns: 1fr 1fr;
+    padding: 7px 12px;
+  }
+
+  .grid {
+    /* grid-template-columns: 1fr 1fr; */
     column-gap: 16px;
     row-gap: 16px;
-    padding: 0;
   }
 
   .sectionTitle {
-    margin-bottom: 10px;
+    margin-bottom: 26px;
   }
 
   .btn {

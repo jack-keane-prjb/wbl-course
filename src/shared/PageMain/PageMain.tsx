@@ -32,17 +32,17 @@ export function PageMain() {
       <main>
         <Hero />
         <Container className={`${styles.section222}`}>
-          <SpecialOffers className={styles.sectionSome} />
-          <HighRank className={styles.sectionSome} />
-        </Container>
-        <Hero2 />
-        <Container className={`${styles.section} ${styles.section333}`}>
-          <TopCategories className={styles.sectionSome} />
-          <Useful className={styles.sectionSome} />
-          <Feedback className={styles.sectionSome} />
+          <SpecialOffers className={styles.specialOffers} />
+          <HighRank className={styles.highRank} />
+          {/* </Container> */}
+          {/* <Hero2 /> */}
+          {/* <Container className={`${styles.section} ${styles.section333}`}> */}
+          {/* <TopCategories className={styles.sectionSome} /> */}
+          {/* <Useful className={styles.sectionSome} /> */}
+          {/* <Feedback className={styles.sectionSome} /> */}
         </Container>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
