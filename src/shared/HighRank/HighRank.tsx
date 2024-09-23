@@ -119,7 +119,7 @@ export function HighRank({ className }: { className?: string }) {
 
 
 
-        {!is320px ||
+        {/* {!is320px ||
           (!is768px && (
             <>
               <OfferCardHighRanked
@@ -141,7 +141,8 @@ export function HighRank({ className }: { className?: string }) {
                 }
               />
             </>
-          ))}
+          ))} */}
+
       </div>
     </Container>
   );

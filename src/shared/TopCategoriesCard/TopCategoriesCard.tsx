@@ -1,6 +1,9 @@
 import React from 'react';
 import { ButtonText } from '../ButtonText';
 import styles from './topcategoriescard.css';
+import classNames from 'classnames';
+
+type TTopCategoriesCardSizes = "small" | "big"
 
 interface ITopCategoriesCard {
   className?: string;
@@ -12,6 +15,7 @@ interface ITopCategoriesCard {
   img768?: string;
   img320?: string;
   altOfImg?: string;
+  size?: TTopCategoriesCardSizes;
 }
 
 export function TopCategoriesCard(props: ITopCategoriesCard) {
@@ -24,6 +28,7 @@ export function TopCategoriesCard(props: ITopCategoriesCard) {
     img768 = img1920,
     img320 = img1920,
     altOfImg = "categoryImg",
+    size = ""
   } = props;
 
   const subcategoriesComponents = subcategories?.map((name) => {
@@ -32,12 +37,12 @@ export function TopCategoriesCard(props: ITopCategoriesCard) {
     return span;
   });
 
-  // const cardClasses = classNames(styles[`card${size}`]);
+  const cardClasses = size ? classNames(styles[`size${size}`]) : "";
 
   // console.log(size);
 
   return (
-    <div className={`${styles.card} ${className}`}>
+    <div className={`${styles.card} ${className} ${cardClasses}`}>
       <div className={styles.descrContainer}>
         <div className={styles.subcategories}>{subcategoriesComponents}</div>
         <div className={styles.titleContainer}>
@@ -47,12 +52,14 @@ export function TopCategoriesCard(props: ITopCategoriesCard) {
       </div>
       {/* TODO: Контентное или декоративное? Вроде, контентное. */}
       {/* <div className={styles.imgContainer}> */}
+      {/* ----------------------------------------- */}
       <picture className={styles.picture}>
         <source srcSet={img1024} media="(max-width: 1599px)" />
         <source srcSet={img768} media="(max-width: 1023px)" />
         <source srcSet={img320} media="(max-width: 767px)" />
         <img src={img1920} alt={altOfImg} className={styles.categoryImg} />
       </picture>
+      {/* ----------------------------------------- */}
       {/* </div> */}
       {/* <picture>
         <source srcset="mdn-logo-wide.png" media="(min-width: 600px)" />

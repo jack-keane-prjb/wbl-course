@@ -115,12 +115,24 @@
   /* 320px */
   .grid {
     grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr; */
     padding: 0;
     padding-top: 26px;
-    column-gap: 16px;
+    column-gap: 14px;
+  }
+
+  .card {
+    grid-column: initial;
+  }
+
+  .card1 {
+    grid-column: span 2;
   }
 
   .sectionTitle {
-    grid-column: span 2;
+
+    margin-bottom: 0px;
+
   }
+
 }

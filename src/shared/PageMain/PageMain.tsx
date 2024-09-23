@@ -34,10 +34,10 @@ export function PageMain() {
         <Container className={`${styles.section222}`}>
           <SpecialOffers className={styles.specialOffers} />
           <HighRank className={styles.highRank} />
-          {/* </Container> */}
-          {/* <Hero2 /> */}
-          {/* <Container className={`${styles.section} ${styles.section333}`}> */}
-          {/* <TopCategories className={styles.sectionSome} /> */}
+        </Container>
+        <Hero2 />
+        <Container className={`${styles.section} ${styles.section333}`}>
+          <TopCategories className={styles.sectionSome} />
           {/* <Useful className={styles.sectionSome} /> */}
           {/* <Feedback className={styles.sectionSome} /> */}
         </Container>

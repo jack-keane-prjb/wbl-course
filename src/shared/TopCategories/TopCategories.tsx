@@ -40,9 +40,11 @@ export function TopCategories({ className }: { className: string }) {
           name="Диваны"
           img1920={imgSofas}
           img1024={imgSofas1024}
+          //TODO: Тут либо картинка не соответствует действительности, либо ее надо растянуть.
           img320={imgSofas320}
+          size='big'
         />
-        <TopCategoriesCard
+        {/* <TopCategoriesCard
           className={`${styles.card} ${styles.card2}`}
           subcategories={['Мягкие', 'Кресла-кровати']}
           name="Кресла"
@@ -50,6 +52,7 @@ export function TopCategories({ className }: { className: string }) {
           img1024={imgArmchairs1024}
           img768={imgArmchairs768}
           img320={imgArmchairs320}
+          size='small'
         />
         <TopCategoriesCard
           className={`${styles.card} ${styles.card3}`}
@@ -59,6 +62,7 @@ export function TopCategories({ className }: { className: string }) {
           img1024={imgBeds1024}
           img768={imgBeds768}
           img320={imgBeds320}
+          size='small'
         />
         <TopCategoriesCard
           className={`${styles.card} ${styles.card4}`}
@@ -67,6 +71,7 @@ export function TopCategories({ className }: { className: string }) {
           img1920={imgChests}
           img1024={imgChests1024}
           img768={imgChests768}
+          size='small'
         />
         <TopCategoriesCard
           className={`${styles.card} ${styles.card5}`}
@@ -75,7 +80,8 @@ export function TopCategories({ className }: { className: string }) {
           img1920={imgChairs}
           img1024={imgChairs1024}
           img768={imgChairs768}
-        />
+          size='small'
+        /> */}
       </div>
     </div>
   );

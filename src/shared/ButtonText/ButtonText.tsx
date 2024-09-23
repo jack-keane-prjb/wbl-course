@@ -21,7 +21,7 @@ export function ButtonText({
 
   return (
     <button className={`${styles.btn} ${className}`}>
-      <span className={styles.textSpan}>{children}</span>
+      {children && <span className={styles.textSpan}>{children}</span>}
       {icon && <div className={`${styles.icon} ${classSize}`}></div>}
     </button>
   );
