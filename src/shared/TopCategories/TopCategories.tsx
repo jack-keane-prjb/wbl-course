@@ -3,6 +3,8 @@ import { Container } from '../Container';
 import { TopCategoriesCard } from '../TopCategoriesCard';
 import styles from './topcategories.css';
 
+// TODO: Выполнить проверку дубликатов на ассеты тут:
+
 import imgSofas from '../../assets/img/top_cat_sofas.png';
 import imgSofas1024 from '../../assets/img/1024px/top_cat_sofas_1024px.png';
 import imgSofas320 from '../../assets/img/320px/top_cat_sofas_320px.png';
@@ -20,10 +22,12 @@ import imgBeds320 from '../../assets/img/320px/top_cat_beds_320px.png';
 import imgChests from '../../assets/img/top_cat_chests.png';
 import imgChests1024 from '../../assets/img/1024px/top_cat_chests_1024px.png';
 import imgChests768 from '../../assets/img/768px/top_cat_chests_768px.png';
+import imgChests320 from '../../assets/img/320px/top_cat_chests_320px.png';
 
 import imgChairs from '../../assets/img/top_cat_chairs.png';
 import imgChairs1024 from '../../assets/img/1024px/top_cat_chairs_1024px.png';
 import imgChairs768 from '../../assets/img/768px/top_cat_chairs_768px.png';
+import imgChairs320 from '../../assets/img/320px/top_cat_chairs_320px.png';
 
 export function TopCategories({ className }: { className: string }) {
   return (
@@ -42,9 +46,8 @@ export function TopCategories({ className }: { className: string }) {
           img1024={imgSofas1024}
           //TODO: Тут либо картинка не соответствует действительности, либо ее надо растянуть.
           img320={imgSofas320}
-          size='big'
         />
-        {/* <TopCategoriesCard
+        <TopCategoriesCard
           className={`${styles.card} ${styles.card2}`}
           subcategories={['Мягкие', 'Кресла-кровати']}
           name="Кресла"
@@ -71,6 +74,7 @@ export function TopCategories({ className }: { className: string }) {
           img1920={imgChests}
           img1024={imgChests1024}
           img768={imgChests768}
+          img320={imgChests320}
           size='small'
         />
         <TopCategoriesCard
@@ -80,9 +84,11 @@ export function TopCategories({ className }: { className: string }) {
           img1920={imgChairs}
           img1024={imgChairs1024}
           img768={imgChairs768}
+          img320={imgChairs320}
           size='small'
-        /> */}
+        />
       </div>
     </div>
   );
 }
+

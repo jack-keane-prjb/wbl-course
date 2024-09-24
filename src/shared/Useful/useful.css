@@ -1,3 +1,23 @@
+.card1 {
+  order: 1;
+}
+
+.card2 {
+  order: 2;
+}
+
+.card3 {
+  order: 3;
+}
+
+.card4 {
+  order: 4;
+}
+
+.card5 {
+  order: 5;
+}
+
 .sectionTitle {
   margin-bottom: 27px;
 }
@@ -22,8 +42,8 @@
 
   /* 320px */
   .grid {
-    padding: 64px 0;
-    /* REMOVE: grid-template-columns: 1fr; */
-    row-gap: 23px;
+    padding: 0;
+    grid-template-columns: 1fr;
+    row-gap: 24px;
   }
 }

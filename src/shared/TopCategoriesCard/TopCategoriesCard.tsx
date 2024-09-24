@@ -3,7 +3,7 @@ import { ButtonText } from '../ButtonText';
 import styles from './topcategoriescard.css';
 import classNames from 'classnames';
 
-type TTopCategoriesCardSizes = "small" | "big"
+type TTopCategoriesCardSizes = "small"
 
 interface ITopCategoriesCard {
   className?: string;
@@ -25,8 +25,8 @@ export function TopCategoriesCard(props: ITopCategoriesCard) {
     name = 'Категория',
     img1920,
     img1024 = img1920,
-    img768 = img1920,
-    img320 = img1920,
+    img768 = img1024,
+    img320 = img768,
     altOfImg = "categoryImg",
     size = ""
   } = props;
@@ -39,7 +39,7 @@ export function TopCategoriesCard(props: ITopCategoriesCard) {
 
   const cardClasses = size ? classNames(styles[`size${size}`]) : "";
 
-  // console.log(size);
+  // console.log(cardClasses);
 
   return (
     <div className={`${styles.card} ${className} ${cardClasses}`}>
@@ -53,10 +53,12 @@ export function TopCategoriesCard(props: ITopCategoriesCard) {
       {/* TODO: Контентное или декоративное? Вроде, контентное. */}
       {/* <div className={styles.imgContainer}> */}
       {/* ----------------------------------------- */}
+
+      {/* TODO: тут проверить: последовательность именно такая. Хотя мне казалось, что в НЕ в реакте последовательность другая. + удобно проверить с маленьких разрешений. Ибо если контейнер большой, то картинка не растянется.*/}
       <picture className={styles.picture}>
-        <source srcSet={img1024} media="(max-width: 1599px)" />
-        <source srcSet={img768} media="(max-width: 1023px)" />
         <source srcSet={img320} media="(max-width: 767px)" />
+        <source srcSet={img768} media="(max-width: 1023px)" />
+        <source srcSet={img1024} media="(max-width: 1599px)" />
         <img src={img1920} alt={altOfImg} className={styles.categoryImg} />
       </picture>
       {/* ----------------------------------------- */}

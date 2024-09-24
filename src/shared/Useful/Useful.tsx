@@ -50,31 +50,31 @@ export function Useful({ className }: { className: string }) {
       <h2 className={`sectionTitle ${styles.sectionTitle}`}>Полезное</h2>
       <div className={`gridContainer ${styles.grid}`}>
         {/* 1920px */}
-        <UsefulСard
+        <UsefulСard className={styles.card1}
           img={img_article_1}
           text="И нет сомнений, что сделанные на базе интернет-аналитики выводы представляют собой не что иное?"
         />
-        <UsefulСard
+        <UsefulСard className={styles.card2}
           img={img_article_2}
           text="Как принято считать, некоторые особенности приносят несомненную пользу обществу?"
         />
 
 
         {/* 1024px */}
-        {/* <UsefulСard
+        <UsefulСard className={styles.card3}
           img={img_article_3}
           text="Ясность нашей позиции очевидна: укрепление и развитие внутренней структуры?"
-        /> */}
+        />
 
         {/* 320px */}
-        {/* <UsefulСard
+        <UsefulСard className={styles.card4}
           img={img_article_4}
           text="Прежде всего, консультация с широким активом однозначно фиксирует необходимость распределения?"
         />
-        <UsefulСard
+        <UsefulСard className={styles.card5}
           img={img_article_5}
           text="Как принято считать, некоторые особенности приносят несомненную пользу обществу?"
-        /> */}
+        />
 
 
 

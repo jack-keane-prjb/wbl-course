@@ -10,8 +10,8 @@ export interface IUsefulCard {
 
 export function UsefulСard({ img, text, className = "" }: IUsefulCard) {
   return (
-    <div className={styles.card}>
-      <img src={img} alt="cardImg" className={`${styles.image} ${className}`} />
+    <div className={`${styles.card} ${className}`}>
+      <img src={img} alt="cardImg" className={`${styles.image}`} />
       <div className={styles.container}>
         <span className={styles.text}>{text}</span>
         <ButtonTransparent className={styles.button} text="Читать" />

@@ -1,0 +1,14 @@
+.displayWidthTester {
+  background-color: coral;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.text {
+
+  color: white;
+  font-weight: bold;
+
+}

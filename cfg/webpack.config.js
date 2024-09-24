@@ -52,7 +52,8 @@ module.exports = (env) => {
         {
           loader: 'file-loader',
           options: {
-            name: 'assets/fonts/[contenthash].[ext]',
+            // TODO: обновить конфиг вебпака. Добавил вот это:
+            name: isDevMode ? "assets/fonts/[name].[ext]" : 'assets/fonts/[contenthash].[ext]'
           },
         },
       ],
@@ -66,7 +67,8 @@ module.exports = (env) => {
         {
           loader: 'file-loader',
           options: {
-            name: 'assets/pics/[contenthash].[ext]',
+            // TODO: обновить конфиг вебпака. Добавил вот это:
+            name: isDevMode ? "assets/pics/[name].[ext]" : 'assets/pics/[contenthash].[ext]',
           },
         },
         {

@@ -23,11 +23,18 @@ import { Useful } from '../Useful';
 import { Feedback } from '../Feedback';
 import { Footer } from '../Footer';
 import { Copyright } from '../Copyright';
+import { DisplayWidthTester } from '../../utils/js/DisplayWidthTester';
+
+
 
 
 export function PageMain() {
+
+
   return (
     <>
+      {/* TODO: ПОЧЕМУ ОН РЕНДЕРИТСЯ последним??? (это, конечно, удобно)*/}
+      {/* <DisplayWidthTester /> */}
       <Header />
       <main>
         <Hero />
@@ -38,11 +45,11 @@ export function PageMain() {
         <Hero2 />
         <Container className={`${styles.section} ${styles.section333}`}>
           <TopCategories className={styles.sectionSome} />
-          {/* <Useful className={styles.sectionSome} /> */}
-          {/* <Feedback className={styles.sectionSome} /> */}
+          <Useful className={styles.sectionSome} />
+          <Feedback className={styles.sectionSome} />
         </Container>
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

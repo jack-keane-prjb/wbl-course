@@ -63,5 +63,6 @@
 
   .grid {
     row-gap: 22px;
+    grid-template-columns: initial;
   }
 }

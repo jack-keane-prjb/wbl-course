@@ -183,6 +183,7 @@
     padding: 19px 0;
     border-radius: 10px;
     min-height: initial;
+    padding: 0;
   }
 
   .card2x {
@@ -285,22 +286,82 @@
 
   /* TODO: не очень нравится мне это решение. Но другого что-то придумать не могу. Ибо навешвать доп классы вне компоннета не хочется - там уже и так много доп. классов. */
 
-  .sizesmall .link {
+  .link {
     font-size: 10px;
   }
 
-  /* HERE */
   .title {
     display: block;
-    font-size: 25px;
+    font-size: 10px;
   }
 
   .nameBtn {
     display: block;
   }
 
-  .sizebig {
-    /* HERE: */
-    /* заглушка  */
+  .descrContainer {
+    padding: 16px 16px 10px;
   }
+
+  .title {
+    font-size: 25px;
+  }
+
+  .link {
+    font-size: 15px;
+  }
+
+  .descrContainer {
+    padding-top: 13px;
+    padding-bottom: 7px;
+    padding-left: 30px;
+    padding-right: 10px;
+  }
+
+  .link:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  .card {
+    padding: 19px 0 16px;
+    grid-column: span 2;
+  }
+
+  .sizesmall.card {
+    grid-column: initial;
+    /* HERE */
+    padding-top: 0;
+    padding-bottom: 16px;
+    /* TODO: прописать новый тег КОСТЫЛЬ */
+    /* REC: вот это костыль */
+    max-height: 206px;
+  }
+
+  .sizesmall .descrContainer {
+    padding: 16px 16px 5px;
+  }
+
+  .sizesmall .subcategories {
+    flex-direction: column;
+    margin-bottom: 13px;
+  }
+
+  .sizesmall .link:not(:last-child) {
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  .sizesmall .title {
+    font-size: 15px;
+    margin-right: 10px;
+  }
+
+  .sizesmall .subcategories {
+    margin-bottom: 8px;
+  }
+
+  .sizesmall .link {
+    font-size: 10px;
+  }
+
 }
