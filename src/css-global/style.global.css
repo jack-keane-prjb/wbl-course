@@ -83,10 +83,7 @@ h5 {
   color: var(--gray666);
 }
 
-
 .sectionTitle {
-  /* Больше заголовок не входит в сетку */
-  /* grid-column: span 12; */
   font-family: var(--font);
   font-size: 32px;
   font-weight: 400;
@@ -227,25 +224,42 @@ h5 {
 /* Нет, не логичнее. Ибо во флексе происходить странный момент с паддингом. */
 /* Есть скрины */
 
-@media all and (max-width: 1023px) {
-  /* 768px */
 
-  /* TODO: вот это занести в компонент Container + удалить лишний код в каждом контейнере */
-  .gridContainer {
-    grid-template-columns: 1fr 1fr;
-  }
+.section {
+  padding: 70px 0;
+}
 
-  .sectionTitle {
-    grid-column: span 2;
+@media all and (max-width: 1599px) {
+
+  /* 1024x */
+
+  .section {
+    padding: 71px 36px;
   }
 }
 
-@media all and (max-width: 767px) {
-  .sectionTitle {
-    grid-column: initial;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
+@media all and (max-width: 1023px) {
+
+  /* 768px */
+
+  .section {
+    padding: 71px 71px;
   }
+
+  .section {
+
+    padding-bottom: 67px;
+
+  }
+
+}
+
+@media all and (max-width: 767px) {
+
+  /* 320px */
+
+  .section {
+    padding: 0;
+  }
+
 }

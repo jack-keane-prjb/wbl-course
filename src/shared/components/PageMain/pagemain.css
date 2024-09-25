@@ -1,5 +1,4 @@
-.section,
-.section222 {
+.section {
   padding: 70px 0;
 }
 
@@ -11,18 +10,10 @@
   padding-bottom: 72px;
 }
 
-.sectionFooter {
-  /* display: flex; */
-  /* justify-content: space-between; */
-  /* padding-top: 10px; */
-}
-
-
 @media all and (max-width: 1599px) {
 
   /* 1024x */
-  .section,
-  .section222 {
+  .section {
     padding: 71px 36px;
   }
 
@@ -38,15 +29,8 @@
 @media all and (max-width: 1023px) {
 
   /* 768px */
-  .section,
-  .section222 {
+  .section {
     padding: 71px 71px;
-  }
-
-  .section222 {
-
-    padding-bottom: 67px;
-
   }
 
   .sectionFix {
@@ -67,15 +51,4 @@
     margin-bottom: 57px;
   }
 
-  .section222 {
-    padding: 0;
-  }
-
-  .specialOffers {
-    margin-bottom: 0;
-  }
-
-  .highRank {
-    padding: 7px 12px;
-  }
 }

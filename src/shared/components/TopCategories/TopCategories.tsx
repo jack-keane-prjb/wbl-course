@@ -31,64 +31,66 @@ import imgChairs320 from '../../../assets/img/320px/top_cat_chairs_320px.png';
 
 export function TopCategories({ className }: { className: string }) {
   return (
-    <div className={className}>
-      <h2 className={`sectionTitle ${styles.sectionTitle}`}>Топ категории</h2>
-      <div className={`gridContainer ${styles.grid}`}>
+    <section className={className}>
+      <Container>
+        <h2 className={`sectionTitle ${styles.sectionTitle}`}>Топ категории</h2>
+        <div className={`grid ${styles.grid}`}>
 
 
-        {/* TODO: возможно, стоит пересмотреть изменение размеров карточки через JS. Ибо нашелся вариант намного */}
-        {/* Итого: вместо всей это кучи атрибутов (пропсов) я буду прописывать один класс. Так намного проще*/}
-        <TopCategoriesCard
-          className={`${styles.card} ${styles.card1}`}
-          subcategories={['Прямые', 'Угловые', 'Модульные']}
-          name="Диваны"
-          img1920={imgSofas}
-          img1024={imgSofas1024}
-          //TODO: Тут либо картинка не соответствует действительности, либо ее надо растянуть.
-          img320={imgSofas320}
-        />
-        <TopCategoriesCard
-          className={`${styles.card} ${styles.card2}`}
-          subcategories={['Мягкие', 'Кресла-кровати']}
-          name="Кресла"
-          img1920={imgArmchairs}
-          img1024={imgArmchairs1024}
-          img768={imgArmchairs768}
-          img320={imgArmchairs320}
-          size='small'
-        />
-        <TopCategoriesCard
-          className={`${styles.card} ${styles.card3}`}
-          subcategories={['Односпальные', 'Двуспальные']}
-          name="Кровати"
-          img1920={imgBeds}
-          img1024={imgBeds1024}
-          img768={imgBeds768}
-          img320={imgBeds320}
-          size='small'
-        />
-        <TopCategoriesCard
-          className={`${styles.card} ${styles.card4}`}
-          subcategories={['Тумбы', 'Комоды']}
-          name="Тумбы и комоды"
-          img1920={imgChests}
-          img1024={imgChests1024}
-          img768={imgChests768}
-          img320={imgChests320}
-          size='small'
-        />
-        <TopCategoriesCard
-          className={`${styles.card} ${styles.card5}`}
-          subcategories={['Деревянные', 'Металлокаркас']}
-          name="Стулья"
-          img1920={imgChairs}
-          img1024={imgChairs1024}
-          img768={imgChairs768}
-          img320={imgChairs320}
-          size='small'
-        />
-      </div>
-    </div>
+          {/* TODO: возможно, стоит пересмотреть изменение размеров карточки через JS. Ибо нашелся вариант намного */}
+          {/* Итого: вместо всей это кучи атрибутов (пропсов) я буду прописывать один класс. Так намного проще*/}
+          <TopCategoriesCard
+            className={`${styles.card} ${styles.card1}`}
+            subcategories={['Прямые', 'Угловые', 'Модульные']}
+            name="Диваны"
+            img1920={imgSofas}
+            img1024={imgSofas1024}
+            //TODO: Тут либо картинка не соответствует действительности, либо ее надо растянуть.
+            img320={imgSofas320}
+          />
+          <TopCategoriesCard
+            className={`${styles.card} ${styles.card2}`}
+            subcategories={['Мягкие', 'Кресла-кровати']}
+            name="Кресла"
+            img1920={imgArmchairs}
+            img1024={imgArmchairs1024}
+            img768={imgArmchairs768}
+            img320={imgArmchairs320}
+            size='small'
+          />
+          <TopCategoriesCard
+            className={`${styles.card} ${styles.card3}`}
+            subcategories={['Односпальные', 'Двуспальные']}
+            name="Кровати"
+            img1920={imgBeds}
+            img1024={imgBeds1024}
+            img768={imgBeds768}
+            img320={imgBeds320}
+            size='small'
+          />
+          <TopCategoriesCard
+            className={`${styles.card} ${styles.card4}`}
+            subcategories={['Тумбы', 'Комоды']}
+            name="Тумбы и комоды"
+            img1920={imgChests}
+            img1024={imgChests1024}
+            img768={imgChests768}
+            img320={imgChests320}
+            size='small'
+          />
+          <TopCategoriesCard
+            className={`${styles.card} ${styles.card5}`}
+            subcategories={['Деревянные', 'Металлокаркас']}
+            name="Стулья"
+            img1920={imgChairs}
+            img1024={imgChairs1024}
+            img768={imgChairs768}
+            img320={imgChairs320}
+            size='small'
+          />
+        </div>
+      </Container>
+    </section>
   );
 }
 

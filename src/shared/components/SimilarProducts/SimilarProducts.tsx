@@ -11,7 +11,7 @@ import high_ranked_7 from '../../../assets/img/high_ranked_7.png';
 
 export function SimilarProducts() {
   return (
-    <Container className="gridContainer">
+    <Container className="grid">
       <h2 className="sectionTitle">Похожие товары</h2>
       <OfferCard
         rank={'5,0'}

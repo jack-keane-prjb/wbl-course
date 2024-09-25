@@ -16,7 +16,7 @@ import { Pagination } from '../Pagination';
 export function Catalog() {
   return (
     // TODO: тут .content, видимо, не нужен (его нет в глобале)
-    <div className={`gridContainer content`}>
+    <div className={`grid content`}>
       <OfferCard
         rank={'5,0'}
         productImg={high_ranked_1_img}

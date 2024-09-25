@@ -24,31 +24,15 @@ import { Feedback } from '../Feedback';
 import { Footer } from '../Footer';
 import { Copyright } from '../Copyright';
 import { DisplayWidthTester } from '../../../utils/js/DisplayWidthTester';
-
-
-
+import { Main } from '../Main';
 
 export function PageMain() {
-
-
   return (
     <>
       {/* TODO: ПОЧЕМУ ОН РЕНДЕРИТСЯ последним??? (это, конечно, удобно)*/}
       {/* <DisplayWidthTester /> */}
       <Header />
-      <main>
-        <Hero />
-        <Container className={`${styles.section222}`}>
-          <SpecialOffers className={styles.specialOffers} />
-          <HighRank className={styles.highRank} />
-        </Container>
-        <Hero2 />
-        <Container className={`${styles.section} ${styles.section333}`}>
-          <TopCategories className={styles.sectionSome} />
-          <Useful className={styles.sectionSome} />
-          <Feedback className={styles.sectionSome} />
-        </Container>
-      </main>
+      <Main />
       <Footer />
     </>
   );
@@ -57,9 +41,7 @@ export function PageMain() {
 {/* TODO: разобарться получше с классами для секций */ }
 {/* TODO: тут бы секцию в глобал отнести. А править конерктно для этих двух компонентов */ }
 
-
 {/* REC: убрал Content в пользу обычного main */ }
 {/* <Content> */ }
-
 
 // TODO: Возможно удалить layout, ибо он ничего в данном случае не делает.

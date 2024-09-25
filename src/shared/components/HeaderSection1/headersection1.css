@@ -1,123 +1,38 @@
-.row {
-  background-color: var(--grayF6);
+/* .row {
+  padding: 34px 0;
 }
 
-.container {
-  display: flex;
-  align-items: center;
-  /* min-height: 50px; */
-  padding: 16px 0;
-}
-
-/* .phoneSpan {
-  display: flex;
-  align-items: center;
+.row > *:not(:last-child) {
+  margin-bottom: 32px;
 } */
 
-.nav {
-  margin-left: auto;
-}
-
-.navList {
-  display: flex;
-}
-
-.li:not(:last-child) {
-  margin-right: 41px;
-}
-
-.a {
-  color: var(--gray999);
-  font-family: Open Sans;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 14px;
-  text-align: left;
-  position: relative;
-  padding: 2px 10px;
-  transition: color 0.2s ease-in-out, background-color 0.2s ease-out;
-}
-
-.a:hover {
-  color: var(--purpleA65);
-}
-
-.a:focus {
-  color: var(--purple703);
-  outline: none;
-  background-color: var(--purpleEBD);
-}
-
-.a:active {
-  color: var(--purple703);
-}
-
-.a:not(:last-child) {
-  margin-bottom: 10px;
-}
-
-.UserBtns {
-  display: none;
+.telLinkRow {
+    display: none;
 }
 
 @media all and (max-width: 1599px) {
 
-  /* 1024px */
-  .UserBtns {
-    display: block;
-  }
-
-  .telLink {
-    display: none;
-  }
-
-  .nav {
-    margin-left: initial;
-  }
-
-  .container {
-    padding-left: 36px;
-    padding-right: 36px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-  }
-
-  .a {
-    padding: 0;
-  }
-
-  .li:not(:last-child) {
-    margin-right: 65px;
-  }
+    /* 1024px */
+    .telLinkRow {
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }
 
 @media all and (max-width: 1023px) {
-  /* 768px */
 
-  .container {
-    padding: 17px 73px;
-  }
-
-  .nav {
-    width: 100%;
-  }
-
-  .navList {
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .UserBtns {
-    display: none;
-  }
-
-  .li:not(:last-child) {
-    margin-right: 1px;
-  }
+    /* 768px */
+    .telLinkRow {
+        padding: 20px 73px;
+        padding-bottom: 21px;
+    }
 }
 
 @media all and (max-width: 767px) {
 
-  /* 320px */
-
+    /* 320px */
+    .telLinkRow {
+        display: none;
+    }
 }

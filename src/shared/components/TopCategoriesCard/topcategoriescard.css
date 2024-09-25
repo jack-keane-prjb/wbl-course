@@ -7,6 +7,10 @@
   min-height: 511px;
 }
 
+.sizesmall.card {
+  min-height: 405px;
+}
+
 .card1x {
   grid-column: span 4;
 }
@@ -62,7 +66,7 @@
 }
 
 .picture {
-  min-height: 303px;
+  /* min-height: 303px; */
   display: flex;
   align-items: flex-end;
 }

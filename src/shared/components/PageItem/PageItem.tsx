@@ -19,7 +19,7 @@ export function PageItem() {
           <NavBar />
         </Container>
         {/* TODO: как лучше делать: каждый компонет пихать в контейнер, или отдельно контейнер прописывать? */}
-        <Container className="gridContainer">
+        <Container className="grid">
           <ItemInfo />
           <ItemDescr />
           <ItemTags />
