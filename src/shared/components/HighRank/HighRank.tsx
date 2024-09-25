@@ -2,14 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { Container } from '../Container';
 import styles from './highrank.css';
 
-import high_ranked_1_img from '../../assets/img/high_ranked_1.png';
-import high_ranked_2_img from '../../assets/img/high_ranked_2.png';
-import high_ranked_3_img from '../../assets/img/high_ranked_3.png';
-import high_ranked_4_img from '../../assets/img/high_ranked_4.png';
-import high_ranked_5_img from '../../assets/img/high_ranked_5.png';
-import high_ranked_6_img from '../../assets/img/high_ranked_6.png';
-import high_ranked_7_img from '../../assets/img/high_ranked_7.png';
-import high_ranked_8_img from '../../assets/img/high_ranked_8.png';
+import high_ranked_1_img from '../../../assets/img/high_ranked_1.png';
+import high_ranked_2_img from '../../../assets/img/high_ranked_2.png';
+import high_ranked_3_img from '../../../assets/img/high_ranked_3.png';
+import high_ranked_4_img from '../../../assets/img/high_ranked_4.png';
+import high_ranked_5_img from '../../../assets/img/high_ranked_5.png';
+import high_ranked_6_img from '../../../assets/img/high_ranked_6.png';
+import high_ranked_7_img from '../../../assets/img/high_ranked_7.png';
+import high_ranked_8_img from '../../../assets/img/high_ranked_8.png';
 
 import { ButtonTransparent } from '../ButtonTransparent';
 import { OfferCardHighRanked } from '../OfferCardHighRanked';

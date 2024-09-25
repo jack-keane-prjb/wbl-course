@@ -1,5 +1,5 @@
 import React from 'react';
-import { ButtonPagination } from '../ButtonPagination';
+import { ButtonPagination } from '../components/ButtonPagination';
 import styles from './pagination.css';
 
 export function Pagination() {

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Container } from '../Container';
-import { UsefulСard } from '../UsefulСard';
+import { Container } from '../components/Container';
+import { UsefulСard } from '../components/UsefulСard';
 import styles from './useful.css';
 
 import img_article_1 from '../../assets/img/article_1.jpg';

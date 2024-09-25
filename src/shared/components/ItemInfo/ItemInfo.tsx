@@ -4,7 +4,7 @@ import { ButtonText } from '../ButtonText';
 import { RankSpan } from '../RankSpan';
 import styles from './iteminfo.css';
 
-import item1Pic from '../../assets/img/item_d-31.png';
+import item1Pic from '../../../assets/img/item_d-31.png';
 
 export function ItemInfo() {
   const item = {

@@ -6,9 +6,9 @@ import './css-global/media.css';
 
 import { Route, Switch } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
-import { PageMain } from './shared/PageMain';
-import { PageCatalog } from './shared/PageCatalog';
-import { PageItem } from './shared/PageItem';
+import { PageMain } from './shared/components/PageMain';
+import { PageCatalog } from './shared/components/PageCatalog';
+import { PageItem } from './shared/components/PageItem';
 
 function Applic() {
   const [mounted, setMounted] = useState(false);

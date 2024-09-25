@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Container } from '../Container';
-import { OfferCard } from '../OfferCard';
+import { Container } from '../components/Container';
+import { OfferCard } from '../components/OfferCard';
 import styles from './specialoffers.css';
 
 import special_offer_1_img from '../../assets/img/special_offer_1.png';
@@ -11,7 +11,7 @@ import special_offer_4_img from '../../assets/img/special_offer_4.png';
 import special_offer_5_img from '../../assets/img/special_offer_5.png';
 import special_offer_6_img from '../../assets/img/special_offer_6.png';
 
-import { ButtonTransparent } from '../ButtonTransparent';
+import { ButtonTransparent } from '../components/ButtonTransparent';
 
 export function SpecialOffers({ className }: { className?: string }) {
   // REC: правильная обработка media queries в react:

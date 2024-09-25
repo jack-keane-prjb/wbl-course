@@ -1,6 +1,6 @@
 import React from 'react';
-import { CheckBox } from '../CheckBox';
-import { SideBarCard } from '../SideBarCard';
+import { CheckBox } from '../components/CheckBox';
+import { SideBarCard } from '../components/SideBarCard';
 import styles from './sidebar.css';
 
 import sideBarCardImg1 from '../../assets/img/sidebar_card_1.png';

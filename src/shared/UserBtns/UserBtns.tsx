@@ -1,5 +1,5 @@
 import React from 'react';
-import { ButtonIcon } from '../ButtonIcon';
+import { ButtonIcon } from '../components/ButtonIcon';
 import styles from './userbtns.css';
 
 export function UserBtns({ className }: { className?: string }) {

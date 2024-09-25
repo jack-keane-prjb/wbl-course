@@ -3,10 +3,10 @@ import { Header } from '../Header';
 import { Hero } from '../Hero';
 import styles from './pagemain.css';
 
-import hero1_1920px from '../../assets/img/hero1_1920px.jpg';
-import hero1_1024px from '../../assets/img/1024px/hero1_1024px.jpg';
-import hero1_768px from '../../assets/img/768px/hero1_768px.jpg';
-import hero1_320px from '../../assets/img/320px/hero1_320px.jpg';
+import hero1_1920px from '../../../assets/img/hero1_1920px.jpg';
+import hero1_1024px from '../../../assets/img/1024px/hero1_1024px.jpg';
+import hero1_768px from '../../../assets/img/768px/hero1_768px.jpg';
+import hero1_320px from '../../../assets/img/320px/hero1_320px.jpg';
 import { SpecialOffers } from '../SpecialOffers';
 import { Container } from '../Container';
 import { HighRank } from '../HighRank';
@@ -14,16 +14,16 @@ import { HighRank } from '../HighRank';
 // import { HighRank } from '../HighRank';
 import { Hero2 } from '../Hero2';
 
-import hero2_1920px from '../../assets/img/hero2_1920px.jpg';
-import hero2_1024px from '../../assets/img/1024px/hero2_1024px.jpg';
-import hero2_768px from '../../assets/img/768px/hero2_768px.jpg';
-import hero2_320px from '../../assets/img/320px/hero2_320px.jpg';
+import hero2_1920px from '../../../assets/img/hero2_1920px.jpg';
+import hero2_1024px from '../../../assets/img/1024px/hero2_1024px.jpg';
+import hero2_768px from '../../../assets/img/768px/hero2_768px.jpg';
+import hero2_320px from '../../../assets/img/320px/hero2_320px.jpg';
 import { TopCategories } from '../TopCategories';
 import { Useful } from '../Useful';
 import { Feedback } from '../Feedback';
 import { Footer } from '../Footer';
 import { Copyright } from '../Copyright';
-import { DisplayWidthTester } from '../../utils/js/DisplayWidthTester';
+import { DisplayWidthTester } from '../../../utils/js/DisplayWidthTester';
 
 
 

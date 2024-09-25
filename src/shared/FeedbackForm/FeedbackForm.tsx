@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button } from '../Button';
-import { CheckBox } from '../CheckBox';
+import { Button } from '../components/Button';
+import { CheckBox } from '../components/CheckBox';
 import styles from './feedbackform.css';
 
 export function FeedbackForm() {
