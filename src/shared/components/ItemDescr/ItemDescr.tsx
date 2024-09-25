@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './itemdescr.css';
 
-import item1DescrPic1 from '../../../../assets/img/item_d-31_descr_1.png';
-import item1DescrPic2 from '../../../../assets/img/item_d-31_descr_2.png';
+import item1DescrPic1 from '../../../assets/img/item_d-31_descr_1.png';
+import item1DescrPic2 from '../../../assets/img/item_d-31_descr_2.png';
 
 export function ItemDescr() {
   const item1descr = (

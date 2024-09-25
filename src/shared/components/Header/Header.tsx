@@ -1,9 +1,9 @@
 import React from 'react';
-import { HeaderSection1 } from './HeaderSection1';
+import { HeaderSection1 } from '../HeaderSection1';
 import { Container } from '../Container';
 import styles from './header.css';
 import { TelLink } from '../TelLink';
-import { HeaderSection2 } from './HeaderSection2';
+import { HeaderSection2 } from '../HeaderSection2';
 
 export function Header() {
   return (

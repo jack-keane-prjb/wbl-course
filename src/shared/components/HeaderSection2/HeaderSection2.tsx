@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ButtonText } from '../../ButtonText';
-import { Container } from '../../Container';
-import { Icon } from '../../Icon';
-import { LinkGeneric } from '../../LinkGeneric';
-import { TelLink } from '../../TelLink';
-import { UserBtns } from '../../UserBtns';
+import { ButtonText } from '../ButtonText';
+import { Container } from '../Container';
+import { Icon } from '../Icon';
+import { LinkGeneric } from '../LinkGeneric';
+import { TelLink } from '../TelLink';
+import { UserBtns } from '../UserBtns';
 import styles from './headersection2.css';
 
 export function HeaderSection2() {
