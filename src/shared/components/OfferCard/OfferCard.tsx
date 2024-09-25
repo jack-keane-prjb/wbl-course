@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import React from 'react';
-import { RankSpan } from '../components/RankSpan';
+import { RankSpan } from '../RankSpan';
 import styles from './offercard.css';
 
 type TSpecialOfferCardSizes = '1x' | '2x';

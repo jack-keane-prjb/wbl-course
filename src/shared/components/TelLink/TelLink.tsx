@@ -1,5 +1,5 @@
 import React from 'react';
-import { Icon } from '../components/Icon';
+import { Icon } from '../Icon';
 import styles from './tellink.css';
 
 // TODO: Не совсем понимаю, как бороться с undefined в названии класса. Я прописываю, что его можно и не передавать. Не передаю. И получаю undefined.

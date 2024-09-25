@@ -1,7 +1,7 @@
 import React from 'react';
-import { ButtonTransparent } from '../components/ButtonTransparent';
-import { Container } from '../components/Container';
-import { OfferCard } from '../components/OfferCard';
+import { ButtonTransparent } from '../ButtonTransparent';
+import { Container } from '../Container';
+import { OfferCard } from '../OfferCard';
 // import styles from './similarproducts.css';
 
 import sofa_r85 from '../../assets/img/sofa_r-85.png';

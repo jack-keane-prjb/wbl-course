@@ -1,6 +1,6 @@
 import React from 'react';
-import { Container } from '../components/Container';
-import { TopCategoriesCard } from '../components/TopCategoriesCard';
+import { Container } from '../Container';
+import { TopCategoriesCard } from '../TopCategoriesCard';
 import styles from './topcategories.css';
 
 // TODO: Выполнить проверку дубликатов на ассеты тут:

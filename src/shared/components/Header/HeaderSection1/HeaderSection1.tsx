@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from '../../Container';
-import { TelLink } from '../../../TelLink';
-import { UserBtns } from '../../../UserBtns';
+import { TelLink } from '../../TelLink';
+import { UserBtns } from '../../UserBtns';
 import styles from './headersection1.css';
 
 export function HeaderSection1({ className }: { className?: string }) {
