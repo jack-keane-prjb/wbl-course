@@ -3,11 +3,11 @@ import { Container } from '../Container';
 import { UsefulСard } from '../UsefulСard';
 import styles from './useful.css';
 
-import img_article_1 from '../../assets/img/article_1.jpg';
-import img_article_2 from '../../assets/img/article_2.jpg';
-import img_article_3 from '../../assets/img/article_3.jpg';
-import img_article_4 from '../../assets/img/article_4.jpg';
-import img_article_5 from '../../assets/img/article_5.jpg';
+import img_article_1 from '../../../assets/img/article_1.jpg';
+import img_article_2 from '../../../assets/img/article_2.jpg';
+import img_article_3 from '../../../assets/img/article_3.jpg';
+import img_article_4 from '../../../assets/img/article_4.jpg';
+import img_article_5 from '../../../assets/img/article_5.jpg';
 import classNames from 'classnames';
 
 export function Useful({ className }: { className: string }) {

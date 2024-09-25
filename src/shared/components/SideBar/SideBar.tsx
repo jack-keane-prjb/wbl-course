@@ -3,7 +3,7 @@ import { CheckBox } from '../CheckBox';
 import { SideBarCard } from '../SideBarCard';
 import styles from './sidebar.css';
 
-import sideBarCardImg1 from '../../assets/img/sidebar_card_1.png';
+import sideBarCardImg1 from '../../../assets/img/sidebar_card_1.png';
 
 export function SideBar() {
   return (

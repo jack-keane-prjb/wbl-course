@@ -2,7 +2,7 @@
   padding-top: 154px;
   padding-bottom: 149px;
   background-repeat: no-repeat;
-  background-image: url("../../assets/img/hero2_1920px.jpg");
+  background-image: url("../../../assets/img/hero2_1920px.jpg");
   background-position: center;
 }
 
@@ -36,7 +36,7 @@
 @media all and (max-width: 1599px) {
 
   .hero {
-    background-image: url("../../assets/img/1024px/hero2_1024px.jpg");
+    background-image: url("../../../assets/img/1024px/hero2_1024px.jpg");
   }
 }
 
@@ -47,7 +47,7 @@
     padding: 154px 36px;
     padding-top: 156px;
     padding-bottom: 151px;
-    background-image: url("../../assets/img/768px/hero2_768px.jpg");
+    background-image: url("../../../assets/img/768px/hero2_768px.jpg");
   }
 
   .container {
@@ -60,7 +60,7 @@
   /* 320px */
   .hero {
     padding: 32px 0;
-    background-image: url("../../assets/img/320px/hero2_320px.jpg");
+    background-image: url("../../../assets/img/320px/hero2_320px.jpg");
     padding: 95px 12px;
     padding-bottom: 58px;
     background-position: center 63px;

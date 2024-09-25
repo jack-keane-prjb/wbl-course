@@ -3,13 +3,13 @@ import { Container } from '../Container';
 import { OfferCard } from '../OfferCard';
 import styles from './specialoffers.css';
 
-import special_offer_1_img from '../../assets/img/special_offer_1.png';
-import special_offer_2_img from '../../assets/img/special_offer_2.png';
-import special_offer_2_2_img from '../../assets/img/special_offer_2_2.png';
-import special_offer_3_img from '../../assets/img/special_offer_3.png';
-import special_offer_4_img from '../../assets/img/special_offer_4.png';
-import special_offer_5_img from '../../assets/img/special_offer_5.png';
-import special_offer_6_img from '../../assets/img/special_offer_6.png';
+import special_offer_1_img from '../../../assets/img/special_offer_1.png';
+import special_offer_2_img from '../../../assets/img/special_offer_2.png';
+import special_offer_2_2_img from '../../../assets/img/special_offer_2_2.png';
+import special_offer_3_img from '../../../assets/img/special_offer_3.png';
+import special_offer_4_img from '../../../assets/img/special_offer_4.png';
+import special_offer_5_img from '../../../assets/img/special_offer_5.png';
+import special_offer_6_img from '../../../assets/img/special_offer_6.png';
 
 import { ButtonTransparent } from '../ButtonTransparent';
 

@@ -7,7 +7,7 @@
   /* TODO: проверить, как вообще убирается сама ячейка с бэкграундом при таком раскладе: */
   grid-column: span 6;
   /* grid-row: span 2; */
-  background-image: url('../../assets/img/feedback_bg.png');
+  background-image: url('../../../assets/img/feedback_bg.png');
   background-position: bottom 22px center;
   background-repeat: no-repeat;
 }
@@ -43,7 +43,7 @@
   .backgroundCell {
     grid-column: initial;
     grid-row: span 2;
-    background-image: url('../../assets/img/768px/feedback_bg_768px.png');
+    background-image: url('../../../assets/img/768px/feedback_bg_768px.png');
     background-position: initial;
     background-position: center -28px;
     background-size: 186px;

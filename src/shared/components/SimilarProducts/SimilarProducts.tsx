@@ -4,10 +4,10 @@ import { Container } from '../Container';
 import { OfferCard } from '../OfferCard';
 // import styles from './similarproducts.css';
 
-import sofa_r85 from '../../assets/img/sofa_r-85.png';
-import sofa_h58 from '../../assets/img/sofa_h-58.png';
-import sofa_s44 from '../../assets/img/sofa_s-44.png';
-import high_ranked_7 from '../../assets/img/high_ranked_7.png';
+import sofa_r85 from '../../../assets/img/sofa_r-85.png';
+import sofa_h58 from '../../../assets/img/sofa_h-58.png';
+import sofa_s44 from '../../../assets/img/sofa_s-44.png';
+import high_ranked_7 from '../../../assets/img/high_ranked_7.png';
 
 export function SimilarProducts() {
   return (

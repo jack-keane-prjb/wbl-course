@@ -5,29 +5,29 @@ import styles from './topcategories.css';
 
 // TODO: Выполнить проверку дубликатов на ассеты тут:
 
-import imgSofas from '../../assets/img/top_cat_sofas.png';
-import imgSofas1024 from '../../assets/img/1024px/top_cat_sofas_1024px.png';
-import imgSofas320 from '../../assets/img/320px/top_cat_sofas_320px.png';
+import imgSofas from '../../../assets/img/top_cat_sofas.png';
+import imgSofas1024 from '../../../assets/img/1024px/top_cat_sofas_1024px.png';
+import imgSofas320 from '../../../assets/img/320px/top_cat_sofas_320px.png';
 
-import imgArmchairs from '../../assets/img/top_cat_armchairs.png';
-import imgArmchairs1024 from '../../assets/img/1024px/top_cat_armchairs_1024px.png';
-import imgArmchairs768 from '../../assets/img/768px/top_cat_armchairs_768px.png';
-import imgArmchairs320 from '../../assets/img/320px/top_cat_armchairs_320px.png';
+import imgArmchairs from '../../../assets/img/top_cat_armchairs.png';
+import imgArmchairs1024 from '../../../assets/img/1024px/top_cat_armchairs_1024px.png';
+import imgArmchairs768 from '../../../assets/img/768px/top_cat_armchairs_768px.png';
+import imgArmchairs320 from '../../../assets/img/320px/top_cat_armchairs_320px.png';
 
-import imgBeds from '../../assets/img/top_cat_beds.png';
-import imgBeds1024 from '../../assets/img/1024px/top_cat_beds_1024px.png';
-import imgBeds768 from '../../assets/img/768px/top_cat_beds_768px.png';
-import imgBeds320 from '../../assets/img/320px/top_cat_beds_320px.png';
+import imgBeds from '../../../assets/img/top_cat_beds.png';
+import imgBeds1024 from '../../../assets/img/1024px/top_cat_beds_1024px.png';
+import imgBeds768 from '../../../assets/img/768px/top_cat_beds_768px.png';
+import imgBeds320 from '../../../assets/img/320px/top_cat_beds_320px.png';
 
-import imgChests from '../../assets/img/top_cat_chests.png';
-import imgChests1024 from '../../assets/img/1024px/top_cat_chests_1024px.png';
-import imgChests768 from '../../assets/img/768px/top_cat_chests_768px.png';
-import imgChests320 from '../../assets/img/320px/top_cat_chests_320px.png';
+import imgChests from '../../../assets/img/top_cat_chests.png';
+import imgChests1024 from '../../../assets/img/1024px/top_cat_chests_1024px.png';
+import imgChests768 from '../../../assets/img/768px/top_cat_chests_768px.png';
+import imgChests320 from '../../../assets/img/320px/top_cat_chests_320px.png';
 
-import imgChairs from '../../assets/img/top_cat_chairs.png';
-import imgChairs1024 from '../../assets/img/1024px/top_cat_chairs_1024px.png';
-import imgChairs768 from '../../assets/img/768px/top_cat_chairs_768px.png';
-import imgChairs320 from '../../assets/img/320px/top_cat_chairs_320px.png';
+import imgChairs from '../../../assets/img/top_cat_chairs.png';
+import imgChairs1024 from '../../../assets/img/1024px/top_cat_chairs_1024px.png';
+import imgChairs768 from '../../../assets/img/768px/top_cat_chairs_768px.png';
+import imgChairs320 from '../../../assets/img/320px/top_cat_chairs_320px.png';
 
 export function TopCategories({ className }: { className: string }) {
   return (
