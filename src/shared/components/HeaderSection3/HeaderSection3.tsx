@@ -8,9 +8,9 @@ import { TelLink } from '../TelLink';
 import { UserBtns } from '../UserBtns';
 import styles from './headersection3.css';
 
-export function HeaderSection3({ className = "" }: { className?: string }) {
+export function HeaderSection3() {
   return (
-    <section className={className}>
+    <section className={styles.section}>
       <Container>
         <div className={`${styles.row} ${styles.row1}`}>
           <Link to="/" className={styles.logo}>

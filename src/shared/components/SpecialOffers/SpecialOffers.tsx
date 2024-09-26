@@ -14,6 +14,7 @@ import special_offer_6_img from '../../../assets/img/special_offer_6.png';
 import { ButtonTransparent } from '../ButtonTransparent';
 import useWindowSizeMediaQuery from '../../../utils/js/hooks/useWindowSizeMediaQuery';
 
+// TODO: поудалять лишний className, где это не надо:
 export function SpecialOffers({ className }: { className?: string }) {
   // REC: правильная обработка media queries в react:
 
@@ -22,7 +23,7 @@ export function SpecialOffers({ className }: { className?: string }) {
 
 
   return (
-    <section className={`${className}`}>
+    <section>
       <Container>
         {/* REC:  вообще для заголовков комонет текст - ну такое себе */}
         <h2 className={`sectionTitle ${styles.sectionTitle}`}>

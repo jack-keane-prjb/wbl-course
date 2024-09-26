@@ -50,9 +50,11 @@
     background-image: url("../../../assets/img/768px/hero2_768px.jpg");
   }
 
+  /* HERE: */
   .container {
-    padding: 0;
+    padding: 0 10px;
   }
+
 }
 
 @media all and (max-width: 767px) {

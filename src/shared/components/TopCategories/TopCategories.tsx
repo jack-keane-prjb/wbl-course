@@ -29,9 +29,9 @@ import imgChairs1024 from '../../../assets/img/1024px/top_cat_chairs_1024px.png'
 import imgChairs768 from '../../../assets/img/768px/top_cat_chairs_768px.png';
 import imgChairs320 from '../../../assets/img/320px/top_cat_chairs_320px.png';
 
-export function TopCategories({ className }: { className: string }) {
+export function TopCategories({ className }: { className?: string }) {
   return (
-    <section className={className}>
+    <section>
       <Container>
         <h2 className={`sectionTitle ${styles.sectionTitle}`}>Топ категории</h2>
         <div className={`grid ${styles.grid}`}>

@@ -11,14 +11,15 @@ import img_article_5 from '../../../assets/img/article_5.jpg';
 import classNames from 'classnames';
 import useWindowSizeMediaQuery from '../../../utils/js/hooks/useWindowSizeMediaQuery';
 
-export function Useful({ className }: { className: string }) {
-  const is1920px = useWindowSizeMediaQuery('(max-width: 1024px)');
-  const is768px = useWindowSizeMediaQuery('(min-width: 768px)');
+export function Useful({ className }: { className?: string }) {
+  const is1920px = useWindowSizeMediaQuery('(min-width: 1600px)');
+  const is1024px = useWindowSizeMediaQuery('(min-width: 1024px) and (max-width: 1599px)');
+  const is768px = useWindowSizeMediaQuery('(min-width: 768px) and (max-width: 1023px)');
   const is320px = useWindowSizeMediaQuery('(max-width: 767px)');
 
 
   return (
-    <section className={className}>
+    <section>
       <Container>
         <h2 className={`sectionTitle ${styles.sectionTitle}`}>Полезное</h2>
         <div className={`grid ${styles.grid}`}>
@@ -33,13 +34,10 @@ export function Useful({ className }: { className: string }) {
           />
 
           {is1920px && <>
-            {/* 1024px */}
-            <UsefulСard className={styles.card3}
+            {/* <UsefulСard className={styles.card3}
               img={img_article_3}
               text="Ясность нашей позиции очевидна: укрепление и развитие внутренней структуры?"
             />
-
-            {/* 320px */}
             <UsefulСard className={styles.card4}
               img={img_article_4}
               text="Прежде всего, консультация с широким активом однозначно фиксирует необходимость распределения?"
@@ -47,8 +45,18 @@ export function Useful({ className }: { className: string }) {
             <UsefulСard className={styles.card5}
               img={img_article_5}
               text="Как принято считать, некоторые особенности приносят несомненную пользу обществу?"
+            /> */}
+          </>}
+
+          {is1024px && <>
+            {/* 1024px */}
+            <UsefulСard className={styles.card3}
+              img={img_article_3}
+              text="Ясность нашей позиции очевидна: укрепление и развитие внутренней структуры?"
             />
           </>}
+
+
 
 
 

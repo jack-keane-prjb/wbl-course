@@ -1,0 +1,209 @@
+.sectionLinks {
+    background-color: var(--grayEA);
+}
+
+.containerLinks {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logoContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.socialLinksContainer {
+    display: flex;
+    margin-top: auto;
+    /* margin-bottom: 10px; */
+}
+
+.h4 {
+    margin-bottom: 2px;
+    padding: 2px 0;
+}
+
+.a {
+    color: var(--gray999);
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+    position: relative;
+    /* padding: 2px 10px; */
+    padding: 2px 0;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-out;
+}
+
+/* TODO: возможно поправить везде последовательност на фокус-ховер-актив */
+
+.a:hover {
+    color: var(--purpleA65);
+}
+
+.a:focus {
+    color: var(--purple703);
+    outline: none;
+    background-color: var(--purpleEBD);
+}
+
+.a:active {
+    color: var(--purple703);
+}
+
+.a:not(:last-child) {
+    margin-bottom: 6px;
+}
+
+.linksContainer {
+    display: flex;
+}
+
+/* TODO: тут, возможно, делать доп. вложенность */
+
+.linksContainerRow {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.linksContainerRow:not(:last-child) {
+    margin-right: 130px;
+}
+
+.socialLink:not(:last-child) {
+    margin-right: 14px;
+}
+
+@media all and (max-width: 1599px) {
+
+
+    /* 1024px */
+    .containerLinks {
+        padding-bottom: 22px;
+    }
+
+    .linksContainer {
+        padding-top: 2px;
+    }
+
+    .linksContainerRow:not(:last-child) {
+        margin-right: 94px;
+    }
+}
+
+@media all and (max-width: 1023px) {
+
+    /* 768px */
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 22px;
+        padding: 0;
+    }
+
+    .containerLinks {
+        padding: 22px 72px;
+        flex-wrap: wrap;
+    }
+
+    .logoContainer {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .logoLink {
+        display: flex;
+        align-items: center;
+    }
+
+    .socialLinksContainer {
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 44px;
+    }
+
+    .linksContainer {
+        grid-column: span 2;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .linksContainerRow,
+    .linksContainerRow:not(:last-child) {
+        margin: 0;
+    }
+}
+
+@media all and (max-width: 767px) {
+
+    /* 320px */
+    .footer {
+        padding-top: 14px;
+    }
+
+    .linksContainerRow:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .row {
+        align-items: center;
+        margin-bottom: 23px;
+    }
+
+    .logoLink {
+        /* margin-bottom: 17px; */
+        margin: 0;
+    }
+
+    .linksContainer {
+        /* flex-wrap: wrap; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 24px;
+        column-gap: 17px;
+        justify-content: space-between;
+    }
+
+    .containerLinks {
+        padding: 0 13px 23px;
+    }
+
+    .logoContainer {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        min-height: 107px;
+        padding-top: 23px;
+        margin-bottom: 20px;
+    }
+
+    .socialLinksContainer {
+        margin: 0;
+    }
+
+    .footer {
+        padding: 0;
+    }
+
+    .a {
+        font-size: 12px;
+    }
+
+    .containerCopyright {
+        padding: 5px 0;
+    }
+}

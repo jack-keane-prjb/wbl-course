@@ -7,7 +7,7 @@ export function Hero({ className = "" }: { className?: string }) {
   // REC: так делаю для того, чтобы вставить перенос. Ибо если просто перенести строку даже с (prettier-ignore), то ничего не выйдет. Где-то, видимо, что-то форматирует текст.
   const headerText = 'Скидка 15% \n на первую покупку';
   return (
-    <section className={`${className} ${styles.hero}`}>
+    <section className={`${className} ${styles.section}`}>
       {/* TODO: поправить на 1920, 1024, 768. Тперь это флекс. */}
       <Container>
         {/* prettier-ignore */}

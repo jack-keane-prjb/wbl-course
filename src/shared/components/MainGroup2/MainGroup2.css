@@ -1,0 +1,24 @@
+.MainGroup2 {
+    padding: 70px 0;
+    /* PixP: */
+    padding-bottom: 74px;
+}
+
+.MainGroup2>*:not(:last-child) {
+    margin-bottom: 70px;
+}
+
+
+@media all and (max-width: 1599px) {
+
+    /* 1024x */
+
+    .MainGroup2>*:not(:last-child) {
+        margin-bottom: 72px;
+    }
+
+    .MainGroup2 {
+        padding-bottom: 70px;
+    }
+
+}

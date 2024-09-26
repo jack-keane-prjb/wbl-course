@@ -1,12 +1,12 @@
 .section {
   background-color: var(--grayF6);
+  padding: 16px 0;
 }
 
 .container {
   display: flex;
   align-items: center;
   /* min-height: 50px; */
-  padding: 16px 0;
 }
 
 /* .phoneSpan {
@@ -63,6 +63,11 @@
 @media all and (max-width: 1599px) {
 
   /* 1024px */
+
+  .section {
+    padding: 7px 0;
+  }
+
   .UserBtns {
     display: block;
   }
@@ -75,12 +80,7 @@
     margin-left: initial;
   }
 
-  .container {
-    padding-left: 36px;
-    padding-right: 36px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-  }
+
 
   .a {
     padding: 0;
@@ -94,8 +94,8 @@
 @media all and (max-width: 1023px) {
   /* 768px */
 
-  .container {
-    padding: 17px 73px;
+  .section {
+    padding: 17px 0;
   }
 
   .nav {

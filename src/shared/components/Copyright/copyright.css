@@ -1,3 +1,15 @@
+.sectionCopyright {
+  /* background-color: var(--grayEA); */
+  background-color: var(--grayF6);
+}
+
+
+.containerCopyright {
+  padding: 5px 0;
+}
+
+
+
 .copyright {
   font-family: Open Sans;
   font-size: 14px;
@@ -10,3 +22,13 @@
 }
 
 /* TODO: отдельно проверить, не содержат ли блоки свойств позиционирования */
+
+@media all and (max-width: 767px) {
+
+  /* 320px */
+
+
+  .containerCopyright {
+    padding: 5px 0;
+  }
+}

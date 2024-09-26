@@ -9,17 +9,16 @@ import { Hero2 } from '../Hero2';
 import { TopCategories } from '../TopCategories';
 import { Useful } from '../Useful';
 import { Feedback } from '../Feedback';
+import { MainGroup1 } from '../MainGroup1';
+import { MainGroup2 } from '../MainGroup2';
 
 export function Main({ className = "" }: { className?: string }) {
   return (
     <main className={className}>
-      <Hero className={styles.partition} />
-      <SpecialOffers className={styles.partition} />
-      <HighRank className={styles.partition} />
-      <Hero2 className={styles.partition} />
-      <TopCategories className={styles.partition} />
-      <Useful className={styles.partition} />
-      <Feedback className={styles.partition} />
+      <Hero />
+      <MainGroup1 />
+      <Hero2 />
+      <MainGroup2 />
     </main>
   )
 }

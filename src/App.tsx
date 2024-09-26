@@ -9,6 +9,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { PageMain } from './shared/components/PageMain';
 import { PageCatalog } from './shared/components/PageCatalog';
 import { PageItem } from './shared/components/PageItem';
+import { DisplayWidthTester } from './utils/js/DisplayWidthTester';
 
 function Applic() {
   const [mounted, setMounted] = useState(false);
@@ -32,6 +33,7 @@ function Applic() {
               <PageMain />
             </Route>
           </Switch>
+          <DisplayWidthTester />
         </BrowserRouter>
       )}
     </>

@@ -4,10 +4,10 @@ import { TelLink } from '../TelLink';
 import { UserBtns } from '../UserBtns';
 import styles from './headersection2.css';
 
-export function HeaderSection2({ className = "" }: { className?: string }) {
+export function HeaderSection2() {
   return (
-    <section className={`${styles.section} ${className}`}>
-      <Container>
+    <section className={styles.section}>
+      <Container className={styles.container}>
         <TelLink className={styles.telLink} />
         <nav className={styles.nav}>
           <ul className={styles.navList}>

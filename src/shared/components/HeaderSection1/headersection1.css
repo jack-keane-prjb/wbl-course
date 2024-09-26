@@ -1,3 +1,7 @@
+.section {
+    padding: 34px 0;
+}
+
 /* .row {
   padding: 34px 0;
 }
@@ -6,14 +10,14 @@
   margin-bottom: 32px;
 } */
 
-.telLinkRow {
+.section {
     display: none;
 }
 
 @media all and (max-width: 1599px) {
 
     /* 1024px */
-    .telLinkRow {
+    .section {
         display: block;
         padding-top: 20px;
         padding-bottom: 20px;
@@ -23,8 +27,8 @@
 @media all and (max-width: 1023px) {
 
     /* 768px */
-    .telLinkRow {
-        padding: 20px 73px;
+    .section {
+        padding: 20px 0;
         padding-bottom: 21px;
     }
 }
@@ -32,7 +36,7 @@
 @media all and (max-width: 767px) {
 
     /* 320px */
-    .telLinkRow {
+    .section {
         display: none;
     }
 }

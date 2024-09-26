@@ -8,8 +8,8 @@ import { TelLink } from '../TelLink';
 export function HeaderSection1({ className = "" }: { className?: string }) {
   // <= 1024px 
   return (
-    <section className={className}>
-      < Container className={styles.telLinkRow} >
+    <section className={styles.section}>
+      < Container >
         <TelLink />
       </Container >
     </section>

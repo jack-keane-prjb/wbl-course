@@ -1,4 +1,6 @@
-/* Maybe move to component: */
+.section {
+  padding: 31px 0;
+}
 
 .logo {
   cursor: pointer;
@@ -239,6 +241,13 @@
   }
 
   /* 768px */
+
+  .section {
+    padding: 28px 0;
+    /* PixP: */
+    padding-bottom: 33px;
+  }
+
   .container {
     width: 100%;
     padding: 28px 68px;

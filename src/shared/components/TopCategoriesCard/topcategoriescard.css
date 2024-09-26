@@ -107,12 +107,23 @@
 
   /* 1024x */
 
+  .card,
+  .sizesmall.card {
+    /* grid-column: initial; */
+    min-height: 511px;
+    /* padding: 0; */
+  }
+
   .nameBtn {
     display: none;
   }
 
   .link:not(:last-child) {
     margin-right: 30px;
+  }
+
+  .picture {
+    min-height: 303px;
   }
 }
 

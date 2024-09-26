@@ -26,7 +26,7 @@ export function HighRank({ className }: { className?: string }) {
 
   return (
     // TODO: убрать бы grid отовсюду. Ибо это лишняя морока.
-    <section className={`${className}`}>
+    <section>
       <Container>
         <h2 className={`sectionTitle ${styles.sectionTitle}`}>Высокий рейтинг</h2>
         <div className={`grid ${styles.grid}`}>
