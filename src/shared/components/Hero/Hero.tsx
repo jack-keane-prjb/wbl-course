@@ -9,7 +9,7 @@ export function Hero({ className = "" }: { className?: string }) {
   return (
     <section className={`${className} ${styles.section}`}>
       {/* TODO: поправить на 1920, 1024, 768. Тперь это флекс. */}
-      <Container>
+      <Container className={styles.container}>
         {/* prettier-ignore */}
         <h2 className={styles.h2}>{headerText}</h2>
         <Button className={styles.btn}>Получить!</Button>

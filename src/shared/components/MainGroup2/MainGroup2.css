@@ -11,7 +11,7 @@
 
 @media all and (max-width: 1599px) {
 
-    /* 1024x */
+    /* 1024px */
 
     .MainGroup2>*:not(:last-child) {
         margin-bottom: 72px;
@@ -19,6 +19,15 @@
 
     .MainGroup2 {
         padding-bottom: 72px;
+    }
+
+}
+
+@media all and (max-width: 767px) {
+
+    /* 320px */
+    .MainGroup2 {
+        padding: 36px 0;
     }
 
 }

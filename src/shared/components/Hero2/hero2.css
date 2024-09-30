@@ -1,4 +1,4 @@
-.hero {
+.section {
   padding-top: 154px;
   padding-bottom: 149px;
   background-repeat: no-repeat;
@@ -35,7 +35,7 @@
 
 @media all and (max-width: 1599px) {
 
-  .hero {
+  .section {
     background-image: url("../../../assets/img/1024px/hero2_1024px.jpg");
   }
 }
@@ -43,7 +43,7 @@
 @media all and (max-width: 1023px) {
 
   /* 768px */
-  .hero {
+  .section {
     padding-top: 156px;
     padding-bottom: 151px;
     background-image: url("../../../assets/img/768px/hero2_768px.jpg");
@@ -59,12 +59,16 @@
 @media all and (max-width: 767px) {
 
   /* 320px */
-  .hero {
-    padding: 32px 0;
+  .section {
+    padding: 33px 0;
     background-image: url("../../../assets/img/320px/hero2_320px.jpg");
-    padding: 95px 12px;
-    padding-bottom: 58px;
-    background-position: center 63px;
+    /* padding: 95px 12px; */
+    /* padding-bottom: 58px; */
+    background-position: initial;
+  }
+
+  .container {
+    padding: 0 12px;
   }
 
   .h2 {

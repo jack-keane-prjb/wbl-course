@@ -20,4 +20,15 @@
     }
 
 
+
+}
+
+@media (max-width: 767px) {
+
+    /* 320px */
+    .MainGroup1 {
+        padding: 41px 0;
+        /* PixP: */
+        padding-bottom: 68px;
+    }
 }

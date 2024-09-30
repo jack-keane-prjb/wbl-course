@@ -344,12 +344,12 @@
 
   .sizesmall.card {
     grid-column: initial;
-    /* HERE */
     padding-top: 0;
     padding-bottom: 16px;
     /* TODO: прописать новый тег КОСТЫЛЬ */
     /* REC: вот это костыль */
     max-height: 206px;
+    min-height: initial;
   }
 
   .sizesmall .descrContainer {

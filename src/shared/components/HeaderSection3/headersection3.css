@@ -303,6 +303,12 @@
 @media all and (max-width: 767px) {
 
   /* 320px */
+
+  .section {
+    padding: 0;
+    padding-bottom: 33px;
+  }
+
   .nav {
     grid-column: span 2;
     margin: initial;
@@ -320,6 +326,7 @@
     display: flex;
     justify-content: center;
     padding: 12px 0;
+    padding-bottom: 11px;
   }
 
   .navList li:not(:last-child) {
@@ -348,6 +355,7 @@
 
   .row1 {
     row-gap: 22px;
+    padding-top: 22px;
   }
 
   .UserBtnsRow1 {
@@ -356,7 +364,7 @@
   }
 
   .row:not(:last-child) {
-    margin-bottom: 17px;
+    margin-bottom: 18px;
   }
 
   .navList li:not(:last-child) {

@@ -10,6 +10,7 @@ export function Header() {
   return (
     <header>
       <HeaderSection1 />
+      {/* REC: интересно, как лучше делать скрытие через css display:none, или же через реакт js. */}
       <HeaderSection2 />
       <HeaderSection3 />
     </header>
