@@ -48,6 +48,10 @@
     background-position: center -28px;
     background-size: 186px;
   }
+
+  .title {
+    margin-bottom: 7px;
+  }
 }
 
 @media all and (max-width: 767px) {
