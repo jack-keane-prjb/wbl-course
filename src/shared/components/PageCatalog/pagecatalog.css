@@ -16,3 +16,14 @@
 .header>*:last-child {
   padding-bottom: 21px;
 }
+
+@media all and (max-width: 1599px) {
+
+  /* 1024px */
+  .grid {
+    grid-template-areas:
+      'sidebar'
+      'content'
+    ;
+  }
+}

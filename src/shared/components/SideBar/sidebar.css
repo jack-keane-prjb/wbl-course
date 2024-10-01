@@ -75,3 +75,13 @@
   font-size: 15px;
   padding-left: 6px;
 }
+
+
+@media all and (max-width: 1599px) {
+
+  /* HERE: */
+  .sidebar {
+    flex-direction: row;
+  }
+
+}
