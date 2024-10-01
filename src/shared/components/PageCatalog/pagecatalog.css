@@ -9,5 +9,10 @@
 }
 
 .main {
-  margin-bottom: 70px;
+  margin-bottom: 37px;
+}
+
+
+.header>*:last-child {
+  padding-bottom: 21px;
 }

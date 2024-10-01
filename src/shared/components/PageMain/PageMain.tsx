@@ -24,7 +24,8 @@ import { Feedback } from '../Feedback';
 import { Footer } from '../Footer';
 import { Copyright } from '../Copyright';
 import { DisplayWidthTester } from '../../../utils/js/DisplayWidthTester';
-import { Main } from '../Main';
+import { PageMainGroup1 } from '../PageMainGroup1';
+import { PageMainGroup2 } from '../PageMainGroup2';
 
 export function PageMain() {
   return (
@@ -32,7 +33,13 @@ export function PageMain() {
       {/* TODO: ПОЧЕМУ ОН РЕНДЕРИТСЯ последним??? (это, конечно, удобно)*/}
       {/* <DisplayWidthTester /> */}
       <Header />
-      <Main />
+      {/* REC: удалил компонент Main, ибо main есть на каждой странице. */}
+      <main>
+        <Hero />
+        <PageMainGroup1 />
+        <Hero2 />
+        <PageMainGroup2 />
+      </main>
       <Footer />
     </>
   );

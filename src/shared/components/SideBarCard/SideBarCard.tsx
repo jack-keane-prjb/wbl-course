@@ -18,7 +18,7 @@ export function SideBarCard({ img, imgAlt, title, description }: ISideBarCard) {
       <div className={styles.container}>
         <span className={styles.title}>{title}</span>
         <span className={styles.description}>{description}</span>
-        <ButtonText className={styles.btn} icon iconSize="small" />
+        <ButtonText className={styles.btn} icon iconSize="small">В каталог</ButtonText>
       </div>
     </div>
   );

@@ -14,7 +14,7 @@ import styles from './pagecatalog.css';
 export function PageCatalog() {
   return (
     <>
-      <Header />
+      <Header className={styles.header} />
       <main className={styles.main}>
         <Container>
           <NavBar />
@@ -25,7 +25,6 @@ export function PageCatalog() {
         </Container>
       </main>
       <Footer />
-      <Copyright />
     </>
   );
 }

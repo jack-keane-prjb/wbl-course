@@ -18,6 +18,11 @@
   transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
+.checkBoxSidebar {
+  width: 20px;
+  height: 20px;
+}
+
 .ico {
   position: absolute;
   opacity: 0;
@@ -27,12 +32,12 @@
   transition: opacity 0.2s ease-in-out;
 }
 
-.checkboxNative:checked + .checkboxCustom {
+.checkboxNative:checked+.checkboxCustom {
   border-color: var(--purpleA65);
   background-color: var(--purpleA65);
 }
 
-.checkboxNative:checked + .checkboxCustom > .ico {
+.checkboxNative:checked+.checkboxCustom>.ico {
   opacity: 1;
 }
 
@@ -43,6 +48,10 @@
   line-height: 14px;
   text-align: left;
   color: var(--black);
+}
+
+.checkBoxSidebar+.text {
+  font-size: 16px;
 }
 
 /* .checkboxCustom::after {
