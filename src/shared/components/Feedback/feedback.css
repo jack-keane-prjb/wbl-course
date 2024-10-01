@@ -69,4 +69,9 @@
     row-gap: 22px;
     grid-template-columns: initial;
   }
+
+  .title {
+    font-size: 24.1px;
+    line-height: 22px;
+  }
 }

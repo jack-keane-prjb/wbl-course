@@ -140,10 +140,6 @@
 @media all and (max-width: 767px) {
 
   /* 320px */
-  .footer {
-    padding-top: 14px;
-  }
-
   .linksContainerRow:not(:last-child) {
     margin-right: 0;
   }
@@ -182,10 +178,6 @@
 
   .socialLinksContainer {
     margin: 0;
-  }
-
-  .footer {
-    padding: 0;
   }
 
   .a {
