@@ -11,15 +11,15 @@ import styles from './headersection3.css';
 export function HeaderSection3() {
   return (
     <section className={styles.section}>
-      <Link to="/" className={styles.logo}>
+      <Link to="/" className={styles.logoOn320px}>
         <Icon ico={'logo'}></Icon>
       </Link>
       <Container>
         <div className={`${styles.row} ${styles.row1}`}>
           {/* Тут, возможен, сдвиг: на 320пкс сделал перестановку. */}
-          {/* <Link to="/" className={styles.logo}>
+          <Link to="/" className={styles.logo}>
             <Icon ico={'logo'}></Icon>
-          </Link> */}
+          </Link>
           <TelLink className={styles.TelLink} />
           <UserBtns className={`${styles.UserBtns} ${styles.UserBtnsRow1}`} />
           <nav className={styles.nav}>
