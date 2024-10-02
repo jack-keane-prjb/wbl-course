@@ -13,6 +13,7 @@ export interface IOfferCardHighRanked {
   fullPrice?: string;
   button?: React.ReactNode;
   additionalImg?: string;
+  className?: string;
 }
 
 export function OfferCardHighRanked(props: IOfferCardHighRanked) {
@@ -25,6 +26,7 @@ export function OfferCardHighRanked(props: IOfferCardHighRanked) {
     fullPrice,
     button,
     additionalImg = '',
+    className = "",
   } = props;
 
   const fullPriceClasses = classNames({
@@ -32,7 +34,7 @@ export function OfferCardHighRanked(props: IOfferCardHighRanked) {
   });
 
   return (
-    <div className={`${styles.card}`}>
+    <div className={`${styles.card} ${className}`}>
       {discount && (
         <span className={styles.spanDiscount}>{`- ${discount}`}</span>
       )}

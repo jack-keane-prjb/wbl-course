@@ -26,6 +26,7 @@ export function Catalog({ className = "" }: { className?: string }) {
           productName={'Диван кожаный “R-94”'}
           fullPrice={'94 990 руб'}
           button={<ButtonTransparent text="Купить" />}
+          className={styles.card1}
         />
         <OfferCardHighRanked
           rank={'4,9'}
@@ -33,6 +34,7 @@ export function Catalog({ className = "" }: { className?: string }) {
           productName={'Диван апартековый “T-75”'}
           fullPrice={'69 990 руб'}
           button={<ButtonTransparent text="Купить" />}
+          className={styles.card2}
         />
         <OfferCardHighRanked
           rank={'4,8'}
@@ -40,6 +42,7 @@ export function Catalog({ className = "" }: { className?: string }) {
           productName={'Диван тканевый “D-31”'}
           fullPrice={'28 490 руб'}
           button={<ButtonTransparent text="Купить" />}
+          className={styles.card3}
         />
         <OfferCardHighRanked
           rank={'4,8'}
@@ -47,6 +50,7 @@ export function Catalog({ className = "" }: { className?: string }) {
           productName={'Диван велюровый “Y-68”'}
           fullPrice={'22 990 руб'}
           button={<ButtonTransparent text="Купить" />}
+          className={styles.card4}
         />
         <OfferCardHighRanked
           rank={'4,8'}
@@ -54,6 +58,7 @@ export function Catalog({ className = "" }: { className?: string }) {
           productName={'Диван из шинила “W-95”'}
           fullPrice={'22 990 руб'}
           button={<ButtonTransparent text="Купить" />}
+          className={styles.card5}
         />
         <OfferCardHighRanked
           rank={'4,8'}
@@ -61,6 +66,7 @@ export function Catalog({ className = "" }: { className?: string }) {
           productName={'Диван флоковый “G-41”'}
           fullPrice={'17 990 руб'}
           button={<ButtonTransparent text="Купить" />}
+          className={styles.card6}
         />
         <OfferCardHighRanked
           rank={'4,8'}
@@ -68,6 +74,7 @@ export function Catalog({ className = "" }: { className?: string }) {
           productName={'Диван шиниловый “V-43”'}
           fullPrice={'19 990 руб'}
           button={<ButtonTransparent text="Купить" />}
+          className={styles.card7}
         />
         <OfferCardHighRanked
           rank={'4,7'}
@@ -75,6 +82,7 @@ export function Catalog({ className = "" }: { className?: string }) {
           productName={'Диван велюровый “S-99”'}
           fullPrice={'19 990 руб'}
           button={<ButtonTransparent text="Купить" />}
+          className={styles.card8}
         />
         <OfferCardHighRanked
           rank={'4,7'}
@@ -82,9 +90,12 @@ export function Catalog({ className = "" }: { className?: string }) {
           productName={'Диван из кожзама “F-85”'}
           fullPrice={'26 990 руб'}
           button={<ButtonTransparent text="Купить" />}
+          className={styles.card9}
         />
-        <Pagination />
       </div>
+      {/* PixP: вынес пагинацию. Возможны сдвиги */}
+      {/* HERE: */}
+      <Pagination />
     </section >
   );
 }
