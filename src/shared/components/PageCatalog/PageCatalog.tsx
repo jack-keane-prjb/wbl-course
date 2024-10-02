@@ -19,9 +19,11 @@ export function PageCatalog() {
         <Container>
           <NavBar />
         </Container>
-        <Container className={styles.grid}>
-          <SideBar />
-          <Catalog />
+        <Container>
+          <div className={`${styles.grid}`}>
+            <SideBar className={styles.sidebar} />
+            <Catalog className={styles.content} />
+          </div>
         </Container>
       </main>
       <Footer />

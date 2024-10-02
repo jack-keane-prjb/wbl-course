@@ -15,11 +15,11 @@ import high_ranked_9_img from '../../../assets/img/high_ranked_9.png';
 import { Pagination } from '../Pagination';
 import { OfferCardHighRanked } from '../OfferCardHighRanked';
 
-export function Catalog() {
+export function Catalog({ className = "" }: { className?: string }) {
   return (
-    <section className={`content ${styles.section}`}>
-      <h2 className={`sectionTitle ${styles.title}`}>Каталог</h2>
-      <div className={`grid ${styles.grid}`}>
+    <section className={`${styles.section} ${className}`}>
+      {/* <h2 className={`sectionTitle ${styles.title}`}>Каталог</h2> */}
+      <div className={`${styles.grid}`}>
         <OfferCardHighRanked
           rank={'5,0'}
           productImg={high_ranked_1_img}

@@ -1,12 +1,17 @@
-.container {
+.pagination {
   display: flex;
   align-items: center;
   justify-content: center;
   grid-column: span 9;
 }
 
-.container > *:not(:last-child) {
+.pagination>*:not(:last-child) {
   margin-right: 15px;
 }
 
+@media all and (max-width: 1599px) {
 
+  .pagination {
+    grid-column: span 3;
+  }
+}

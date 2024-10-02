@@ -7,12 +7,13 @@ interface ISideBarCard {
   imgAlt?: string;
   title?: string;
   description?: string;
+  className?: string;
 }
 
-export function SideBarCard({ img, imgAlt, title, description }: ISideBarCard) {
+export function SideBarCard({ img, imgAlt, title, description, className = "" }: ISideBarCard) {
   return (
     // TODO: возможно тут стоит использовать article
-    <div className={styles.card}>
+    <div className={`${styles.card} ${className}`}>
       {/* TODO: нужны ли мне все альты проименовывать? Возмножно просто свойство сделаю. */}
       <img src={img} alt={imgAlt} />
       <div className={styles.container}>
