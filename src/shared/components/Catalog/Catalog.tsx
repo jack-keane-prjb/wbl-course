@@ -94,7 +94,6 @@ export function Catalog({ className = "" }: { className?: string }) {
         />
       </div>
       {/* PixP: вынес пагинацию. Возможны сдвиги */}
-      {/* HERE: */}
       <Pagination />
     </section >
   );

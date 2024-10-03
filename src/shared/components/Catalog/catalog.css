@@ -75,12 +75,18 @@
 @media all and (max-width: 1023px) {
     .grid {
         grid-template-columns: 1fr 1fr;
+        margin-bottom: 32px;
     }
 
     .card3 {
-
         order: 5;
+    }
 
+    /* TODO: реально подумать, как лучше скрывать элементы. Через CSS или через JS. Пока что у меня смесь. */
+    .card7,
+    .card8,
+    .card9 {
+        display: none;
     }
 
 }

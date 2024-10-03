@@ -7,6 +7,7 @@ export function Pagination() {
     <div className={styles.pagination}>
       <ButtonPagination current />
       <ButtonPagination text="2" />
+      <ButtonPagination text="3" className={styles.button3} />
     </div>
   );
 }
