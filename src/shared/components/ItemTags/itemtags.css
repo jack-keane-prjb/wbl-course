@@ -43,6 +43,7 @@
 
 
 /* REC: добавить это в сниппеты: (ну или куда-нибудь)*/
+/* Точечки */
 
 /*Horizontal*/
 /* background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
@@ -55,3 +56,16 @@ background-repeat: repeat-x; */
 background-position: right;
 background-size: 1px 3px;
 background-repeat: repeat-y; */
+
+
+@media all and (max-width: 1599px) {
+
+  .itemTags {
+
+    grid-column: span 4;
+  }
+
+  .tagContainer {
+    max-width: 189px;
+  }
+}

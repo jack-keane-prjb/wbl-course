@@ -1,5 +1,7 @@
-.itemImg {
+.itemImgContainer {
   grid-column: span 6;
+  /* display: flex; */
+  /* align-items: flex-end; */
 }
 
 .itemInfo {
@@ -51,4 +53,24 @@
 
 .btntext {
   padding-left: 30px;
+}
+
+@media all and (max-width: 1599px) {
+
+  .itemImgContainer {
+    grid-column: span 5;
+  }
+
+  .itemImg {
+    padding-top: 19px;
+  }
+
+  .itemInfo {
+    grid-column: span 4;
+  }
+
+  .title {
+    margin-bottom: 3px;
+  }
+
 }

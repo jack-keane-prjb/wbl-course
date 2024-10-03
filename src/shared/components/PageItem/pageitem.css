@@ -13,3 +13,21 @@
 .section:last-child {
     margin-bottom: 71px;
 }
+
+@media all and (max-width: 1599px) {
+    .header>*:last-child {
+        padding-bottom: 22px;
+    }
+
+    .NavBar {
+        margin-bottom: 36px;
+    }
+
+    .section {
+        margin-bottom: 70px;
+    }
+
+    .section:last-child {
+        margin-bottom: 68px;
+    }
+}

@@ -36,5 +36,5 @@ export function ItemDescr() {
     descr: item1descr,
   };
 
-  return <div className={styles.container}>{item.descr}</div>;
+  return <div className={styles.itemDescr}>{item.descr}</div>;
 }

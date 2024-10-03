@@ -4,5 +4,16 @@
 }
 
 .similarProductsCard {
-    padding-top: 33px
+    padding-top: 33px;
+    min-height: initial;
+}
+
+@media all and (max-width: 1599px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card4 {
+        display: none;
+    }
 }

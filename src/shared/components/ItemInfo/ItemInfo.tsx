@@ -20,11 +20,13 @@ export function ItemInfo() {
 
   return (
     <>
-      <img
-        className={styles.itemImg}
-        src={item.info.img}
-        alt={item.info.imgAlt}
-      />
+      <div className={styles.itemImgContainer}>
+        <img
+          className={styles.itemImg}
+          src={item.info.img}
+          alt={item.info.imgAlt}
+        />
+      </div>
       <div className={styles.itemInfo}>
         <RankSpan rank={item.info.rank} className={styles.rank} />
         {/*TODO: Разобраться бы еще когда делать все-таки h, а когда просто span */}
