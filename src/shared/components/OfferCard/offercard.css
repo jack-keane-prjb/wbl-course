@@ -63,9 +63,18 @@
   /* min-height: 252px; */
   /* min-height: 150px; */
   /* height: 100%; */
+  /* HERE: */
   min-height: 252px;
   margin-bottom: 0;
   padding: 0 22px;
+}
+
+.heightsmall .imgContainer {
+  min-height: 144px;
+}
+
+.heightsmall .fullPriceSpan {
+  font-size: 16px;
 }
 
 /* REC: попытки внести универсальность приводят к тем же телодвиженями, учитывая усложнение селекторов... */
@@ -98,6 +107,10 @@
   margin-bottom: 23px;
 }
 
+.heightsmall .priceRow {
+  margin-bottom: 28px;
+}
+
 .priceRow>*:not(:last-child) {
   margin-right: 30px;
 }
@@ -125,6 +138,10 @@
   position: absolute;
   right: 30px;
   bottom: 30px;
+}
+
+.rank {
+  padding-left: 32px;
 }
 
 @media all and (max-width: 1599px) {

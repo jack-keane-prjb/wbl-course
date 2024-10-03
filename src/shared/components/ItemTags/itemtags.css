@@ -1,18 +1,24 @@
-.container {
+.itemTags {
   grid-column: span 6;
 }
 
 .tagContainer {
   width: 100%;
   display: flex;
+  max-width: 328px;
   /* align-items: center; */
 }
 
-.tagContainer > *:not(:last-child) {
+.tagContainer>*:not(:last-child) {
   margin-right: 5px;
 }
 
-.tagName, .tag {
+.test {
+  display: flex;
+}
+
+.tagName,
+.tag {
   font-family: Open Sans;
   font-size: 14px;
   font-weight: 400;
@@ -27,7 +33,7 @@
 
 .delimeter {
   width: 100%;
-  background-image: linear-gradient(to right, black 20%, rgba(255,255,255,0) 0%);
+  background-image: linear-gradient(to right, black 20%, rgba(255, 255, 255, 0) 0%);
   background-position: bottom;
   background-size: 5px 1px;
   background-repeat: repeat-x;

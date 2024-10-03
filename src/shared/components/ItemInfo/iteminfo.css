@@ -6,31 +6,33 @@
   grid-column: span 6;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
+  align-items: flex-start;
 }
 
 .rank {
   margin-bottom: 5px;
+  padding-left: 1px;
 }
 
 .title {
   font-family: Open Sans;
-font-size: 24px;
-font-weight: 400;
-line-height: 31.2px;
-text-align: left;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.2px;
+  text-align: left;
 
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .shortDescr {
   margin-bottom: 21px;
   font-family: Open Sans;
-font-size: 14px;
-font-weight: 400;
-line-height: 14px;
-text-align: left;
-color: var(--gray999);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: left;
+  color: var(--gray999);
 }
 
 .price {
@@ -39,10 +41,14 @@ color: var(--gray999);
   font-weight: 400;
   line-height: 46.8px;
   text-align: left;
-margin-bottom: 21px;
+  margin-bottom: 21px;
 }
 
 .btn {
   margin-bottom: 12px;
+  padding: 20px 32px;
 }
 
+.btntext {
+  padding-left: 30px;
+}

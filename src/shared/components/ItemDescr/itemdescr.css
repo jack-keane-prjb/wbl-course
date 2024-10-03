@@ -11,7 +11,7 @@
   line-height: 16px;
   text-align: left;
   color: var(--black);
-  margin-bottom: 5px;
+  margin-bottom: 9px;
 }
 
 .descr {
@@ -23,13 +23,17 @@
   color: var(--black);
 }
 
+.descr:not(:last-of-type) {
+  margin-bottom: 8px;
+}
+
 .imgContainer {
   display: flex;
   align-items: center;
-  padding: 20px 20px;
+  /* padding: 20px 20px; */
   margin-top: auto;
 }
 
-.imgContainer > *:not(:last-child) {
+.imgContainer>*:not(:last-child) {
   margin-right: 20px;
 }

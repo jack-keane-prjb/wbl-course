@@ -9,25 +9,18 @@ import { ItemTags } from '../ItemTags';
 import { NavBar } from '../NavBar';
 import { SimilarProducts } from '../SimilarProducts';
 import styles from './pageitem.css';
+import { ItemSection } from '../ItemSection';
 
 export function PageItem() {
   return (
     <>
-      <Header />
+      <Header className={styles.header} />
       <main className={styles.main}>
-        <Container>
-          <NavBar />
-        </Container>
-        {/* TODO: как лучше делать: каждый компонет пихать в контейнер, или отдельно контейнер прописывать? */}
-        <Container className="grid">
-          <ItemInfo />
-          <ItemDescr />
-          <ItemTags />
-        </Container>
-        <SimilarProducts />
+        <NavBar className={styles.NavBar}>{["D 31"]}</NavBar>
+        <ItemSection className={styles.section} />
+        <SimilarProducts className={styles.section} />
       </main>
       <Footer />
-      <Copyright />
     </>
   );
 }
