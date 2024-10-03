@@ -21,3 +21,7 @@ img {
 body {
   font-family: Arial, Verdana, sans-serif;
 }
+
+fieldset {
+  margin: 0;
+}

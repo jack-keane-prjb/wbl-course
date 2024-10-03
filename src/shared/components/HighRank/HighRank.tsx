@@ -35,42 +35,42 @@ export function HighRank({ className }: { className?: string }) {
             productImg={high_ranked_1_img}
             productName={'Диван кожаный \n “R-94”'}
             fullPrice={'94 990 руб'}
-            button={<ButtonTransparent className={styles.btn} text="Купить" />}
+            button={<ButtonTransparent size='small' text="Купить" />}
           />
           <OfferCardHighRanked
             rank={'4,9'}
             productImg={high_ranked_2_img}
             productName={'Диван апартековый \n “T-75”'}
             fullPrice={'69 990 руб'}
-            button={<ButtonTransparent className={styles.btn} text="Купить" />}
+            button={<ButtonTransparent size='small' text="Купить" />}
           />
           <OfferCardHighRanked
             rank={'4,8'}
             productImg={high_ranked_3_img}
             productName={'Диван тканевый \n “D-31”'}
             fullPrice={'28 490 руб'}
-            button={<ButtonTransparent className={styles.btn} text="Купить" />}
+            button={<ButtonTransparent size='small' text="Купить" />}
           />
           <OfferCardHighRanked
             rank={'4,8'}
             productImg={high_ranked_4_img}
             productName={'Диван велюровый \n “Y-68”'}
             fullPrice={'22 990 руб'}
-            button={<ButtonTransparent className={styles.btn} text="Купить" />}
+            button={<ButtonTransparent size='small' text="Купить" />}
           />
           <OfferCardHighRanked
             rank={'4,8'}
             productImg={high_ranked_5_img}
             productName={'Диван из шинила \n “W-95”'}
             fullPrice={'22 990 руб'}
-            button={<ButtonTransparent className={styles.btn} text="Купить" />}
+            button={<ButtonTransparent size='small' text="Купить" />}
           />
           <OfferCardHighRanked
             rank={'4,8'}
             productImg={high_ranked_6_img}
             productName={'Диван флоковый \n “G-41”'}
             fullPrice={'17 990 руб'}
-            button={<ButtonTransparent className={styles.btn} text="Купить" />}
+            button={<ButtonTransparent size='small' text="Купить" />}
           />
 
           {/* TODO: разобраться тут с логикой на меньших разрешениях: */}
@@ -82,7 +82,7 @@ export function HighRank({ className }: { className?: string }) {
             productName={'Диван шиниловый \n “V-43”'}
             fullPrice={'19 990 руб'}
             button={
-              <ButtonTransparent className={styles.btn} text="Купить" />
+              <ButtonTransparent size='small' text="Купить" />
             }
           />
             <OfferCardHighRanked
@@ -91,7 +91,7 @@ export function HighRank({ className }: { className?: string }) {
               productName={'Диван велюровый \n “S-99”'}
               fullPrice={'19 990 руб'}
               button={
-                <ButtonTransparent className={styles.btn} text="Купить" />
+                <ButtonTransparent size='small' text="Купить" />
               }
             /></>}
 
@@ -107,7 +107,7 @@ export function HighRank({ className }: { className?: string }) {
                 productName={'Диван шиниловый \n “V-43”'}
                 fullPrice={'19 990 руб'}
                 button={
-                  <ButtonTransparent className={styles.btn} text="Купить" />
+                  <ButtonTransparent size='small' text="Купить" />
                 }
               />
               <OfferCardHighRanked
@@ -116,7 +116,7 @@ export function HighRank({ className }: { className?: string }) {
                 productName={'Диван велюровый \n “S-99”'}
                 fullPrice={'19 990 руб'}
                 button={
-                  <ButtonTransparent className={styles.btn} text="Купить" />
+                  <ButtonTransparent size='small' text="Купить" />
                 }
               />
             </>

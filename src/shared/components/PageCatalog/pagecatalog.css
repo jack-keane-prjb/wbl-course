@@ -26,4 +26,14 @@
   .main {
     margin-bottom: 70px;
   }
+
+  .header>*:last-child {
+    padding-bottom: 25px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .grid {
+    row-gap: 30px;
+  }
 }

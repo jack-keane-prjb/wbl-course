@@ -22,3 +22,13 @@
   color: var(--gray999);
   padding: 0 5px;
 }
+
+@media all and (max-width: 767px) {
+
+  /* 320px */
+
+  .navBar {
+    display: none;
+  }
+
+}

@@ -90,3 +90,17 @@
     }
 
 }
+
+@media all and (max-width: 767px) {
+    .grid {
+        column-gap: 16px;
+        row-gap: 16px;
+    }
+
+    /* .card {
+        padding: 17px 5px 2px;
+    } */
+    .card3 {
+        order: 3;
+    }
+}

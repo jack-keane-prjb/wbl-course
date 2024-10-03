@@ -130,3 +130,39 @@
 
 
 }
+
+@media all and (max-width: 767px) {
+
+  /* 320px */
+  .filtersContainer {
+    flex-wrap: wrap;
+  }
+
+  .filterWrapper {
+    margin-bottom: 21px;
+  }
+
+  .filterWrapper:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .filterWrapper:last-child {
+    margin-bottom: 0;
+  }
+
+  .filterWrapper:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .sidebar {
+    padding: 0;
+  }
+
+  .title {
+    margin-bottom: 26px;
+  }
+
+  .filterNamePrice {
+    margin-bottom: 7px;
+  }
+}

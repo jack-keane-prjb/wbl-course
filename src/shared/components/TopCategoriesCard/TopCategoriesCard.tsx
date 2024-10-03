@@ -37,6 +37,7 @@ export function TopCategoriesCard(props: ITopCategoriesCard) {
     return span;
   });
 
+  // REC: хороший вариант задавть classnames:
   const cardClasses = size ? classNames(styles[`size${size}`]) : "";
 
   // console.log(cardClasses);
