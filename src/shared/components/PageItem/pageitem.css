@@ -30,4 +30,13 @@
     .section:last-child {
         margin-bottom: 68px;
     }
+
+}
+
+@media all and (max-width: 1023px) {
+
+    .NavBar {
+        margin-bottom: 13px;
+    }
+
 }

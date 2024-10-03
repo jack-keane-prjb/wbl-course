@@ -69,3 +69,9 @@ background-repeat: repeat-y; */
     max-width: 189px;
   }
 }
+
+@media all and (max-width: 1599px) {
+  .itemTags {
+    grid-column: initial;
+  }
+}

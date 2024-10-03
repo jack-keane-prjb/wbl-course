@@ -74,3 +74,11 @@
   }
 
 }
+
+@media all and (max-width: 1024px) {
+
+  .itemImgContainer,
+  .itemInfo {
+    grid-column: initial;
+  }
+}

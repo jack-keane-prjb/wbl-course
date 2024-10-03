@@ -43,3 +43,9 @@
     grid-column: span 5;
   }
 }
+
+@media all and (max-width: 1599px) {
+  .itemDescr {
+    grid-column: initial;
+  }
+}
