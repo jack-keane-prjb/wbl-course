@@ -11,6 +11,8 @@ import { SimilarProducts } from '../SimilarProducts';
 import styles from './pageitem.css';
 import { ItemSection } from '../ItemSection';
 
+
+
 export function PageItem() {
   return (
     <>

@@ -51,7 +51,7 @@
   padding: 20px 32px;
 }
 
-.btntext {
+.btnTextWrapper {
   padding-left: 30px;
 }
 
@@ -80,5 +80,41 @@
   .itemImgContainer,
   .itemInfo {
     grid-column: initial;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .itemImg {
+    padding-top: 3px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .title {
+    font-size: 15.9px;
+  }
+
+  .rank {
+    margin-bottom: 1px;
+  }
+
+  .shortDescr {
+    margin-bottom: 8px;
+  }
+
+  .price {
+    font-size: 24px;
+    margin-bottom: 7px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .btnTextWrapper {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
   }
 }

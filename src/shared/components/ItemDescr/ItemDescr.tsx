@@ -20,11 +20,11 @@ export function ItemDescr() {
         справится.
       </p>
       <div className={styles.imgContainer}>
-        <img
+        <img className={styles.desсrImg}
           src={item1DescrPic1}
           alt="Раскладывающийся механизм дивана. Изображение 1"
         />
-        <img
+        <img className={styles.desсrImg}
           src={item1DescrPic2}
           alt="Раскладывающийся механизм дивана. Изображение 2"
         />

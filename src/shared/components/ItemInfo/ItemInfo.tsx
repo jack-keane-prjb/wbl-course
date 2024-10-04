@@ -34,7 +34,9 @@ export function ItemInfo() {
         <span className={styles.shortDescr}>{item.info.shortDescr}</span>
         <span className={styles.price}>{item.info.price}</span>
         <Button className={styles.btn}>Купить в один клик</Button>
-        <ButtonText className={styles.btntext}>+ Добавить в корзину</ButtonText>
+        <div className={styles.btnTextWrapper}>
+          <ButtonText className={styles.btntext}>+ Добавить в корзину</ButtonText>
+        </div>
       </div>
     </>
   );

@@ -34,7 +34,7 @@
   margin-top: auto;
 }
 
-.imgContainer>*:not(:last-child) {
+.desсrImg:not(:last-child) {
   margin-right: 20px;
 }
 
@@ -55,5 +55,23 @@
     max-width: 532px;
     min-height: 327px;
   }
+}
 
+@media all and (max-width: 767px) {
+  .itemDescr {
+    padding-top: 16px;
+  }
+
+  .imgContainer {
+    min-height: 166px;
+    padding-bottom: 43px;
+  }
+
+  .desсrImg {
+    max-width: 143px;
+  }
+
+  .desсrImg:not(:last-child) {
+    margin-right: 10px;
+  }
 }

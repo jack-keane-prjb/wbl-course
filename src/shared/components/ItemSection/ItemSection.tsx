@@ -17,6 +17,5 @@ export function ItemSection({ className = "" }: { className?: string }) {
         </div>
       </Container>
     </section>
-
   </>
 }

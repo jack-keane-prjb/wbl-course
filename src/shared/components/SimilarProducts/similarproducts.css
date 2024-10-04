@@ -3,11 +3,6 @@
     margin-bottom: 23px;
 }
 
-.similarProductsCard {
-    padding-top: 33px;
-    min-height: initial;
-}
-
 @media all and (max-width: 1599px) {
     .grid {
         grid-template-columns: repeat(3, 1fr);
@@ -27,4 +22,17 @@
     .card3 {
         display: none;
     }
+
+    .btn {
+        padding: 12px 25px;
+        /* width: 100%; */
+    }
+}
+
+@media all and (max-width: 767px) {
+    .grid {
+        column-gap: 15px;
+    }
+
+    .btn {}
 }

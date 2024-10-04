@@ -21,8 +21,8 @@ export function SimilarProducts({ className = "" }: { className?: string }) {
             productName={'Диван кожаный “R-94”'}
             fullPrice={'94 990 руб'}
             height='small'
-            className={`${styles.similarProductsCard} ${styles.card1}`}
-            button={<ButtonTransparent text="Купить"
+            className={`${styles.card1}`}
+            button={<ButtonTransparent text="Купить" className={styles.btn}
             />}
           />
           <OfferCard
@@ -31,8 +31,8 @@ export function SimilarProducts({ className = "" }: { className?: string }) {
             productName={'Диван кожаный “R-94”'}
             fullPrice={'94 990 руб'}
             height='small'
-            className={`${styles.similarProductsCard} ${styles.card2}`}
-            button={<ButtonTransparent text="Купить"
+            className={`${styles.card2}`}
+            button={<ButtonTransparent text="Купить" className={styles.btn}
             />}
           />
           <OfferCard
@@ -41,8 +41,8 @@ export function SimilarProducts({ className = "" }: { className?: string }) {
             productName={'Диван кожаный “R-94”'}
             fullPrice={'94 990 руб'}
             height='small'
-            className={`${styles.similarProductsCard} ${styles.card3}`}
-            button={<ButtonTransparent text="Купить"
+            className={`${styles.card3}`}
+            button={<ButtonTransparent text="Купить" className={styles.btn}
             />}
           />
           <OfferCard
@@ -51,8 +51,8 @@ export function SimilarProducts({ className = "" }: { className?: string }) {
             productName={'Диван кожаный “R-94”'}
             fullPrice={'94 990 руб'}
             height='small'
-            className={`${styles.similarProductsCard} ${styles.card4}`}
-            button={<ButtonTransparent text="Купить"
+            className={`${styles.card4}`}
+            button={<ButtonTransparent text="Купить" className={styles.btn}
             />}
           />
         </div>

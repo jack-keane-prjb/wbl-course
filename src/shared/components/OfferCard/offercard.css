@@ -144,6 +144,11 @@
   padding-left: 32px;
 }
 
+.heightsmall .similarProductsCard {
+  padding-top: 33px;
+  min-height: initial;
+}
+
 @media all and (max-width: 1599px) {
   /* 1024x */
 
@@ -210,5 +215,47 @@
 
   .additionalImg {
     display: none;
+  }
+
+  .heightsmall.card {
+    min-height: initial;
+    padding: 16px 15px;
+  }
+
+  .heightsmall .imgContainer {
+    min-height: 62px;
+    padding: 0;
+    margin-bottom: 9px;
+  }
+
+  .heightsmall .productImg {
+    padding: 0;
+    /* max-height: 46px; */
+  }
+
+  .heightsmall .col {
+    padding: 0;
+  }
+
+  .heightsmall .productName {
+    font-size: 15px;
+    line-height: 19px;
+    /* max-width: 20px; */
+    padding-left: 0;
+    margin-bottom: 23px;
+  }
+
+  .heightsmall .rank {
+    padding-left: 0;
+    margin-bottom: 6px;
+  }
+
+  .heightsmall .priceRow {
+    padding-left: 0;
+    margin-bottom: 16px;
+  }
+
+  .heightsmall .container {
+    /* padding: 5px 10px; */
   }
 }

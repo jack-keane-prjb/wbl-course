@@ -80,3 +80,27 @@ background-repeat: repeat-y; */
     max-width: 408px;
   }
 }
+
+@media all and (max-width: 767px) {
+  .delimeter {
+    display: none;
+  }
+
+  .tagContainer {
+    width: initial;
+    /* flex-direction: column; */
+  }
+
+  .tagRow {
+    flex-direction: column;
+  }
+
+  .tagName {
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  .tagRow {
+    margin-bottom: 5.9px;
+  }
+}

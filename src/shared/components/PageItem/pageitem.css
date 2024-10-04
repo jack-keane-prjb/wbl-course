@@ -1,3 +1,7 @@
+.cont {
+    display: flex;
+}
+
 .header>*:last-child {
     padding-bottom: 19px;
 }
@@ -40,11 +44,11 @@
     }
 
     .section {
-        margin-bottom: 30px;
+        margin-bottom: 60px;
     }
 
     .section:last-child {
-        margin-bottom: 68px;
+        margin-bottom: 71px;
     }
 
 }
