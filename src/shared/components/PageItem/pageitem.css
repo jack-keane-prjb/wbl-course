@@ -39,4 +39,12 @@
         margin-bottom: 13px;
     }
 
+    .section {
+        margin-bottom: 30px;
+    }
+
+    .section:last-child {
+        margin-bottom: 68px;
+    }
+
 }

@@ -24,105 +24,105 @@ export function ItemTags() {
 
   return (
     <div className={styles.itemTags}>
-      <div className={styles.test}>
+      <div className={styles.tagRow}>
         <div className={styles.tagContainer}>
           <span className={styles.tagName}>Гарантия</span>
           <span className={styles.delimeter}></span>
         </div>
         <span className={styles.tag}>{item.tags.guarantee}</span>
       </div>
-      <div className={styles.test}>
+      <div className={styles.tagRow}>
         <div className={styles.tagContainer}>
           <span className={styles.tagName}>Артикул</span>
           <span className={styles.delimeter}></span>
         </div>
         <span className={styles.tag}>{item.tags.vendorСode}</span>
       </div>
-      <div className={styles.test}>
+      <div className={styles.tagRow}>
         <div className={styles.tagContainer}>
           <span className={styles.tagName}>Длина</span>
           <span className={styles.delimeter}></span>
         </div>
         <span className={styles.tag}>{item.tags.length}</span>
       </div>
-      <div className={styles.test}>
+      <div className={styles.tagRow}>
         <div className={styles.tagContainer}>
           <span className={styles.tagName}>Высота</span>
           <span className={styles.delimeter}></span>
         </div>
         <span className={styles.tag}>{item.tags.height}</span>
       </div>
-      <div className={styles.test}>
+      <div className={styles.tagRow}>
         <div className={styles.tagContainer}>
           <span className={styles.tagName}>Глубина</span>
           <span className={styles.delimeter}></span>
         </div>
         <span className={styles.tag}>{item.tags.depth}</span>
       </div>
-      <div className={styles.test}>
+      <div className={styles.tagRow}>
         <div className={styles.tagContainer}>
           <span className={styles.tagName}>Спальное место</span>
           <span className={styles.delimeter}></span>
         </div>
         <span className={styles.tag}>{item.tags.sleepingArea}</span>
       </div>
-      <div className={styles.test}>
+      <div className={styles.tagRow}>
         <div className={styles.tagContainer}>
           <span className={styles.tagName}>Высота посадки</span>
           <span className={styles.delimeter}></span>
         </div>
         <span className={styles.tag}>{item.tags.rideHeight}</span>
       </div>
-      <div className={styles.test}>
+      <div className={styles.tagRow}>
         <div className={styles.tagContainer}>
           <span className={styles.tagName}>Механизм</span>
           <span className={styles.delimeter}></span>
         </div>
         <span className={styles.tag}>{item.tags.mechanism}</span>
       </div>
-      <div className={styles.test}>
+      <div className={styles.tagRow}>
         <div className={styles.tagContainer}>
           <span className={styles.tagName}>Тип обивки</span>
           <span className={styles.delimeter}></span>
         </div>
         <span className={styles.tag}>{item.tags.upholsteryType}</span>
       </div>
-      <div className={styles.test}>
+      <div className={styles.tagRow}>
         <div className={styles.tagContainer}>
           <span className={styles.tagName}>Цвет</span>
           <span className={styles.delimeter}></span>
         </div>
         <span className={styles.tag}>{item.tags.color}</span>
       </div>
-      <div className={styles.test}>
+      <div className={styles.tagRow}>
         <div className={styles.tagContainer}>
           <span className={styles.tagName}>Наполнитель</span>
           <span className={styles.delimeter}></span>
         </div>
         <span className={styles.tag}>{item.tags.filler}</span>
       </div>
-      <div className={styles.test}>
+      <div className={styles.tagRow}>
         <div className={styles.tagContainer}>
           <span className={styles.tagName}>Материал каркаса</span>
           <span className={styles.delimeter}></span>
         </div>
         <span className={styles.tag}>{item.tags.frameMaterial}</span>
       </div>
-      <div className={styles.test}>
+      <div className={styles.tagRow}>
         <div className={styles.tagContainer}>
           <span className={styles.tagName}>Количество мест</span>
           <span className={styles.delimeter}></span>
         </div>
         <span className={styles.tag}>{item.tags.numberOfSeats}</span>
       </div>
-      <div className={styles.test}>
+      <div className={styles.tagRow}>
         <div className={styles.tagContainer}>
           <span className={styles.tagName}>Категория</span>
           <span className={styles.delimeter}></span>
         </div>
         <span className={styles.tag}>{item.tags.category}</span>
       </div>
-      <div className={styles.test}>
+      <div className={styles.tagRow}>
         <div className={styles.tagContainer}>
           <span className={styles.tagName}>Возврат</span>
           <span className={styles.delimeter}></span>

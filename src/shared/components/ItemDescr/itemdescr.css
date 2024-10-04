@@ -49,3 +49,11 @@
     grid-column: initial;
   }
 }
+
+@media all and (max-width: 1023px) {
+  .itemDescr {
+    max-width: 532px;
+    min-height: 327px;
+  }
+
+}

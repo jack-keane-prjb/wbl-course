@@ -13,7 +13,7 @@
   margin-right: 5px;
 }
 
-.test {
+.tagRow {
   display: flex;
 }
 
@@ -70,8 +70,13 @@ background-repeat: repeat-y; */
   }
 }
 
-@media all and (max-width: 1599px) {
+@media all and (max-width: 1023px) {
   .itemTags {
     grid-column: initial;
+    margin-top: -54px;
+  }
+
+  .tagContainer {
+    max-width: 408px;
   }
 }
