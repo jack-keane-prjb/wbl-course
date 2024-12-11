@@ -4,7 +4,7 @@ import { RankSpan } from '../RankSpan';
 import styles from './offercard.css';
 
 type TSpecialOfferCardSizes = '1x' | '2x';
-type TSpecialOfferCardHeights = 'small' | ''
+type TSpecialOfferCardHeights = 'small' | '';
 
 export interface ISpecialOfferCard {
   discount?: string;
@@ -35,7 +35,10 @@ export function OfferCard(props: ISpecialOfferCard) {
     className = '',
   } = props;
 
-  const cardClasses = classNames(styles[`card${size}`], styles[`height${height}`]);
+  const cardClasses = classNames(
+    styles[`card${size}`],
+    styles[`height${height}`]
+  );
 
   const fullPriceClasses = classNames({
     [styles.striked]: priceDicounted,
@@ -43,23 +46,29 @@ export function OfferCard(props: ISpecialOfferCard) {
 
   return (
     <div className={`${styles.card} ${cardClasses} ${className}`}>
-      {/* PixP: добавил доп обертку. Возможны сдвиги. */}
       <div className={styles.container}>
         {discount && (
           <span className={styles.spanDiscount}>{`- ${discount}`}</span>
         )}
         {rank && <RankSpan rank={rank} className={styles.rank} />}
         <div className={`${styles.imgContainer}`}>
-          <img src={productImg} alt="productImg" className={styles.productImg} />
+          <img
+            src={productImg}
+            alt="productImg"
+            className={styles.productImg}
+          />
         </div>
         <div className={styles.col}>
           <span className={styles.productName}>{productName}</span>
           <div className={styles.priceRow}>
             {priceDicounted && (
-              <span className={styles.priceDicounted}>{`${priceDicounted}`}</span>
+              <span
+                className={styles.priceDicounted}
+              >{`${priceDicounted}`}</span>
             )}
-            {/* REC: Тут просто схалтурил и просто буду копировать цену с руб */}
-            <span className={`${styles.fullPriceSpan} ${fullPriceClasses}`}>{fullPrice}</span>
+            <span className={`${styles.fullPriceSpan} ${fullPriceClasses}`}>
+              {fullPrice}
+            </span>
           </div>
           {button}
         </div>

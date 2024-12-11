@@ -1,6 +1,6 @@
 .PageMainGroup1 {
     padding: 70px 0;
-    /* PixP: */
+
     padding-top: 72px;
 
 }
@@ -11,10 +11,10 @@
 
 @media (max-width: 1023px) {
 
-    /* 768px */
+
     .PageMainGroup1 {
         padding: 68px 0;
-        /* PixP: */
+
         padding-bottom: 70px;
 
     }
@@ -25,10 +25,10 @@
 
 @media (max-width: 767px) {
 
-    /* 320px */
+
     .PageMainGroup1 {
         padding: 41px 0;
-        /* PixP: */
+
         padding-bottom: 68px;
     }
 }

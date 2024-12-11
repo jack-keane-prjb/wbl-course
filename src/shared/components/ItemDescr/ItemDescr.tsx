@@ -15,16 +15,17 @@ export function ItemDescr() {
         опустить спинку.
       </p>
       <p className={styles.descr}>
-        Этот механизм не портит пол и не боится ковров.
-        Требуется чуть больше силы, чтобы разложить диван, но подросток
-        справится.
+        Этот механизм не портит пол и не боится ковров. Требуется чуть больше
+        силы, чтобы разложить диван, но подросток справится.
       </p>
       <div className={styles.imgContainer}>
-        <img className={styles.desсrImg}
+        <img
+          className={styles.desсrImg}
           src={item1DescrPic1}
           alt="Раскладывающийся механизм дивана. Изображение 1"
         />
-        <img className={styles.desсrImg}
+        <img
+          className={styles.desсrImg}
           src={item1DescrPic2}
           alt="Раскладывающийся механизм дивана. Изображение 2"
         />

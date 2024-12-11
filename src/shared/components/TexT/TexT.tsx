@@ -24,7 +24,6 @@ export enum EColors {
 }
 
 export interface ITextProps {
-  // REC: тут я, получается, не пользую фичи, связанные с размером. Тогда вообще в этом смысла нет.
   As?: 'span' | 'h1' | 'h2' | 'h3' | 'h4' | 'p' | 'div';
   children?: React.ReactNode;
   size?: TSizes;
@@ -45,8 +44,6 @@ export function TexT(props: ITextProps) {
     bold = false,
     className,
   } = props;
-
-  // TODO: добавить это в сниппеты, а то каждый раз сюда лезу:
 
   const classes = classNames(styles[`s${size}`], styles[color], {
     [styles.bold]: bold,

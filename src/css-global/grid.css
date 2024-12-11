@@ -1,9 +1,7 @@
 #react_root {
   margin: 0;
   display: grid;
-  /* REC: тут надо именно два раза прописать 1fr (за каждую колонку) */
   grid-template-columns: 1fr;
-  /* TODO: Возможно, тут указано неправильно: ибо, похоже, что это относится к классам, а не тегам */
   grid-template-areas:
     'header'
     'main'
@@ -43,6 +41,6 @@ footer {
 @media all and (max-width: 767px) {
   .grid {
     grid-template-columns: 1fr;
-    /* padding: 10px; */
+
   }
 }

@@ -8,14 +8,16 @@ interface INavBar {
 }
 
 export function NavBar({ className, children = [] }: INavBar) {
-
-  // REC: даже вспомнил, как это делается:
   const path = children.map((child) => {
-    return <>
-      <span className={styles.delimeter}>/</span>
-      <a href="#" className={`${styles.pathPart} ${styles.pathPartLast}`}>{child}</a>
-    </>
-  })
+    return (
+      <>
+        <span className={styles.delimeter}>/</span>
+        <a href="#" className={`${styles.pathPart} ${styles.pathPartLast}`}>
+          {child}
+        </a>
+      </>
+    );
+  });
 
   return (
     <Container>
@@ -36,7 +38,6 @@ export function NavBar({ className, children = [] }: INavBar) {
           Прямые диваны
         </a>
         {path}
-
       </div>
     </Container>
   );

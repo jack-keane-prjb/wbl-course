@@ -2,7 +2,7 @@
   display: flex;
   width: 36px;
   height: 36px;
-  /* justify-content: center; */
+
   align-items: center;
   transition: background-color 0.2s ease-in-out;
 }
@@ -11,19 +11,19 @@
   background-color: var(--purpleC99);
 }
 
-.link:focus > svg path {
+.link:focus>svg path {
   fill: var(--white);
 }
 
-.link:hover > svg path {
+.link:hover>svg path {
   fill: var(--purpleA65);
 }
 
-.link:active > svg path {
+.link:active>svg path {
   fill: var(--purple703);
 }
 
-.link > svg path {
+.link>svg path {
   transition: fill 0.2s ease-in-out;
 }
 

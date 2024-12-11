@@ -2,13 +2,7 @@
     padding: 34px 0;
 }
 
-/* .row {
-  padding: 34px 0;
-}
 
-.row > *:not(:last-child) {
-  margin-bottom: 32px;
-} */
 
 .section {
     display: none;
@@ -16,7 +10,7 @@
 
 @media all and (max-width: 1599px) {
 
-    /* 1024px */
+
     .section {
         display: block;
         padding-top: 20px;
@@ -26,7 +20,7 @@
 
 @media all and (max-width: 1023px) {
 
-    /* 768px */
+
     .section {
         padding: 20px 0;
         padding-bottom: 21px;
@@ -35,7 +29,7 @@
 
 @media all and (max-width: 767px) {
 
-    /* 320px */
+
     .section {
         display: none;
     }

@@ -29,13 +29,14 @@ export function ItemInfo() {
       </div>
       <div className={styles.itemInfo}>
         <RankSpan rank={item.info.rank} className={styles.rank} />
-        {/*TODO: Разобраться бы еще когда делать все-таки h, а когда просто span */}
         <h2 className={styles.title}>{item.info.title}</h2>
         <span className={styles.shortDescr}>{item.info.shortDescr}</span>
         <span className={styles.price}>{item.info.price}</span>
         <Button className={styles.btn}>Купить в один клик</Button>
         <div className={styles.btnTextWrapper}>
-          <ButtonText className={styles.btntext}>+ Добавить в корзину</ButtonText>
+          <ButtonText className={styles.btntext}>
+            + Добавить в корзину
+          </ButtonText>
         </div>
       </div>
     </>

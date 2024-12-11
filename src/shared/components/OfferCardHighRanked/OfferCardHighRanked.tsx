@@ -3,7 +3,6 @@ import React from 'react';
 import { RankSpan } from '../RankSpan';
 import styles from './offercardhighranked.css';
 
-// TODO: это можно подчистить, ибо я не использую тут размеры
 export interface IOfferCardHighRanked {
   discount?: string;
   rank?: string;
@@ -26,7 +25,7 @@ export function OfferCardHighRanked(props: IOfferCardHighRanked) {
     fullPrice,
     button,
     additionalImg = '',
-    className = "",
+    className = '',
   } = props;
 
   const fullPriceClasses = classNames({
@@ -55,7 +54,6 @@ export function OfferCardHighRanked(props: IOfferCardHighRanked) {
                 className={styles.priceDicounted}
               >{`${priceDicounted}`}</span>
             )}
-            {/* REC: Тут просто схалтурил и просто буду копировать цену с руб */}
             <span className={`${styles.fullPrice} ${fullPriceClasses}`}>
               {fullPrice}
             </span>

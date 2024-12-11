@@ -1,6 +1,3 @@
-/* REC: универсализация - это очень хорошо. Однако, кода дело доходит до пиксель перфект, то приходится втыкать вот такие ненужные стили. И ничего с этим не сделаешь. */
-/* Так что БЭМ, либо css-модули тащат (намного проще именование) */
-
 .sectionTitle {
   margin-bottom: 26px;
 }
@@ -9,7 +6,7 @@
   row-gap: 32px;
 }
 
-/* REC: вот так меняю порядок карточек */
+
 
 .card1 {
   order: 1;
@@ -36,11 +33,11 @@
   grid-column: span 4;
 }
 
-/* REC: я еще свойства пишу через жопу, ибо у меня медиа-запросы подразумевают, что я делаю desktop-first. Но в какой-то момент я отсупы подгонять с 320пкс. Что с этого получиться я вообще хз.*/
+
 
 @media all and (max-width: 1599px) {
 
-  /* 1024x */
+
   .container {
     padding-top: 72px;
     padding-bottom: 50px;
@@ -50,7 +47,7 @@
     margin-bottom: 25px;
   }
 
-  /* TODO: есть дубликаты свойств в разных медиа-запросах. Решать бы как-нибудь этот вопрос. */
+
   .grid {
     grid-template-columns: repeat(6, 1fr);
     row-gap: 32px;
@@ -72,7 +69,7 @@
 
   .card4 {
     grid-column: span 2;
-    /* order: 3; */
+
   }
 
   .card5 {
@@ -83,13 +80,13 @@
 
 @media all and (max-width: 1023px) {
 
-  /* 768px */
+
   .grid {
-    /* padding: 64px 74px; */
-    /* row-gap: 31px; */
+
+
     grid-template-columns: 1fr 1fr;
     column-gap: 32px;
-    /* padding: 0; */
+
   }
 
   .card {
@@ -113,14 +110,14 @@
 
 @media all and (max-width: 767px) {
 
-  /* 320px */
+
   .grid {
     grid-template-columns: 1fr 1fr;
-    /* grid-template-columns: 1fr; */
+
     padding: 0;
     padding-top: 26px;
     column-gap: 14px;
-    /* row-gap: 32px; */
+
   }
 
   .card {

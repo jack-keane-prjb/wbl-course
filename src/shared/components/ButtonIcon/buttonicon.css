@@ -1,16 +1,11 @@
 .btn {
   height: 36px;
   position: relative;
-  /* padding: 0 5px; */
   transition: background-color .2s ease-in-out;
 }
 
 .btn svg path {
   transition: fill .2s ease-in-out;
-}
-
-.btn:hover svg path {
-  fill: var(--purpleC99);
 }
 
 .btn:focus svg path {
@@ -20,6 +15,11 @@
 .btn:focus {
   background-color: var(--purpleC99);
 }
+
+.btn:hover svg path {
+  fill: var(--purpleC99);
+}
+
 
 .btn:active {
   background-color: transparent;

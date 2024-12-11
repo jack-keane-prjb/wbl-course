@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Container } from '../Container';
 import { OfferCard } from '../OfferCard';
 import styles from './specialoffers.css';
@@ -14,18 +14,17 @@ import special_offer_6_img from '../../../assets/img/special_offer_6.png';
 import { ButtonTransparent } from '../ButtonTransparent';
 import useWindowSizeMediaQuery from '../../../utils/js/hooks/useWindowSizeMediaQuery';
 
-// TODO: поудалять лишний className, где это не надо:
 export function SpecialOffers({ className }: { className?: string }) {
-  // REC: правильная обработка media queries в react:
-
-  const is320px = useWindowSizeMediaQuery('(min-width: 320px) and (max-width: 767px)')
-  const is768px = useWindowSizeMediaQuery('(min-width: 768px) and (max-width: 1023px)')
-
+  const is320px = useWindowSizeMediaQuery(
+    '(min-width: 320px) and (max-width: 767px)'
+  );
+  const is768px = useWindowSizeMediaQuery(
+    '(min-width: 768px) and (max-width: 1023px)'
+  );
 
   return (
     <section>
       <Container>
-        {/* REC:  вообще для заголовков комонет текст - ну такое себе */}
         <h2 className={`sectionTitle ${styles.sectionTitle}`}>
           Специальные предложения
         </h2>
@@ -48,7 +47,6 @@ export function SpecialOffers({ className }: { className?: string }) {
             button={<ButtonTransparent text="Купить" />}
             additionalImg={special_offer_2_2_img}
           />
-          {/* REC: это надо читать, как "на 768 не будет выводиться эта карточка"*/}
           {!is768px && (
             <OfferCard
               discount="600"

@@ -9,7 +9,7 @@
 
 .grid {
     display: grid;
-    /* grid-auto-rows: auto; */
+
     column-gap: 32px;
     row-gap: 26px;
 
@@ -64,8 +64,8 @@
 
     .grid {
         grid-template-columns: repeat(3, 1fr);
-        /* grid-template-columns: 1fr; */
-        /* column-gap: 32px; */
+
+
         row-gap: 32px;
     }
 
@@ -82,7 +82,6 @@
         order: 5;
     }
 
-    /* TODO: реально подумать, как лучше скрывать элементы. Через CSS или через JS. Пока что у меня смесь. */
     .card7,
     .card8,
     .card9 {
@@ -97,9 +96,7 @@
         row-gap: 16px;
     }
 
-    /* .card {
-        padding: 17px 5px 2px;
-    } */
+
     .card3 {
         order: 3;
     }

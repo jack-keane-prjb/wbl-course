@@ -1,5 +1,5 @@
 .card {
-  /* padding: 30px; */
+
   background-color: var(--grayF6);
   position: relative;
   display: flex;
@@ -26,9 +26,9 @@
   padding: 30px 30px 29px 30px;
 }
 
-/* .descrContainer > *:not(:last-child) { */
-/* margin-bottom: 20px; */
-/* } */
+
+
+
 
 .subcategories {
   margin-bottom: 14px;
@@ -55,36 +55,23 @@
   line-height: 32.68px;
   text-align: left;
   color: var(--black);
-  /* margin-bottom: 29px; */
+
 }
 
-.imgContainer {
-  /* display: flex; */
-  /* align-items: flex-end; */
-  /* height: 100%; */
-  /* min-height: 339px; */
-}
+.imgContainer {}
 
 .picture {
-  /* min-height: 303px; */
+
   display: flex;
   align-items: flex-end;
 }
 
-.categoryImg {
-  /* position: absolute; */
-  /* margin-left: -30px; */
-  /* margin-bottom: 30px; */
-  /* REC: новое свойство для object-fit */
-  /* object-fit: contain; */
-  /* object-position: left center; */
-  /* min-height: 311px; */
-}
+.categoryImg {}
 
 .titleContainer {
   display: flex;
   align-items: center;
-  /* margin-bottom: 29px; */
+
 }
 
 .nameBtn {
@@ -96,22 +83,22 @@
   margin-top: auto;
 }
 
-/* TODO: скорее всего, если я хотел начинать с мобилок, то надо были писать min-width: 320 и т.д. Тогда бы свойста навешивались. Надо переделать. */
-/* REC: так еще удобнее получается, ибо попадаешь точно в размер макета, а дальше расширение. */
-/* @media all and (max-width: 767px) { */
 
-/* UPD: в таком случае, ВООБЩЕ ВСЕ надо переделывать, ибо дефолтные размеры шрифта указаны для 1920 и все прочее. Так что нет. */
-/* А вообще, наверное, прикольно начинать с мобилы. */
+
+
+
+
+
 
 @media all and (max-width: 1599px) {
 
-  /* 1024x */
+
 
   .card,
   .sizesmall.card {
-    /* grid-column: initial; */
+
     min-height: 511px;
-    /* padding: 0; */
+
   }
 
   .nameBtn {
@@ -129,7 +116,7 @@
 
 @media all and (max-width: 1023px) {
 
-  /* 768px */
+
   .card {
     grid-column: initial;
     min-height: 511px;
@@ -183,8 +170,8 @@
   .btnContainer {
     margin-top: auto;
     padding: 30px 31px 29px;
-    /* padding-bottom: 36px; */
-    /* padding-top: 30px; */
+
+
   }
 
 
@@ -192,7 +179,7 @@
 
 @media all and (max-width: 767px) {
 
-  /* 320px */
+
   .card {
     grid-column: initial;
     padding: 19px 0;
@@ -204,8 +191,8 @@
   .card2x {
     grid-column: span 2;
     padding-top: 29px;
-    /* Убрал, ибо изменил логику верстки карточки */
-    /* padding-bottom: 17px; */
+
+
   }
 
   .subcategories {
@@ -299,7 +286,7 @@
   }
 
 
-  /* TODO: не очень нравится мне это решение. Но другого что-то придумать не могу. Ибо навешвать доп классы вне компоннета не хочется - там уже и так много доп. классов. */
+
 
   .link {
     font-size: 10px;
@@ -346,8 +333,8 @@
     grid-column: initial;
     padding-top: 0;
     padding-bottom: 16px;
-    /* TODO: прописать новый тег КОСТЫЛЬ */
-    /* REC: вот это костыль */
+
+
     max-height: 206px;
     min-height: initial;
   }

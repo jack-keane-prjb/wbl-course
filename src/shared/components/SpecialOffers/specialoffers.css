@@ -2,12 +2,10 @@
   margin-bottom: 25px;
 }
 
-.grid {
-  /* grid-template-columns: repeat(9, 1fr); */
-}
+.grid {}
 
 @media all and (max-width: 1599px) {
-  /* 1024x */
+
 
   .container {
     padding: 0;
@@ -24,7 +22,7 @@
 
 @media all and (max-width: 1023px) {
 
-  /* 768px */
+
   .container {
     margin-bottom: 71px;
   }
@@ -36,7 +34,7 @@
 
 @media all and (max-width: 767px) {
 
-  /* 320px */
+
 
   .container {
     padding: 61px 12px;

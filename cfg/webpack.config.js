@@ -1,5 +1,4 @@
 const path = require('path');
-// const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const GLOBAL_CSS_REGEXP = /\.global\.css$/;
 
@@ -45,21 +44,18 @@ module.exports = (env) => {
       ],
     },
     fonts: {
-      // TODO: обноавить это в шаблоне
       test: /\.(woff|woff2|eot|ttf|otf)$/,
-      // type: 'asset/resource',
+
       use: [
         {
           loader: 'file-loader',
           options: {
-            // TODO: обновить конфиг вебпака. Добавил вот это:
-            name: isDevMode ? "assets/fonts/[name].[ext]" : 'assets/fonts/[contenthash].[ext]'
+            name: isDevMode
+              ? 'assets/fonts/[name].[ext]'
+              : 'assets/fonts/[contenthash].[ext]',
           },
         },
       ],
-      // generator: {
-      //   filename: '/assets/[name][ext]',
-      // },
     },
     pics: {
       test: /\.(png|jpg|gif)$/,
@@ -67,8 +63,9 @@ module.exports = (env) => {
         {
           loader: 'file-loader',
           options: {
-            // TODO: обновить конфиг вебпака. Добавил вот это:
-            name: isDevMode ? "assets/pics/[name].[ext]" : 'assets/pics/[contenthash].[ext]',
+            name: isDevMode
+              ? 'assets/pics/[name].[ext]'
+              : 'assets/pics/[contenthash].[ext]',
           },
         },
         {
@@ -107,34 +104,7 @@ module.exports = (env) => {
         'postcss-loader',
       ],
     },
-    // cssIsomorph: {
-    //   test: /\.css$/,
-    //   use: [
-    //     {
-    //       loader: MiniCssExtractPlugin.loader,
-    //     },
-    //     {
-    //       loader: 'css-loader',
-    //     },
-    //     {
-    //       loader: 'postcss-loader',
-    //     },
-    //   ],
-    // },
-    // cssIsomorphGlobal: {
-    //   test: GLOBAL_CSS_REGEXP,
-    //   use: [
-    //     {
-    //       loader: MiniCssExtractPlugin.loader,
-    //     },
-    //     {
-    //       loader: 'css-loader',
-    //     },
-    //     {
-    //       loader: 'postcss-loader',
-    //     },
-    //   ],
-    // },
+
     cssServer: {
       test: /\.css$/,
       use: [

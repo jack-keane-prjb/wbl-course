@@ -2,31 +2,22 @@
   --font: 'Open Sans';
   --gridGap: 32px;
 
-   --white: #fff;
-   --grayF6: #F6F6F6;
-   --grayEA: #EAEAEA;
-   --gray999: #999999;
-   --gray666: #666666;
-   --gray333:  #333333;
-   --black:  #333333;
-   --straw: #D5B986;
-   --purpleEBD: #EBD1FF;
-   --purpleF8E: #F8EFFF;
-   --purpleC99: #C998FB;
-   --purpleA65: #A65CF0;
-   --purple703: #7033AC;
-   --orangeFFF: #FFF5D1;
-   --orangeFF8: #FF862F;
-   --orangeFFB: #FFBD59;
-   --orangeBB3: #BB370E;
-   --goodInput: #B8EC64;
-
-
-
-
-
-
-
-/* TODO: а как тут с пробелами бороться? */
-
+  --white: #fff;
+  --grayF6: #F6F6F6;
+  --grayEA: #EAEAEA;
+  --gray999: #999999;
+  --gray666: #666666;
+  --gray333: #333333;
+  --black: #333333;
+  --straw: #D5B986;
+  --purpleEBD: #EBD1FF;
+  --purpleF8E: #F8EFFF;
+  --purpleC99: #C998FB;
+  --purpleA65: #A65CF0;
+  --purple703: #7033AC;
+  --orangeFFF: #FFF5D1;
+  --orangeFF8: #FF862F;
+  --orangeFFB: #FFBD59;
+  --orangeBB3: #BB370E;
+  --goodInput: #B8EC64;
 }

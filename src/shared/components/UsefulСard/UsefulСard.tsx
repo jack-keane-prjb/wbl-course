@@ -8,7 +8,7 @@ export interface IUsefulCard {
   className?: string;
 }
 
-export function UsefulСard({ img, text, className = "" }: IUsefulCard) {
+export function UsefulСard({ img, text, className = '' }: IUsefulCard) {
   return (
     <div className={`${styles.card} ${className}`}>
       <img src={img} alt="cardImg" className={`${styles.image}`} />

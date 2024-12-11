@@ -6,13 +6,10 @@
 .container {
   display: flex;
   align-items: center;
-  /* min-height: 50px; */
+
 }
 
-/* .phoneSpan {
-  display: flex;
-  align-items: center;
-} */
+
 
 .nav {
   margin-left: auto;
@@ -62,7 +59,7 @@
 
 @media all and (max-width: 1599px) {
 
-  /* 1024px */
+
 
   .section {
     padding: 7px 0;
@@ -92,7 +89,7 @@
 }
 
 @media all and (max-width: 1023px) {
-  /* 768px */
+
 
   .section {
     padding: 17px 0;
@@ -118,7 +115,7 @@
 
 @media all and (max-width: 767px) {
 
-  /* 320px */
+
   .telLinkRow {
     display: none;
   }

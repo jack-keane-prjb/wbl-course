@@ -12,8 +12,8 @@ body {
   line-height: 16px;
   font-family: var(--font), sans-serif;
 
-  /* background-color: var(--black); */
-  /* background-color: #577254; */
+
+
   position: relative;
 }
 
@@ -44,7 +44,7 @@ input {
   border: none;
 }
 
-/* REC: добавить в сниппеты + перечень сниппетов в напоминалку */
+
 input[type='number']::-webkit-inner-spin-button,
 input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -62,7 +62,7 @@ p {
   white-space: pre-line;
 }
 
-/* REC: возможно, стоит все заголовки прописывать в глобале */
+
 
 h4 {
   font-family: Open Sans;
@@ -220,10 +220,6 @@ h5 {
   background-color: #836d64;
 }
 
-/* REC: а тут не логичнее будет padding делать? */
-/* Нет, не логичнее. Ибо во флексе происходить странный момент с паддингом. */
-/* Есть скрины */
-
 
 .section {
   padding: 70px 0;
@@ -231,7 +227,7 @@ h5 {
 
 @media all and (max-width: 1599px) {
 
-  /* 1024x */
+
 
   .section {
     padding: 71px 36px;
@@ -240,7 +236,7 @@ h5 {
 
 @media all and (max-width: 1023px) {
 
-  /* 768px */
+
 
   .section {
     padding: 71px 71px;
@@ -256,7 +252,7 @@ h5 {
 
 @media all and (max-width: 767px) {
 
-  /* 320px */
+
 
   .section {
     padding: 0;

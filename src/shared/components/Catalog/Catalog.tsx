@@ -1,6 +1,5 @@
 import React from 'react';
 import { ButtonTransparent } from '../ButtonTransparent';
-import { OfferCard } from '../OfferCard';
 import styles from './catalog.css';
 
 import high_ranked_1_img from '../../../assets/img/high_ranked_1.png';
@@ -15,17 +14,16 @@ import high_ranked_9_img from '../../../assets/img/high_ranked_9.png';
 import { Pagination } from '../Pagination';
 import { OfferCardHighRanked } from '../OfferCardHighRanked';
 
-export function Catalog({ className = "" }: { className?: string }) {
+export function Catalog({ className = '' }: { className?: string }) {
   return (
     <section className={`${styles.section} ${className}`}>
-      {/* <h2 className={`sectionTitle ${styles.title}`}>Каталог</h2> */}
       <div className={`${styles.grid}`}>
         <OfferCardHighRanked
           rank={'5,0'}
           productImg={high_ranked_1_img}
           productName={'Диван кожаный “R-94”'}
           fullPrice={'94 990 руб'}
-          button={<ButtonTransparent text="Купить" size='small' />}
+          button={<ButtonTransparent text="Купить" size="small" />}
           className={`${styles.card} ${styles.card1}`}
         />
         <OfferCardHighRanked
@@ -33,8 +31,7 @@ export function Catalog({ className = "" }: { className?: string }) {
           productImg={high_ranked_2_img}
           productName={'Диван апартековый “T-75”'}
           fullPrice={'69 990 руб'}
-          button={<ButtonTransparent text="Купить" size='small' />}
-          // REC: так ввожу коррекцию на уже готовый компонент
+          button={<ButtonTransparent text="Купить" size="small" />}
           className={`${styles.card} ${styles.card2}`}
         />
         <OfferCardHighRanked
@@ -42,7 +39,7 @@ export function Catalog({ className = "" }: { className?: string }) {
           productImg={high_ranked_3_img}
           productName={'Диван тканевый “D-31”'}
           fullPrice={'28 490 руб'}
-          button={<ButtonTransparent text="Купить" size='small' />}
+          button={<ButtonTransparent text="Купить" size="small" />}
           className={`${styles.card} ${styles.card3}`}
         />
         <OfferCardHighRanked
@@ -50,7 +47,7 @@ export function Catalog({ className = "" }: { className?: string }) {
           productImg={high_ranked_4_img}
           productName={'Диван велюровый “Y-68”'}
           fullPrice={'22 990 руб'}
-          button={<ButtonTransparent text="Купить" size='small' />}
+          button={<ButtonTransparent text="Купить" size="small" />}
           className={`${styles.card} ${styles.card4}`}
         />
         <OfferCardHighRanked
@@ -58,7 +55,7 @@ export function Catalog({ className = "" }: { className?: string }) {
           productImg={high_ranked_5_img}
           productName={'Диван из шинила “W-95”'}
           fullPrice={'22 990 руб'}
-          button={<ButtonTransparent text="Купить" size='small' />}
+          button={<ButtonTransparent text="Купить" size="small" />}
           className={`${styles.card} ${styles.card5}`}
         />
         <OfferCardHighRanked
@@ -66,7 +63,7 @@ export function Catalog({ className = "" }: { className?: string }) {
           productImg={high_ranked_6_img}
           productName={'Диван флоковый “G-41”'}
           fullPrice={'17 990 руб'}
-          button={<ButtonTransparent text="Купить" size='small' />}
+          button={<ButtonTransparent text="Купить" size="small" />}
           className={`${styles.card} ${styles.card6}`}
         />
         <OfferCardHighRanked
@@ -74,7 +71,7 @@ export function Catalog({ className = "" }: { className?: string }) {
           productImg={high_ranked_7_img}
           productName={'Диван шиниловый “V-43”'}
           fullPrice={'19 990 руб'}
-          button={<ButtonTransparent text="Купить" size='small' />}
+          button={<ButtonTransparent text="Купить" size="small" />}
           className={`${styles.card} ${styles.card7}`}
         />
         <OfferCardHighRanked
@@ -82,7 +79,7 @@ export function Catalog({ className = "" }: { className?: string }) {
           productImg={high_ranked_8_img}
           productName={'Диван велюровый “S-99”'}
           fullPrice={'19 990 руб'}
-          button={<ButtonTransparent text="Купить" size='small' />}
+          button={<ButtonTransparent text="Купить" size="small" />}
           className={`${styles.card} ${styles.card8}`}
         />
         <OfferCardHighRanked
@@ -90,12 +87,11 @@ export function Catalog({ className = "" }: { className?: string }) {
           productImg={high_ranked_9_img}
           productName={'Диван из кожзама “F-85”'}
           fullPrice={'26 990 руб'}
-          button={<ButtonTransparent text="Купить" size='small' />}
+          button={<ButtonTransparent text="Купить" size="small" />}
           className={`${styles.card} ${styles.card9}`}
         />
       </div>
-      {/* PixP: вынес пагинацию. Возможны сдвиги */}
       <Pagination />
-    </section >
+    </section>
   );
 }

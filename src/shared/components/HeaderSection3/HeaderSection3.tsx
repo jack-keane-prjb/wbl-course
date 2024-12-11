@@ -16,7 +16,6 @@ export function HeaderSection3() {
       </Link>
       <Container>
         <div className={`${styles.row} ${styles.row1}`}>
-          {/* Тут, возможен, сдвиг: на 320пкс сделал перестановку. */}
           <Link to="/" className={styles.logo}>
             <Icon ico={'logo'}></Icon>
           </Link>
@@ -56,7 +55,6 @@ export function HeaderSection3() {
               className={styles.input}
               type="text"
               placeholder="Я хочу купить..."
-            // required
             />
             <Icon ico="search" className={styles.searchIco}></Icon>
             <ButtonText icon className={styles.btn}></ButtonText>

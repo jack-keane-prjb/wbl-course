@@ -3,14 +3,14 @@ import { Icon } from '../Icon';
 import styles from './checkbox.css';
 import classNames from 'classnames';
 
-type TCheckBoxTypes = "" | "Sidebar"
+type TCheckBoxTypes = '' | 'Sidebar';
 
 interface ICheckBox {
   className?: string;
   labelFor: string;
   name?: string;
   id?: string;
-  // text: string;
+
   children?: string;
   checkBoxType?: TCheckBoxTypes;
 }
@@ -25,7 +25,9 @@ export function CheckBox(props: ICheckBox) {
     checkBoxType,
   } = props;
 
-  const checkBoxFieldClasses = checkBoxType ? classNames(styles[`checkBox${checkBoxType}`]) : "";
+  const checkBoxFieldClasses = checkBoxType
+    ? classNames(styles[`checkBox${checkBoxType}`])
+    : '';
 
   return (
     <label htmlFor={labelFor} className={styles.label}>

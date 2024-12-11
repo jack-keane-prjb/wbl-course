@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Button } from '../Button';
 import { Container } from '../Container';
 import styles from './hero2.css';
 
-export function Hero2({ className = "" }: { className?: string }) {
-
+export function Hero2({ className = '' }: { className?: string }) {
   return (
     <section className={`${className} ${styles.section}`}>
       <Container className={styles.container}>

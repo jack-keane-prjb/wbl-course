@@ -8,7 +8,7 @@
 
 
 @media all and (max-width: 1599px) {
-  /* 1024x */
+
 
   .container {
     padding: 0;
@@ -25,7 +25,7 @@
 }
 
 @media all and (max-width: 1023px) {
-  /* 768px */
+
 
   .container {
     padding: 0;
@@ -40,13 +40,13 @@
 
 @media all and (max-width: 767px) {
 
-  /* 320px */
+
   .container {
     padding: 7px 12px;
   }
 
   .grid {
-    /* grid-template-columns: 1fr 1fr; */
+
     column-gap: 16px;
     row-gap: 16px;
   }

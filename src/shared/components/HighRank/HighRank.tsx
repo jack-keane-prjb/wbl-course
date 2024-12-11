@@ -16,18 +16,12 @@ import { OfferCardHighRanked } from '../OfferCardHighRanked';
 import useWindowSizeMediaQuery from '../../../utils/js/hooks/useWindowSizeMediaQuery';
 
 export function HighRank({ className }: { className?: string }) {
-  // '(min-width: 320px) and (max-width: 767px)'
-  // '(min-width: 768px) and (max-width: 1023px)'
-  // '(min-width: 1600px)'
-
-  // TODO: заменить везде на использование хука:
   const is768px = useWindowSizeMediaQuery(
     '(min-width: 320px) and (max-width: 767px)'
   );
   const is1920px = useWindowSizeMediaQuery('(min-width: 1600px)');
 
   return (
-    // TODO: убрать бы grid отовсюду. Ибо это лишняя морока.
     <section>
       <Container>
         <h2 className={`sectionTitle ${styles.sectionTitle}`}>
@@ -89,9 +83,6 @@ export function HighRank({ className }: { className?: string }) {
             }
           />
 
-          {/* TODO: разобраться тут с логикой на меньших разрешениях: */}
-
-          {/* 1920px */}
           {is1920px && (
             <>
               <OfferCardHighRanked
@@ -120,30 +111,6 @@ export function HighRank({ className }: { className?: string }) {
               />
             </>
           )}
-
-          {/* {!is320px ||
-          (!is768px && (
-            <>
-              <OfferCardHighRanked
-                rank={'4,8'}
-                productImg={high_ranked_7_img}
-                productName={'Диван шиниловый \n “V-43”'}
-                fullPrice={'19 990 руб'}
-                button={
-                  <ButtonTransparent size='small' text="Купить" />
-                }
-              />
-              <OfferCardHighRanked
-                rank={'4,7'}
-                productImg={high_ranked_8_img}
-                productName={'Диван велюровый \n “S-99”'}
-                fullPrice={'19 990 руб'}
-                button={
-                  <ButtonTransparent size='small' text="Купить" />
-                }
-              />
-            </>
-          ))} */}
         </div>
       </Container>
     </section>

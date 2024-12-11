@@ -1,6 +1,4 @@
 .btn {
-  /* padding: 22px 50px; */
-  /* TODO: разобраться с дублированием паддинга */
   padding: 22px 32px;
   font-family: var(--font);
   font-size: 16px;
@@ -27,10 +25,6 @@
   transition: opacity .2s ease-in-out;
 }
 
-.btn:hover {
-  background-color: var(--purpleC99);
-}
-
 .btn:focus {
   background-color: var(--purpleC99);
 }
@@ -38,6 +32,11 @@
 .btn:focus::after {
   opacity: 1;
 }
+
+.btn:hover {
+  background-color: var(--purpleC99);
+}
+
 
 .btn:active {
   background-color: var(--purple703);
@@ -47,4 +46,3 @@
   color: var(--gray999);
   background-color: var(--grayEA);
 }
-

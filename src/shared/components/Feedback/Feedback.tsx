@@ -1,13 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Container } from '../Container';
 import { FeedbackForm } from '../FeedbackForm';
 import styles from './feedback.css';
 import useWindowSizeMediaQuery from '../../../utils/js/hooks/useWindowSizeMediaQuery';
 
-// TODO: поправить везде вертикальный зазор в сетке. он не 26 пикс. Это отступ только для заголовков.
-
 export function Feedback({ className }: { className?: string }) {
-
   const is320px = useWindowSizeMediaQuery('(max-width: 767px)');
 
   return (

@@ -16,9 +16,7 @@
   height: 100%;
 }
 
-/* .card2x {
-  grid-column: span 6;
-} */
+
 
 .spanDiscount {
   font-family: Open Sans;
@@ -34,7 +32,7 @@
   left: 0;
   margin-bottom: 0;
   width: 82px;
-  /* height: 30px; */
+
   display: block;
   text-align: center;
 }
@@ -56,22 +54,20 @@
   justify-content: flex-end;
   align-items: center;
   width: 100%;
-  /* min-height: 252px; */
-  /* min-height: 150px; */
+
+
   height: 100%;
   margin-bottom: 13px;
 }
 
-/* REC: попытки внести универсальность приводят к тем же телодвиженями, учитывая усложнение селекторов... */
 
-.card .imgContainer {
-  /* margin-bottom: 14px; */
-}
+
+.card .imgContainer {}
 
 .productImg {
   align-self: center;
-  /* padding-top: 42px; */
-  /* max-height: 210px; */
+
+
   padding-top: 4px;
 }
 
@@ -82,13 +78,11 @@
   padding-left: 15px;
 }
 
-/* REC: написание всяких умных селекторов = никогда не завершить pixel perfect )))) В топку*/
-/* .descrContainer>*:not(:last-child) {
-  margin-bottom: 27px;
-} */
+
+
 
 .productName {
-  /* max-width: 225px; */
+
   font-family: Open Sans;
   font-size: 24px;
   font-weight: 400;
@@ -142,11 +136,11 @@
   bottom: 30px;
 }
 
-/* TODO: еще бы решить, как лучше писать свойства в медиа-запросах, ибо можно назнчить строго диапазон. А можно сделть типа не менее / не более.  Тогда свойства будут складываться. */
+
 
 @media all and (max-width: 1599px) {
 
-  /* 1024x */
+
   .imgContainer {
     min-height: 143px;
     margin-bottom: 0;
@@ -173,16 +167,14 @@
 
 @media all and (max-width: 1023px) {
 
-  /* 768px */
+
   .card {
     min-height: 420px;
     padding-bottom: 30px;
     padding-left: 16px;
   }
 
-  .spanRank {
-    /* margin-bottom: 10px; */
-  }
+  .spanRank {}
 
   .imgContainer {
     margin-bottom: 2px;
@@ -197,7 +189,7 @@
 
 @media all and (max-width: 767px) {
 
-  /* 320px */
+
   .productName {
     font-size: 16px;
     font-weight: 400;
@@ -215,12 +207,7 @@
     margin-bottom: 18px;
   }
 
-  /* .fullPrice {
-    font-size: 16px;
-font-weight: 400;
-line-height: 20.8px;
-text-align: left;
-  } */
+
 
   .descrContainer {
     padding: 0;

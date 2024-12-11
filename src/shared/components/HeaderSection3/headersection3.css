@@ -6,7 +6,7 @@
   cursor: pointer;
 }
 
-/* TODO: вот тут хорошо бы испытать удалятор ненужных стилей. Но его еще нужно найти сначала... */
+
 
 .logo,
 .action,
@@ -28,7 +28,7 @@
   padding-left: 5px;
 }
 
-/* ============================================= */
+
 
 .container {
   min-height: 27px;
@@ -44,8 +44,8 @@
 
 .navList {
   display: flex;
-  /* flex-shrink: 0; */
-  /* REMOVE: background-color: coral; */
+
+
 }
 
 .navList li:not(:last-child) {
@@ -53,7 +53,7 @@
 }
 
 .link {
-  /* text-wrap: nowrap; */
+
   white-space: nowrap;
 }
 
@@ -82,8 +82,8 @@
 }
 
 
-/* TODO: что я тут имел ввиду? */
-/* And to move this: */
+
+
 
 .container {
   min-height: 60px;
@@ -92,11 +92,11 @@
 }
 
 .searchForm {
-  /* padding: 18px 32px; */
+
   display: flex;
   align-items: center;
-  /* TODO: */
-  /* width: 1061px; */
+
+
   position: relative;
   width: 100%;
   flex-basis: 1060px;
@@ -110,10 +110,6 @@
   background-color: var(--grayF6);
 }
 
-.input:hover {
-  background-color: var(--grayEA);
-}
-
 .input:focus {
   background-color: var(--purpleF8E);
   outline: 2px solid var(--purpleA65);
@@ -122,6 +118,11 @@
 .input:focus+.searchIco path {
   fill: var(--purpleA65);
 }
+
+.input:hover {
+  background-color: var(--grayEA);
+}
+
 
 .input::placeholder {
   font-family: Open Sans;
@@ -132,9 +133,7 @@
   color: var(--gray999);
 }
 
-/* .input:valid  {
-  outline: 1px solid var(--goodInput);
-} */
+
 
 .searchIco {
   position: absolute;
@@ -154,7 +153,7 @@
 @media all and (max-width: 1599px) {
 
 
-  /* 1024px */
+
   .container {
     padding-left: 36px;
     padding-right: 36px;
@@ -179,11 +178,11 @@
     display: none;
   }
 
-  /* 1024px */
+
 
   .input {
     min-width: 500px;
-    /* flex-basis: 500px; */
+
   }
 
   .UserBtnsRow1 {
@@ -195,7 +194,7 @@
   }
 
   .searchForm {
-    /* REC: вот эти два свойства используются в паре. Типа один растягивает на всю ширину. А другой ОГРАНИЧИВАЕТ. */
+
     max-width: 733px;
     width: 100%;
   }
@@ -203,24 +202,21 @@
 
 @media all and (max-width: 1023px) {
 
-  /* 768px */
+
   .container {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: auto;
-    row-gap: 28px; */
+
 
     padding: 27px 68px;
     padding-bottom: 34px;
 
-    /* flex-direction: column; */
+
   }
 
   .nav {
     grid-column: span 2;
     margin: initial;
     display: flex;
-    /* justify-content: space-between; */
+
     width: 100%;
   }
 
@@ -244,11 +240,11 @@
     text-align: left;
   }
 
-  /* 768px */
+
 
   .section {
     padding: 28px 0;
-    /* PixP: */
+
     padding-bottom: 33px;
   }
 
@@ -256,7 +252,7 @@
     width: 100%;
     padding: 28px 68px;
     padding-bottom: 32px;
-    /* padding-bottom: 34px; */
+
   }
 
   .searchForm {
@@ -276,18 +272,16 @@
   }
 
   .row1 {
-    /* display: flex;
-    flex-direction: column;
-    align-items: flex-start; */
+
 
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
-    /* column-gap: 32px; */
+
     row-gap: 28px;
 
     padding-top: 0;
-    /* margin-bottom: 12px; */
+
   }
 
   .nav {
@@ -306,7 +300,7 @@
 
 @media all and (max-width: 767px) {
 
-  /* 320px */
+
 
   .section {
     padding: 0;
@@ -317,8 +311,8 @@
     grid-column: span 2;
     margin: initial;
     display: flex;
-    /* justify-content: space-between; */
-    /* width: 100%; */
+
+
     overflow: scroll;
   }
 
@@ -326,7 +320,7 @@
     display: none;
   }
 
-  /* REC: вот так делаю, ибо варианат перемещения не вижу. */
+
   .logoOn320px {
     display: flex;
     grid-column: span 2;
@@ -343,10 +337,10 @@
     margin-right: 38px;
   }
 
-  /* 320px */
+
 
   .container {
-    /* padding: 15px 10px; */
+
     padding: 0;
     margin-bottom: 18px;
     padding: 0 12px;
@@ -359,8 +353,8 @@
 
   .TelLink {
     display: flex;
-    /* TODO: подумать, стоит ли выравнивание в ячейках делать паддингом. */
-    /* padding-left: 14px; */
+
+
   }
 
   .row1 {
@@ -369,7 +363,7 @@
   }
 
   .UserBtnsRow1 {
-    /* padding-right: 8px; */
+
     margin: 0;
   }
 

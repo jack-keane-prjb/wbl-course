@@ -12,7 +12,7 @@
 @media all and (max-width: 1023px) {
     .grid {
         grid-template-columns: 1fr;
-        /* HERE: */
+
         row-gap: 83px;
     }
 }
@@ -20,7 +20,7 @@
 @media all and (max-width: 1023px) {
     .grid {
         grid-template-columns: 1fr;
-        /* HERE: */
+
         row-gap: 15px;
     }
 }

@@ -9,14 +9,6 @@ app.get('/', (req, res) => {
   res.send(indexTemplate(ReactDOM.renderToString(App())));
 });
 
-// app.get('/catalog', (req, res) => {
-//   res.send(indexTemplate(ReactDOM.renderToString(App())));
-// });
-
-// app.get('/catalog/sofas/straight/d-31', (req, res) => {
-//   res.send(indexTemplate(ReactDOM.renderToString(App())));
-// });
-
 app.get('*', (req, res) => {
   res.send(indexTemplate(ReactDOM.renderToString(App())));
 });

@@ -1,6 +1,6 @@
 .card {
   grid-column: span 3;
-  /* padding: 30px; */
+
   background-color: var(--grayF6);
   position: relative;
   border-radius: 10px;
@@ -16,9 +16,7 @@
   padding-top: 2px;
 }
 
-/* .col>*:not(:last-child) {
-  margin-bottom: 23px;
-} */
+
 
 .card2x {
   grid-column: span 6;
@@ -38,7 +36,7 @@
   left: 0;
   margin-bottom: 0;
   width: 82px;
-  /* height: 30px; */
+
   display: block;
   text-align: center;
 }
@@ -59,11 +57,11 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  /* width: 100%; */
-  /* min-height: 252px; */
-  /* min-height: 150px; */
-  /* height: 100%; */
-  /* HERE: */
+
+
+
+
+
   min-height: 252px;
   margin-bottom: 0;
   padding: 0 22px;
@@ -77,17 +75,17 @@
   font-size: 16px;
 }
 
-/* REC: попытки внести универсальность приводят к тем же телодвиженями, учитывая усложнение селекторов... */
+
 
 .card .imgContainer {
   margin-bottom: 14px;
-  /* margin-bottom: 25px; */
+
 }
 
 .productImg {
   align-self: center;
-  /* padding-top: 42px; */
-  /* max-height: 210px; */
+
+
   padding-top: 7px;
 }
 
@@ -150,7 +148,7 @@
 }
 
 @media all and (max-width: 1599px) {
-  /* 1024x */
+
 
   .card {
     grid-column: initial;
@@ -161,11 +159,11 @@
     height: initial;
   }
 
-  /* TODO: т.к. я делал все задом-наперед, то могли остаться дубликаты классов. Проверятор бы всего этого. */
+
 
   .card2x .productImg {
-    /* justify-content: center; */
-    /* padding-top: 44px; */
+
+
     margin-bottom: 33px;
   }
 
@@ -176,25 +174,25 @@
 
 @media all and (max-width: 1023px) {
 
-  /* 768px */
+
   .additionalImg {
     display: none;
   }
 
   .card2x .productImg {
-    /* justify-content: center; */
-    /* padding-top: 44px; */
+
+
     margin-bottom: 33px;
   }
 }
 
 @media all and (max-width: 767px) {
 
-  /* 320px */
+
   .card {
     grid-column: initial;
-    /* padding-left: 35px; */
-    /* padding-right: 35px; */
+
+
     min-height: 511px;
   }
 
@@ -204,8 +202,8 @@
 
   .imgContainer {
     justify-content: center;
-    /* REC: тут одна из карточек выбивается. Если поправить на другое свойство, то выбивается другая )) Оставляем. */
-    /* justify-content: flex-end; */
+
+
   }
 
   .productImg {
@@ -230,7 +228,7 @@
 
   .heightsmall .productImg {
     padding: 0;
-    /* max-height: 46px; */
+
   }
 
   .heightsmall .col {
@@ -240,7 +238,7 @@
   .heightsmall .productName {
     font-size: 15px;
     line-height: 19px;
-    /* max-width: 20px; */
+
     padding-left: 0;
     margin-bottom: 23px;
   }
@@ -255,7 +253,5 @@
     margin-bottom: 16px;
   }
 
-  .heightsmall .container {
-    /* padding: 5px 10px; */
-  }
+  .heightsmall .container {}
 }

@@ -32,7 +32,6 @@ function Applic() {
               <PageMain />
             </Route>
           </Switch>
-          {/* <DisplayWidthTester /> */}
         </BrowserRouter>
       )}
     </>

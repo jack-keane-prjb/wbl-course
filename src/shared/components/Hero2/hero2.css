@@ -42,14 +42,14 @@
 
 @media all and (max-width: 1023px) {
 
-  /* 768px */
+
   .section {
     padding-top: 156px;
     padding-bottom: 151px;
     background-image: url("../../../assets/img/768px/hero2_768px.jpg");
   }
 
-  /* HERE: */
+
   .container {
     padding: 0 36px;
   }
@@ -58,12 +58,12 @@
 
 @media all and (max-width: 767px) {
 
-  /* 320px */
+
   .section {
     padding: 33px 0;
     background-image: url("../../../assets/img/320px/hero2_320px.jpg");
-    /* padding: 95px 12px; */
-    /* padding-bottom: 58px; */
+
+
     background-position: initial;
   }
 

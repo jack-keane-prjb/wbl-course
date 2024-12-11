@@ -1,12 +1,12 @@
 .title {
-  /* REC: сетку можно еще подгонять вот так, если не хочется трогать row-gap и col-gap */
+
   margin-bottom: 11px;
 }
 
 .backgroundCell {
-  /* TODO: проверить, как вообще убирается сама ячейка с бэкграундом при таком раскладе: */
+
   grid-column: span 6;
-  /* grid-row: span 2; */
+
   background-image: url('../../../assets/img/feedback_bg.png');
   background-position: bottom 22px center;
   background-repeat: no-repeat;
@@ -21,7 +21,7 @@
 
   .backgroundCell {
     grid-column: span 5;
-    /* background-position: bottom 75px center; */
+
     background-position: top 35px center;
     background-size: 100%;
   }
@@ -30,7 +30,7 @@
 
 @media all and (max-width: 1023px) {
 
-  /* 768px */
+
   .container {
     padding: 65px 72px;
   }
@@ -56,7 +56,7 @@
 
 @media all and (max-width: 767px) {
 
-  /* 320px */
+
   .container {
     padding: 5px 0;
   }

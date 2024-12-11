@@ -18,7 +18,6 @@ export function FeedbackForm() {
       />
       <input className={styles.input} type="text" placeholder="Ваш телефон" />
       <input className={styles.input} type="text" placeholder="Ваш e-mail" />
-      {/* REC: совсем забыл, что можно делать overwrite стилей. Не нужно создавать свойство компонента для этого и заморачиватья с classnames */}
       <Button className={styles.button}>Отправить</Button>
       <CheckBox labelFor="AcceptRules" className={styles.checkbox}>
         Принимаю пользовательское соглашение

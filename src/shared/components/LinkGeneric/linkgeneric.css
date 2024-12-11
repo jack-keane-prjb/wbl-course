@@ -6,20 +6,21 @@
   line-height: 21.79px;
   text-align: left;
   position: relative;
-  /* TODO: надо как-то решить вопрос с паддингом и псевдо-элементом */
-  /* padding: 2px 10px; */
+
+
   transition: color 0.2s ease-in-out, background-color 0.2s ease-out;
   color: var(--black);
 }
 
-.a:hover {
-  color: var(--purpleA65);
-}
 
 .a:focus {
   color: var(--black);
   outline: none;
   background-color: var(--purpleEBD);
+}
+
+.a:hover {
+  color: var(--purpleA65);
 }
 
 .a:active {

@@ -24,7 +24,6 @@
 .socialLinksContainer {
     display: flex;
     margin-top: auto;
-    /* margin-bottom: 10px; */
 }
 
 .h4 {
@@ -40,15 +39,9 @@
     line-height: 14px;
     text-align: left;
     position: relative;
-    /* padding: 2px 10px; */
+
     padding: 2px 0;
     transition: color 0.2s ease-in-out, background-color 0.2s ease-out;
-}
-
-/* TODO: возможно поправить везде последовательност на фокус-ховер-актив */
-
-.a:hover {
-    color: var(--purpleA65);
 }
 
 .a:focus {
@@ -56,6 +49,11 @@
     outline: none;
     background-color: var(--purpleEBD);
 }
+
+.a:hover {
+    color: var(--purpleA65);
+}
+
 
 .a:active {
     color: var(--purple703);
@@ -69,7 +67,7 @@
     display: flex;
 }
 
-/* TODO: тут, возможно, делать доп. вложенность */
+
 
 .linksContainerRow {
     display: flex;
@@ -88,7 +86,7 @@
 @media all and (max-width: 1599px) {
 
 
-    /* 1024px */
+
     .containerLinks {
         padding-bottom: 22px;
     }
@@ -104,7 +102,7 @@
 
 @media all and (max-width: 1023px) {
 
-    /* 768px */
+
 
     .container {
         display: grid;
@@ -150,7 +148,7 @@
 
 @media all and (max-width: 767px) {
 
-    /* 320px */
+
     .footer {
         padding-top: 14px;
     }
@@ -165,12 +163,12 @@
     }
 
     .logoLink {
-        /* margin-bottom: 17px; */
+
         margin: 0;
     }
 
     .linksContainer {
-        /* flex-wrap: wrap; */
+
         display: grid;
         grid-template-columns: 1fr 1fr;
         row-gap: 24px;

@@ -54,31 +54,11 @@
   font-size: 16px;
 }
 
-/* .checkboxCustom::after {
-  content: '';
 
-
-  content: url('../Icon/res/checkbox_bird.svg');
-  background-color: red;
-  REC: тут, видимо, сломалось подключение через inline svg base64 (или его тут и нет...)
-  background-image: url('../Icon/res/checkbox_bird.svg');
-
-
-  position: absolute;
-  z-index: 100;
-
-
-
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-} */
 
 @media all and (max-width: 767px) {
 
-  /* 320px */
+
   .checkboxCustom {
     margin-right: 12px;
   }

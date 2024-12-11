@@ -11,13 +11,6 @@
   padding-left: 2px;
 }
 
-.telLink:hover .telLinkText {
-  color: var(--orangeFFB);
-}
-
-.telLink:hover>svg path {
-  fill: var(--orangeFFB);
-}
 
 .telLink:focus {
   background-color: var(--orangeFFF);
@@ -30,6 +23,14 @@
 
 .telLink:focus>svg path {
   fill: var(--orangeFF8);
+}
+
+.telLink:hover .telLinkText {
+  color: var(--orangeFFB);
+}
+
+.telLink:hover>svg path {
+  fill: var(--orangeFFB);
 }
 
 .telLink:active {

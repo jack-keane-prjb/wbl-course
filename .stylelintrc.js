@@ -1,26 +1,13 @@
-// Отключенные правила (мешали нормально работать расширению VS Code):
-// 'selector-anb-no-unmatchable': true,
-
-// 'declaration-block-no-duplicate-properties': [
-// 	true,
-// 	{
-// 		ignore: ['consecutive-duplicates-with-different-syntaxes'],
-// 	},
-// ],
-
-// + добавил 'plugin/stylelint-group-selectors': true,
-// + изменил class pattern на БЭМ
-
 'use strict';
 
 module.exports = {
   plugins: [
-    // REC: плагины через nvm, видимо, все. Ну или только stylelint так.
+
     "stylelint-group-selectors",
     "stylelint-prettier"
   ],
   rules: {
-    // stylelint-config-recommended
+
     'annotation-no-unknown': true,
     'at-rule-no-unknown': true,
     'block-no-empty': true,
@@ -29,12 +16,12 @@ module.exports = {
     'custom-property-no-missing-var-function': true,
     'declaration-block-no-duplicate-custom-properties': true,
     'declaration-block-no-duplicate-properties': true,
-    // 'declaration-block-no-duplicate-properties': [
-    // 	true,
-    // 	{
-    // 		ignore: ['consecutive-duplicates-with-different-syntaxes'],
-    // 	},
-    // ],
+
+
+
+
+
+
     'declaration-block-no-shorthand-property-overrides': true,
     'font-family-no-duplicate-names': true,
     'font-family-no-missing-generic-family-keyword': true,
@@ -53,7 +40,7 @@ module.exports = {
     'no-invalid-position-at-import-rule': true,
     'no-irregular-whitespace': true,
     'property-no-unknown': true,
-    // 'selector-anb-no-unmatchable': true,
+
     'selector-pseudo-class-no-unknown': true,
     'selector-pseudo-element-no-unknown': true,
     'selector-type-no-unknown': [
@@ -64,7 +51,7 @@ module.exports = {
     ],
     'string-no-newline': true,
     'unit-no-unknown': true,
-    // stylelint-config-standard
+
     'alpha-value-notation': [
       'percentage',
       {
@@ -109,9 +96,9 @@ module.exports = {
       },
     ],
     'custom-property-pattern': [
-      // default kebab style
-      // '^([a-z][a-z0-9]*)(-[a-z0-9]+)*$',
-      // --greyC4 affordable
+
+
+
       '[a-z]+((\d)|([A-Z0-9][a-z0-9]+))*([A-Z])?',
       {
         message: (name) => `Expected custom property name "${name}" to be kebab-case`,
@@ -144,7 +131,7 @@ module.exports = {
       },
     ],
     'media-feature-name-no-vendor-prefix': true,
-    // тут изменение
+
     'media-feature-range-notation': 'prefix',
     'number-max-precision': 4,
     'property-no-vendor-prefix': true,
@@ -157,18 +144,18 @@ module.exports = {
     ],
     'selector-attribute-quotes': 'always',
     'selector-class-pattern': [
-      // Default BEM:
-      // ^[a-z]([-]?[a-z0-9]+)*(__[a-z0-9]([-]?[a-z0-9]+)*)?(_[a-z0-9]([-]?[a-z0-9]+)*)?(_[a-z0-9]([-]?[a-z0-9]+)*)?$
-      // My preferable BEM:
-      // '^[a-z]([-]?[a-z0-9]+)*(__[a-z0-9]([-]?[a-z0-9]+)*)?(--[a-z0-9]([-]?[a-z0-9]+)*)?(--[a-z0-9]([-]?[a-z0-9]+)*)?$',
-      //camelCase:
+
+
+
+
+
       '[a-z]+((\d)|([A-Z0-9][a-z0-9]+))*([A-Z])?',
       {
-        // Default BEM: block-name__elem-name_mod-name_mod-val
-        // My preferable BEM: block-name__elem-name--mod-name--mod-val
-        // message: (selector) => `Expected class selector "${selector}" to be kebab-case`,
+
+
+
         resolveNestedSelectors: true,
-        // message: (selector) => `Expected class selector "${selector}" to match BEM pattern. https://regexr.com/3apms`,
+
         message: (selector) => `Expected class selector "${selector}" to match camelCase pattern.`,
 
       },
@@ -188,13 +175,13 @@ module.exports = {
     'value-no-vendor-prefix': [
       true,
       {
-        // `-webkit-box` is allowed as standard. See https://www.w3.org/TR/css-overflow-3/#webkit-line-clamp
+
         ignoreValues: ['box', 'inline-box'],
       },
     ],
-    // REMOVE 'selector-combinator-space-before': 'always',
-    // REMOVE 'selector-combinator-space-after': 'always',
-    //plugins
+
+
+
     'plugin/stylelint-group-selectors': true,
     "prettier/prettier": true
   },

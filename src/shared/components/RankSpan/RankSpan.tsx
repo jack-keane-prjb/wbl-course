@@ -12,7 +12,6 @@ export function RankSpan({ rank, className }: IRank) {
     <>
       {' '}
       <span className={`${styles.spanRank} ${className}`}>
-        {/* REC: + line-height в таких случаях вообще невозможно настроить (при использовании TexT) */}
         <Icon ico="star" size={13} className={styles.ico}></Icon>
         <span className={styles.rankText}>{rank}</span>
       </span>

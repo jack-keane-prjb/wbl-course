@@ -3,7 +3,7 @@ import { ButtonText } from '../ButtonText';
 import styles from './topcategoriescard.css';
 import classNames from 'classnames';
 
-type TTopCategoriesCardSizes = "small"
+type TTopCategoriesCardSizes = 'small';
 
 interface ITopCategoriesCard {
   className?: string;
@@ -27,20 +27,16 @@ export function TopCategoriesCard(props: ITopCategoriesCard) {
     img1024 = img1920,
     img768 = img1024,
     img320 = img768,
-    altOfImg = "categoryImg",
-    size = ""
+    altOfImg = 'categoryImg',
+    size = '',
   } = props;
 
   const subcategoriesComponents = subcategories?.map((name) => {
-    // const span = <LinkGeneric>{name}</LinkGeneric>;
     const span = <a className={styles.link}>{name}</a>;
     return span;
   });
 
-  // REC: хороший вариант задавть classnames:
-  const cardClasses = size ? classNames(styles[`size${size}`]) : "";
-
-  // console.log(cardClasses);
+  const cardClasses = size ? classNames(styles[`size${size}`]) : '';
 
   return (
     <div className={`${styles.card} ${className} ${cardClasses}`}>
@@ -51,24 +47,12 @@ export function TopCategoriesCard(props: ITopCategoriesCard) {
           <ButtonText icon iconSize="small" className={styles.nameBtn} />
         </div>
       </div>
-      {/* TODO: Контентное или декоративное? Вроде, контентное. */}
-      {/* <div className={styles.imgContainer}> */}
-      {/* ----------------------------------------- */}
-
-      {/* TODO: тут проверить: последовательность именно такая. Хотя мне казалось, что в НЕ в реакте последовательность другая. + удобно проверить с маленьких разрешений. Ибо если контейнер большой, то картинка не растянется.*/}
       <picture className={styles.picture}>
         <source srcSet={img320} media="(max-width: 767px)" />
         <source srcSet={img768} media="(max-width: 1023px)" />
         <source srcSet={img1024} media="(max-width: 1599px)" />
         <img src={img1920} alt={altOfImg} className={styles.categoryImg} />
       </picture>
-      {/* ----------------------------------------- */}
-      {/* </div> */}
-      {/* <picture>
-        <source srcset="mdn-logo-wide.png" media="(min-width: 600px)" />
-        <img src="mdn-logo-narrow.png" alt="MDN" />
-      </picture> */}
-
       <div className={styles.btnContainer}>
         <ButtonText icon iconSize="small" className={styles.btn}>
           В каталог
@@ -77,4 +61,3 @@ export function TopCategoriesCard(props: ITopCategoriesCard) {
     </div>
   );
 }
-

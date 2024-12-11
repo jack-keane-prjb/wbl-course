@@ -1,5 +1,5 @@
 .sectionCopyright {
-  /* background-color: var(--grayEA); */
+
   background-color: var(--grayF6);
 }
 
@@ -17,15 +17,15 @@
   line-height: 19.07px;
   text-align: center;
   color: var(--gray999);
-  /* TODO: проверить правило, согласно которому элемент не может содержать позиционирование (паддинги и прочее) */
-  /* padding: 12px 0; */
+
+
 }
 
-/* TODO: отдельно проверить, не содержат ли блоки свойств позиционирования */
+
 
 @media all and (max-width: 767px) {
 
-  /* 320px */
+
 
 
   .containerCopyright {

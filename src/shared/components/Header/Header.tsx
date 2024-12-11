@@ -8,7 +8,6 @@ export function Header({ className = '' }: { className?: string }) {
   return (
     <header className={`${styles.header} ${className}`}>
       <HeaderSection1 />
-      {/* REC: интересно, как лучше делать скрытие через css display:none, или же через реакт js. */}
       <HeaderSection2 />
       <HeaderSection3 />
     </header>
