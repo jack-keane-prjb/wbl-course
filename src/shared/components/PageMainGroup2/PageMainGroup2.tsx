@@ -6,9 +6,11 @@ import { Useful } from '../Useful';
 import { Feedback } from '../Feedback';
 
 export function PageMainGroup2() {
-  return <div className={styles.PageMainGroup2}>
-    <TopCategories />
-    <Useful />
-    <Feedback />
-  </div>;
+  return (
+    <div className={styles.PageMainGroup2}>
+      <TopCategories />
+      <Useful />
+      <Feedback />
+    </div>
+  );
 }

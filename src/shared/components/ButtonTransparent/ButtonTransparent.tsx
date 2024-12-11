@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './buttontransparent.css';
 import classNames from 'classnames';
 
-type TButtonTransparentSizes = "small"
+type TButtonTransparentSizes = 'small' | '';
 
 interface IButtonTransparent {
   text?: string;
@@ -13,10 +13,11 @@ interface IButtonTransparent {
 export function ButtonTransparent({
   text = 'Buy',
   className,
-  size
+  size,
 }: IButtonTransparent) {
+  const classes = size ? classNames(styles[`size${size}`]) : '';
 
-  const classes = size ? classNames(styles[`size${size}`]) : "";
-
-  return <button className={`${styles.btn} ${classes} ${className}`}>{text}</button>;
+  return (
+    <button className={`${styles.btn} ${classes} ${className}`}>{text}</button>
+  );
 }

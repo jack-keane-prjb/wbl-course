@@ -5,8 +5,10 @@ import { SpecialOffers } from '../SpecialOffers';
 import { HighRank } from '../HighRank';
 
 export function PageMainGroup1() {
-  return <div className={styles.PageMainGroup1}>
-    <SpecialOffers />
-    <HighRank />
-  </div>;
+  return (
+    <div className={styles.PageMainGroup1}>
+      <SpecialOffers />
+      <HighRank />
+    </div>
+  );
 }
