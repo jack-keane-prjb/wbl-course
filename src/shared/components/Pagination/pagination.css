@@ -1,0 +1,32 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* grid-column: span 9; */
+}
+
+.pagination>*:not(:last-child) {
+  margin-right: 15px;
+}
+
+.button3 {
+  display: none;
+}
+
+@media all and (max-width: 1599px) {
+
+  .pagination {
+    /* grid-column: span 3; */
+  }
+}
+
+@media all and (max-width: 1023px) {
+
+  .pagination {
+    /* grid-column: span 2; */
+  }
+
+  .button3 {
+    display: block;
+  }
+}

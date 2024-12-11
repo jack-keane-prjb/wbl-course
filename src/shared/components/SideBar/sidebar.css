@@ -1,0 +1,168 @@
+.sidebar {
+  /* background-color: rgb(242, 204, 204); */
+  display: flex;
+  flex-direction: column;
+  padding: 35px 0;
+  padding-bottom: 93px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.filterBy {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 26px;
+}
+
+.filterName {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 17px;
+}
+
+.fieldset {
+  padding: 0;
+  border: none;
+
+}
+
+.filterWrapper {
+  margin-bottom: 31px;
+}
+
+/* .fieldset:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.checkbox:not(:last-child) {
+  margin-bottom: 12px;
+} */
+
+.fieldset>*:not(:last-child) {
+  margin-bottom: 11px;
+}
+
+.fieldsetCategory {
+  margin-bottom: 28px;
+}
+
+.filterNamePrice {
+  margin-bottom: 3px;
+}
+
+.priceDiv {
+  display: flex;
+  align-items: center;
+}
+
+.priceDiv>*:not(:last-child) {
+  margin-right: 12px;
+}
+
+.priceFilterInput {
+  border: 1px solid var(--gray999);
+  border-radius: 3px;
+  padding: 7px;
+  width: 85px;
+}
+
+/* TODO: тут посмотреть нужные ли тут ховеры и прочее + тринзишн */
+
+.priceFilterInput:focus {
+  border-color: var(--purple703);
+  outline: none;
+}
+
+.priceFilterInput:hover {
+  border-color: var(--purpleA65);
+}
+
+/* .priceFilterInput:active {
+
+} */
+
+.priceFilterInput::placeholder {
+  font-size: 15px;
+  padding-left: 6px;
+}
+
+
+@media all and (max-width: 1599px) {
+
+  /* HERE: */
+  .sidebar {
+    /* flex-direction: row; */
+    padding-bottom: 0;
+  }
+
+  .filtersContainer {
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: column; */
+  }
+
+  .sidebarcard1 {
+    display: none;
+  }
+
+  .filterBy {
+    display: none;
+  }
+
+  /* REC: вот тут опять наталкиваюсь на поведение, при котором :not(:last-child) имеет приоритет выше, чем то, что написано позже */
+
+  .filterWrapper {
+    margin-bottom: 0;
+  }
+
+  .filterWrapper:not(:last-child) {
+    margin-right: 44px;
+  }
+
+  /* REC: искуственно усложняю: */
+  .filterWrapper.filterWrapperCategory {
+    margin-right: 83px;
+  }
+
+
+}
+
+@media all and (max-width: 767px) {
+
+  /* 320px */
+  .filtersContainer {
+    flex-wrap: wrap;
+  }
+
+  .filterWrapper {
+    margin-bottom: 21px;
+  }
+
+  .filterWrapper:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .filterWrapper:last-child {
+    margin-bottom: 0;
+  }
+
+  .filterWrapper:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .sidebar {
+    padding: 0;
+  }
+
+  .title {
+    margin-bottom: 26px;
+  }
+
+  .filterNamePrice {
+    margin-bottom: 7px;
+  }
+}

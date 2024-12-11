@@ -1,0 +1,384 @@
+.section {
+  padding: 31px 0;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+/* TODO: вот тут хорошо бы испытать удалятор ненужных стилей. Но его еще нужно найти сначала... */
+
+.logo,
+.action,
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+.logoOn320px {
+  display: none;
+}
+
+.actions {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.action>*+* {
+  padding-left: 5px;
+}
+
+/* ============================================= */
+
+.container {
+  min-height: 27px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 31px 0;
+}
+
+.nav {
+  margin-left: auto;
+}
+
+.navList {
+  display: flex;
+  /* flex-shrink: 0; */
+  /* REMOVE: background-color: coral; */
+}
+
+.navList li:not(:last-child) {
+  margin-right: 92px;
+}
+
+.link {
+  /* text-wrap: nowrap; */
+  white-space: nowrap;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.row:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.row1 {
+  padding-top: 3px;
+}
+
+
+.TelLink {
+  display: none;
+}
+
+.UserBtnsRow1 {
+  display: none
+}
+
+
+/* TODO: что я тут имел ввиду? */
+/* And to move this: */
+
+.container {
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.searchForm {
+  /* padding: 18px 32px; */
+  display: flex;
+  align-items: center;
+  /* TODO: */
+  /* width: 1061px; */
+  position: relative;
+  width: 100%;
+  flex-basis: 1060px;
+}
+
+.input {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px 60px;
+  background-color: var(--grayF6);
+}
+
+.input:hover {
+  background-color: var(--grayEA);
+}
+
+.input:focus {
+  background-color: var(--purpleF8E);
+  outline: 2px solid var(--purpleA65);
+}
+
+.input:focus+.searchIco path {
+  fill: var(--purpleA65);
+}
+
+.input::placeholder {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+  color: var(--gray999);
+}
+
+/* .input:valid  {
+  outline: 1px solid var(--goodInput);
+} */
+
+.searchIco {
+  position: absolute;
+  left: 32px;
+}
+
+.btn {
+  position: absolute;
+  right: 32px;
+}
+
+.UserBtnsRow1 {
+  display: none;
+}
+
+
+@media all and (max-width: 1599px) {
+
+
+  /* 1024px */
+  .container {
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-top: 30px;
+    padding-bottom: 33px;
+    justify-content: space-between;
+  }
+
+  .nav {
+    margin-left: initial;
+  }
+
+  .navList li:not(:last-child) {
+    margin-right: 42px;
+  }
+
+  .TelLink {
+    display: none;
+  }
+
+  .UserBtnsRow1 {
+    display: none;
+  }
+
+  /* 1024px */
+
+  .input {
+    min-width: 500px;
+    /* flex-basis: 500px; */
+  }
+
+  .UserBtnsRow1 {
+    display: none;
+  }
+
+  .UserBtnsRow2 {
+    display: none;
+  }
+
+  .searchForm {
+    /* REC: вот эти два свойства используются в паре. Типа один растягивает на всю ширину. А другой ОГРАНИЧИВАЕТ. */
+    max-width: 733px;
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 1023px) {
+
+  /* 768px */
+  .container {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    row-gap: 28px; */
+
+    padding: 27px 68px;
+    padding-bottom: 34px;
+
+    /* flex-direction: column; */
+  }
+
+  .nav {
+    grid-column: span 2;
+    margin: initial;
+    display: flex;
+    /* justify-content: space-between; */
+    width: 100%;
+  }
+
+  .navList {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .navList li:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .TelLink {
+    display: none;
+  }
+
+  .link {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.07px;
+    text-align: left;
+  }
+
+  /* 768px */
+
+  .section {
+    padding: 28px 0;
+    /* PixP: */
+    padding-bottom: 33px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 28px 68px;
+    padding-bottom: 32px;
+    /* padding-bottom: 34px; */
+  }
+
+  .searchForm {
+    width: 100%;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .UserBtnsRow1 {
+    display: none;
+  }
+
+  .row:not(:last-child) {
+    margin-bottom: 35px;
+  }
+
+  .row1 {
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    /* column-gap: 32px; */
+    row-gap: 28px;
+
+    padding-top: 0;
+    /* margin-bottom: 12px; */
+  }
+
+  .nav {
+    align-self: center;
+  }
+
+  .UserBtnsRow1 {
+    display: block;
+    margin: 0;
+    justify-self: flex-end;
+    padding-top: 1px;
+    margin-right: 4px;
+  }
+
+}
+
+@media all and (max-width: 767px) {
+
+  /* 320px */
+
+  .section {
+    padding: 0;
+    padding-bottom: 33px;
+  }
+
+  .nav {
+    grid-column: span 2;
+    margin: initial;
+    display: flex;
+    /* justify-content: space-between; */
+    /* width: 100%; */
+    overflow: scroll;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  /* REC: вот так делаю, ибо варианат перемещения не вижу. */
+  .logoOn320px {
+    display: flex;
+    grid-column: span 2;
+    justify-self: center;
+    width: 100%;
+    background-color: var(--grayF6);
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+    padding-bottom: 11px;
+  }
+
+  .navList li:not(:last-child) {
+    margin-right: 38px;
+  }
+
+  /* 320px */
+
+  .container {
+    /* padding: 15px 10px; */
+    padding: 0;
+    margin-bottom: 18px;
+    padding: 0 12px;
+    margin-bottom: 33px;
+  }
+
+  .input {
+    min-width: initial;
+  }
+
+  .TelLink {
+    display: flex;
+    /* TODO: подумать, стоит ли выравнивание в ячейках делать паддингом. */
+    /* padding-left: 14px; */
+  }
+
+  .row1 {
+    row-gap: 22px;
+    padding-top: 22px;
+  }
+
+  .UserBtnsRow1 {
+    /* padding-right: 8px; */
+    margin: 0;
+  }
+
+  .row:not(:last-child) {
+    margin-bottom: 18px;
+  }
+
+  .navList li:not(:last-child) {
+    margin-right: 31px;
+  }
+
+}

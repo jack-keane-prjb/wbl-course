@@ -1,0 +1,82 @@
+.section {
+  background-repeat: no-repeat;
+  background-image: url(../../../assets/img/hero1_1920px.jpg);
+  background-position: 0 0;
+  padding: 81px 0;
+}
+
+/* REC: h2 тоже вынести в компонент */
+.h2 {
+  max-width: 496px;
+  font-family: var(--font);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 65.37px;
+  text-align: left;
+  color: var(--gray999);
+  margin-bottom: 47px;
+}
+
+.btn {
+  padding: 22px 50px;
+}
+
+@media all and (max-width: 1599px) {
+  .section {
+    background-image: url(../../../assets/img/1024px/hero1_1024px.jpg);
+    background-position: 0 0;
+  }
+
+}
+
+
+@media all and (max-width: 1023px) {
+  /* 768px */
+
+  .section {
+    /* padding: 80px 72px; */
+    background-image: url(../../../assets/img/768px/hero1_768px.jpg);
+  }
+
+  .h2 {
+    margin-bottom: 49px;
+  }
+}
+
+@media all and (max-width: 767px) {
+
+  /* 320px */
+  .h2 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27.24px;
+    text-align: left;
+    margin-bottom: 138px;
+    padding: 0 18px;
+    margin: 0;
+  }
+
+  .section {
+    /* padding: 0; */
+    background-image: url(../../../assets/img/320px/hero1_320px.jpg);
+    background-position: 0 0;
+    /* display: flex; */
+    padding: 30px 0;
+    /* flex-direction: column; */
+    /* align-items: flex-start; */
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 272px;
+    /* align-items: flex-start; */
+  }
+
+
+  .btn {
+    /* width: 100%; */
+    /* align-self: stretch; */
+    margin-top: auto;
+  }
+}

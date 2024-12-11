@@ -1,0 +1,106 @@
+.section {
+    padding: 30px 0;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.grid {
+    display: grid;
+    /* grid-auto-rows: auto; */
+    column-gap: 32px;
+    row-gap: 26px;
+
+}
+
+.card1 {
+    order: 1;
+}
+
+.card2 {
+    order: 2;
+}
+
+.card3 {
+    order: 3;
+}
+
+.card4 {
+    order: 4;
+}
+
+.card5 {
+    order: 5;
+}
+
+.card6 {
+    order: 6;
+}
+
+.card7 {
+    order: 7;
+}
+
+.card8 {
+    order: 8;
+}
+
+.card9 {
+    order: 9;
+}
+
+
+@media all and (max-width: 1599px) {
+
+    .title {
+        display: none;
+    }
+
+    .section {
+        padding: 0;
+    }
+
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        /* grid-template-columns: 1fr; */
+        /* column-gap: 32px; */
+        row-gap: 32px;
+    }
+
+}
+
+
+@media all and (max-width: 1023px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 32px;
+    }
+
+    .card3 {
+        order: 5;
+    }
+
+    /* TODO: реально подумать, как лучше скрывать элементы. Через CSS или через JS. Пока что у меня смесь. */
+    .card7,
+    .card8,
+    .card9 {
+        display: none;
+    }
+
+}
+
+@media all and (max-width: 767px) {
+    .grid {
+        column-gap: 16px;
+        row-gap: 16px;
+    }
+
+    /* .card {
+        padding: 17px 5px 2px;
+    } */
+    .card3 {
+        order: 3;
+    }
+}

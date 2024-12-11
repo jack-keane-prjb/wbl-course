@@ -1,0 +1,113 @@
+.s150 {
+  font-size: 150px;
+  line-height: normal;
+  font-weight: 200;
+}
+
+.s64 {
+  font-size: 64px;
+  line-height: normal;
+}
+
+.s48 {
+  font-size: 48px;
+  line-height: 65px;
+}
+
+.s32 {
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.s28 {
+  font-size: 28px;
+  line-height: 33px;
+}
+
+.s24 {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.s20 {
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.s18 {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.s16 {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.s14 {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.s12 {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.s10 {
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.white {
+  color: var(--white);
+}
+.grayF6 {
+  color: var(--grayF6);
+}
+.grayEA {
+  color: var(--grayEA);
+}
+.gray999 {
+  color: var(--gray999);
+}
+.gray666 {
+  color: var(--gray666);
+}
+.gray333 {
+  color: var(--gray333);
+}
+.black {
+  color: var(--black);
+}
+.straw {
+  color: var(--straw);
+}
+.purpleEBD {
+  color: var(--purpleEBD);
+}
+.purpleC99 {
+  color: var(--purpleC99);
+}
+.purpleA65 {
+  color: var(--purpleA65);
+}
+.purple703 {
+  color: var(--purple703);
+}
+.orangeFFF {
+  color: var(--orangeFFF);
+}
+.orangeFF8 {
+  color: var(--orangeFF8);
+}
+.orangeFFB {
+  color: var(--orangeFFB);
+}
+.orangeBB3 {
+  color: var(--orangeBB3);
+}

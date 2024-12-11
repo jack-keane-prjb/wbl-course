@@ -1,0 +1,267 @@
+@import url('./normalize.css');
+@import url('./_fonts.css');
+@import url('./_helpers.css');
+@import url('./_variables.css');
+@import url('./_template.css');
+@import url('./grid.css');
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: var(--font), sans-serif;
+
+  /* background-color: var(--black); */
+  /* background-color: #577254; */
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+}
+
+/* REC: добавить в сниппеты + перечень сниппетов в напоминалку */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  white-space: pre-line;
+}
+
+/* REC: возможно, стоит все заголовки прописывать в глобале */
+
+h4 {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: var(--black);
+  padding: 2px 10px;
+}
+
+h5 {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.8px;
+  text-align: left;
+  color: var(--gray666);
+}
+
+.sectionTitle {
+  font-family: var(--font);
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  color: var(--gray333);
+}
+
+.flex {
+  display: flex;
+}
+
+.aic {
+  align-items: center;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.fdc {
+  flex-direction: column;
+}
+
+.mla {
+  margin-left: auto;
+}
+
+.mra {
+  margin-right: auto;
+}
+
+.mr7 {
+  margin-right: 7px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mb25 {
+  margin-bottom: 25px;
+}
+
+.pt25 {
+  padding-top: 25px;
+}
+
+.pt100 {
+  padding-top: 100px;
+}
+
+.pr80 {
+  padding-right: 80px;
+}
+
+.pb100 {
+  padding-bottom: 80px;
+}
+
+.pl80 {
+  padding-left: 80px;
+}
+
+.dist10>*+* {
+  margin-top: 10px;
+}
+
+.dist25>*+* {
+  margin-top: 25px;
+}
+
+.dist50>*+* {
+  margin-top: 50px;
+}
+
+.inter5>*+* {
+  margin-left: 5px;
+}
+
+.inter10>*+* {
+  margin-left: 10px;
+}
+
+.inter25>*+* {
+  margin-left: 25px;
+}
+
+.inter32>*+* {
+  margin-left: 32px;
+}
+
+.inter64>*+* {
+  margin-left: 64px;
+}
+
+.inter91>*+* {
+  margin-left: 91px;
+}
+
+.minh50 {
+  min-height: 50px;
+}
+
+.bg-coral {
+  background-color: #edb0a2;
+}
+
+.bg-red {
+  background-color: #b76b75;
+}
+
+.bg-green {
+  background-color: #6bb775;
+}
+
+.bg-blue {
+  background-color: #9ca3cf;
+}
+
+.bg-yellow {
+  background-color: #e8da9a;
+}
+
+.bg-pink {
+  background-color: #d69296;
+}
+
+.bg-purple {
+  background-color: #e3b6de;
+}
+
+.bg-brown {
+  background-color: #836d64;
+}
+
+/* REC: а тут не логичнее будет padding делать? */
+/* Нет, не логичнее. Ибо во флексе происходить странный момент с паддингом. */
+/* Есть скрины */
+
+
+.section {
+  padding: 70px 0;
+}
+
+@media all and (max-width: 1599px) {
+
+  /* 1024x */
+
+  .section {
+    padding: 71px 36px;
+  }
+}
+
+@media all and (max-width: 1023px) {
+
+  /* 768px */
+
+  .section {
+    padding: 71px 71px;
+  }
+
+  .section {
+
+    padding-bottom: 67px;
+
+  }
+
+}
+
+@media all and (max-width: 767px) {
+
+  /* 320px */
+
+  .section {
+    padding: 0;
+  }
+
+
+
+}

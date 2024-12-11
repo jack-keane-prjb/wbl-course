@@ -1,0 +1,48 @@
+#react_root {
+  margin: 0;
+  display: grid;
+  /* REC: тут надо именно два раза прописать 1fr (за каждую колонку) */
+  grid-template-columns: 1fr;
+  /* TODO: Возможно, тут указано неправильно: ибо, похоже, что это относится к классам, а не тегам */
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  grid-column: span 3;
+}
+
+.content {
+  grid-area: content;
+  grid-column: span 9;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(77px, 1fr));
+  grid-auto-rows: auto;
+  column-gap: 32px;
+  row-gap: 26px;
+}
+
+@media all and (max-width: 767px) {
+  .grid {
+    grid-template-columns: 1fr;
+    /* padding: 10px; */
+  }
+}

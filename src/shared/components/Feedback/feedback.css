@@ -1,0 +1,77 @@
+.title {
+  /* REC: сетку можно еще подгонять вот так, если не хочется трогать row-gap и col-gap */
+  margin-bottom: 11px;
+}
+
+.backgroundCell {
+  /* TODO: проверить, как вообще убирается сама ячейка с бэкграундом при таком раскладе: */
+  grid-column: span 6;
+  /* grid-row: span 2; */
+  background-image: url('../../../assets/img/feedback_bg.png');
+  background-position: bottom 22px center;
+  background-repeat: no-repeat;
+}
+
+@media all and (max-width: 1599px) {
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(77px, 1fr));
+    column-gap: 32px;
+  }
+
+  .backgroundCell {
+    grid-column: span 5;
+    /* background-position: bottom 75px center; */
+    background-position: top 35px center;
+    background-size: 100%;
+  }
+}
+
+
+@media all and (max-width: 1023px) {
+
+  /* 768px */
+  .container {
+    padding: 65px 72px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 0;
+  }
+
+  .backgroundCell {
+    grid-column: initial;
+    grid-row: span 2;
+    background-image: url('../../../assets/img/768px/feedback_bg_768px.png');
+    background-position: initial;
+    background-position: center -28px;
+    background-size: 186px;
+  }
+
+  .title {
+    margin-bottom: 7px;
+  }
+}
+
+@media all and (max-width: 767px) {
+
+  /* 320px */
+  .container {
+    padding: 5px 0;
+  }
+
+  .backgroundCell {
+    grid-column: initial;
+  }
+
+  .grid {
+    row-gap: 22px;
+    grid-template-columns: initial;
+  }
+
+  .title {
+    font-size: 24.1px;
+    line-height: 22px;
+  }
+}
